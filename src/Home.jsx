@@ -5,6 +5,8 @@ import { TextField } from '@mui/material'
 import showFlightImg from './assets/homeHeroshowFlight.svg'
 import homelocationIcon from './assets/home-page-location-icon.svg'
 import homeStarImg from './assets/home-star-img.svg'
+import homeCirclWhiteImg from './assets/home-circle-white-img.svg'
+import homeCirlceBlue from './assets/home-circle-blue-img.svg'
 
 const Home = () => {
     return (
@@ -77,11 +79,11 @@ const Home = () => {
 
 
             <div className='flex flex-col items-center justify-center md:flex-row md:justify-evenly mt-10  gap-11 md:gap-0'>
-                <div className=' w-[300px] sm:w-[410px]  flex flex-col'>
+                <div className=' w-[300px] sm:w-[410px]  flex flex-col relative'>
 
                     <div className='flex flex-col  items-center md:flex-col  '>
                         <div className="h-[348px]  bg-[url('./assets/home-page-indonesia.svg')] bg-cover w-[300px] sm:w-[410px] rounded-t-lg ">
-
+                            <button className='home-indonedia-price-btn'>&#8377;500</button>
                         </div>
 
 
@@ -118,38 +120,95 @@ const Home = () => {
 
                 <div className=' w-[300px] sm:w-[410px]'>
 
-<div className='flex flex-col  items-center md:flex-col '>
-    <div className="h-[348px]  bg-[url('./assets/home-page-indonesia.svg')] bg-cover w-[300px] sm:w-[410px] rounded-t-lg ">
+                    <div className='flex flex-col  items-center md:flex-col '>
+                        <div className="h-[348px]  bg-[url('./assets/home-page-indonesia.svg')] bg-cover w-[300px] sm:w-[410px] rounded-t-lg relative">
+                            <button className='home-indonedia-price-btn'>&#8377;500</button>
+                        </div>
 
-    </div>
+
+                        <div className=' home-indonesia-card-text-main-div '>
+
+                            {/* indonesia name and location icon */}
+                            <div className='flex items-center justify-between px-2 py-2 '>
+                                <div className='flex items-center justify-around py-2 mt-[-10px] '>
+                                    <img src={homelocationIcon} alt="homelocationIcon" />
+                                    <p className='font-bold'>Indonesia</p>
+                                </div>
+
+                                {/* star rating */}
+                                <div className='flex gap-1 mt-[-15px]'>
+                                    <img src={homeStarImg} alt="homeStarImg" />
+                                    <p>4.5</p>
+                                </div>
+                            </div>
+
+                            <div className='flex flex-col items-center justify-center px-6'>
+                                <p>Explore the Beauty of the island for 3 days and 2 nights with our travel agency...</p>
+                                <button className='home-indonesia-book-now-btn my-7 text-white font-bold'>Book Now</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
 
 
-    <div className=' home-indonesia-card-text-main-div '>
+                {/* 3rd indonesia card div */}
 
-        {/* indonesia name and location icon */}
-        <div className='flex items-center justify-between px-2 py-2 '>
-            <div className='flex items-center justify-around py-2 mt-[-10px] '>
-                <img src={homelocationIcon} alt="homelocationIcon" />
-                <p className='font-bold'>Indonesia</p>
+                <div className='hidden lg:flex w-[300px] sm:w-[410px] '>
+
+                    <div className='flex flex-col  items-center md:flex-col relative'>
+                        <div className="h-[348px]  bg-[url('./assets/home-page-indonesia.svg')] bg-cover w-[300px] sm:w-[410px] rounded-t-lg ">
+                            <button className='home-indonedia-price-btn'>&#8377;500</button>
+                        </div>
+
+
+                        <div className=' home-indonesia-card-text-main-div '>
+
+                            {/* indonesia name and location icon */}
+                            <div className='flex items-center justify-between px-2 py-2 '>
+                                <div className='flex items-center justify-around py-2 mt-[-10px] '>
+                                    <img src={homelocationIcon} alt="homelocationIcon" />
+                                    <p className='font-bold'>Indonesia</p>
+                                </div>
+
+                                {/* star rating */}
+                                <div className='flex gap-1 mt-[-15px]'>
+                                    <img src={homeStarImg} alt="homeStarImg" />
+                                    <p>4.5</p>
+                                </div>
+                            </div>
+
+                            <div className='flex flex-col items-center justify-center px-6'>
+                                <p>Explore the Beauty of the island for 3 days and 2 nights with our travel agency...</p>
+                                <button className='home-indonesia-book-now-btn my-7 text-white font-bold'>Book Now</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
-            {/* star rating */}
-            <div className='flex gap-1 mt-[-15px]'>
-                <img src={homeStarImg} alt="homeStarImg" />
-                <p>4.5</p>
+
+
+            <div className=' hidden sm:flex items-center justify-center gap-4 py-11'>
+                <img src={homeCirclWhiteImg} alt="w" />
+                <img src={homeCirlceBlue} alt="w" />
+                <img src={homeCirclWhiteImg} alt="w" />
             </div>
-        </div>
 
-        <div className='flex flex-col items-center justify-center px-6'>
-            <p>Explore the Beauty of the island for 3 days and 2 nights with our travel agency...</p>
-            <button className='home-indonesia-book-now-btn my-7 text-white font-bold'>Book Now</button>
-        </div>
 
-    </div>
-</div>
+      <div className="flex items-center justify-center">
+          <button className='home-hero-discover-btn mt-10'>Discover Now</button>
+      </div>
+        
 
-</div>
-            </div>
+
+
+
+
 
 
 
