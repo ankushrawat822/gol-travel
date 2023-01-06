@@ -71,6 +71,7 @@ const Home = () => {
                 <button className='hero-page-best-packages-btns bg-[#3282AD] text-white font-bold'>Maldives</button>
                 <button className='hero-page-best-packages-btns text-[#3282AD] font-bold'>Samudram</button>
                 <button className='hidden md:flex md:text-center md:items-center md:justify-center hero-page-best-packages-btns text-[#3282AD] font-bold'>Cordelia</button>
+                <button className='hidden md:flex md:text-center md:items-center md:justify-center hero-page-best-packages-btns text-[#3282AD] font-bold'>Agatti</button>
                 <button className='hero-page-best-packages-btns text-[#3282AD] font-bold'>More</button>
             </div>
 
