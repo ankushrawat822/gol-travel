@@ -8,6 +8,7 @@ import homeStarImg from './assets/home-star-img.svg'
 import homeCirclWhiteImg from './assets/home-circle-white-img.svg'
 import homeCirlceBlue from './assets/home-circle-blue-img.svg'
 
+
 const Home = () => {
     return (
         <>
@@ -58,7 +59,7 @@ const Home = () => {
 
             </div>
 
-            <div className='flex gap-4 items-center justify-center md:items-end md:justify-end md:mr-10'>
+            <div className='flex gap-4 items-center justify-center md:items-end md:justify-end md:mr-16'>
                 <button>+ Add Promo Code</button>
                 <button className='home-hero-show-flight-btn flex items-center justify-center text-white'> <img src={showFlightImg} alt="showFlightImg" />Show Flights</button>
             </div>
@@ -121,7 +122,7 @@ const Home = () => {
                 <div className=' w-[300px] sm:w-[410px]'>
 
                     <div className='flex flex-col  items-center md:flex-col '>
-                        <div className="h-[348px]  bg-[url('./assets/home-page-indonesia.svg')] bg-cover w-[300px] sm:w-[410px] rounded-t-lg relative">
+                        <div className="h-[348px]  bg-[url('./assets/home-indonesia-img2.svg')] bg-cover w-[300px] sm:w-[410px] rounded-t-lg relative">
                             <button className='home-indonedia-price-btn'>&#8377;500</button>
                         </div>
 
@@ -158,7 +159,7 @@ const Home = () => {
                 <div className='hidden lg:flex w-[300px] sm:w-[410px] '>
 
                     <div className='flex flex-col  items-center md:flex-col relative'>
-                        <div className="h-[348px]  bg-[url('./assets/home-page-indonesia.svg')] bg-cover w-[300px] sm:w-[410px] rounded-t-lg ">
+                        <div className="h-[348px]  bg-[url('./assets/home-indonesia-img3.svg')] bg-cover w-[300px] sm:w-[410px] rounded-t-lg ">
                             <button className='home-indonedia-price-btn'>&#8377;500</button>
                         </div>
 
