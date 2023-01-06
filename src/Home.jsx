@@ -11,7 +11,7 @@ const Home = () => {
         <>
 
             {/* hero section */}
-            <div className='home-hero-main-div mt-7 '>
+            <div className='home-hero-main-div mt-16 '>
 
                 <div className='home-hero-text-main-container '>
 
