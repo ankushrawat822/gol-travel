@@ -606,8 +606,141 @@ border-radius: 5px;
 }
 
 
+/* hero page css starts*/
 
-/* video page media querries  */
+.home-hero-main-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  gap: 30px;
+  padding: 0px 5%;
+}
+
+.bb{
+  border: 1px solid red;
+}
+
+.home-hero-visit-button{
+width: 197px;
+height: 64px;
+background: #D2F4FF;
+border-radius: 44px;
+}
+
+.home-hero-lakshadweep-text-hr{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+color: #3282AD;
+}
+
+.home-hero-top-and-botton-text{
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+color: #3A3A3A;
+}
+
+.home-hero-discover-btn{
+padding: 16px 32px;
+background: #FFFFFF;
+border: 2px solid #3282AD;
+border-radius: 5px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 32px;
+color: #3282AD;
+}
+
+
+.home-hero-flying-input-div{
+  width: 100vw;
+  padding: 60px 5%;
+
+}
+
+.home-hero-show-flight-btn{
+padding: 8px 16px;
+gap: 4px;
+background: #3282AD;
+border-radius: 4px;
+}
+
+.hero-page-best-packages-btns{
+height: 55px;
+width: 150px;
+border: 1px solid #3A3A3A;
+
+}
+
+.gg{
+  border: 2px solid green;;
+}
+
+.home-indonesia-book-now-btn{
+  padding: 8px 32px;
+gap: 10px;
+
+width: 183px;
+height: 49px;
+
+background: #3282AD;
+border-radius: 4px;
+}
+
+
+.home-indonesia-card-text-main-div{
+  filter: drop-shadow(0px 4px 25px rgba(50, 130, 173, 0.15));
+border-radius: 8px;
+background-color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* all page media querries  */
 @media screen and (max-width: 1115px) {
   .first-video-container {
     display: flex;
@@ -731,6 +864,22 @@ border-radius: 5px;
 }
 
 
+/* home page styles */
+ .home-hero-main-div{
+  flex-direction: column;
+ }
+
+ .home-hero-text-main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+ }
+
+ .home-hero-text-main-container div{
+  text-align: center;
+ }
 }
 
 
@@ -742,8 +891,38 @@ border-radius: 5px;
     margin-top: -359px;
     width: 150px;
   }
+
+  .home-hero-top-and-botton-text{
+    font-size: 38px;
+  }
+
+  .home-hero-lakshadweep-text-hr{
+    font-size: 30px;
+  }
+
+  .home-hero-text-main-container{
+
+  }
+
+  .home-hero-flying-input-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
+
+@media screen and (max-width: 490px){
+  .home-hero-text-main-container{
+  
+  }
+
+  .home-hero-main-div{
+    padding: 0px;
+    width: auto;
+  }
+}
 
 
 

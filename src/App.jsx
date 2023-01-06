@@ -2,12 +2,13 @@
 import './index.css'
 import React  from 'react'
 import Navbar  from './Navbar'
+import Home from './Home'
 import Video from './Video'
 import Support from './Support'
 import Package from './Package'
 import Footer from './Footer'
 import { Routes, Route } from 'react-router-dom'
-import NotFound from './NotFount'
+import NotFound from './NotFound'
 
 
 function App() {
@@ -15,7 +16,10 @@ function App() {
    <>
     <Navbar></Navbar>
  <Routes>
-   <Route  path='/' element={<Video></Video>}/>
+ 
+   <Route  path='/' element={<Home></Home>}/>
+
+   <Route  path='/video' element={<Video></Video>}/>
 
    <Route  path='/support' element={<Support></Support>}/>
 
