@@ -723,6 +723,12 @@ background: #FFFFFF;
 border-radius: 5px;
 }
 
+.home-client-reviews-card-bg{
+background: #FFFFFF;
+box-shadow: 0px 0px 25px rgba(50, 130, 173, 0.15);
+border-radius: 15px;
+}
+
 
 
 

@@ -8,6 +8,8 @@ import homeStarImg from './assets/home-star-img.svg'
 import homeCirclWhiteImg from './assets/home-circle-white-img.svg'
 import homeCirlceBlue from './assets/home-circle-blue-img.svg'
 import homeKaravatiIsland from './assets/home-island-karavati.svg'
+import clientStarImg from './assets/home-client-reviews-star.svg'
+import homeclientUserImg from './assets/home-client-user-img.svg'
 
 
 const Home = () => {
@@ -85,11 +87,11 @@ const Home = () => {
 
                     <div className='flex flex-col  items-center md:flex-col  '>
                         <div className="h-[348px]  bg-[url('./assets/home-page-indonesia.svg')] bg-cover w-[300px] sm:w-[410px] lg:w-[337px] rounded-t-lg ">
-                            <button className='home-indonedia-price-btn'>&#8377;500</button>
+                            <button className='home-indonedia-price-btn lg:right-[44px]'>&#8377;500</button>
                         </div>
 
 
-                        <div className=' home-indonesia-card-text-main-div '>
+                        <div className=' home-indonesia-card-text-main-div lg:w-[337px]'>
 
                             {/* indonesia name and location icon */}
                             <div className='flex items-center justify-between px-2 py-2 '>
@@ -128,7 +130,7 @@ const Home = () => {
                         </div>
 
 
-                        <div className=' home-indonesia-card-text-main-div '>
+                        <div className=' home-indonesia-card-text-main-div lg:w-[337px]'>
 
                             {/* indonesia name and location icon */}
                             <div className='flex items-center justify-between px-2 py-2 '>
@@ -165,7 +167,7 @@ const Home = () => {
                         </div>
 
 
-                        <div className=' home-indonesia-card-text-main-div '>
+                        <div className=' home-indonesia-card-text-main-div lg:w-[337px] '>
 
                             {/* indonesia name and location icon */}
                             <div className='flex items-center justify-between px-2 py-2 '>
@@ -435,22 +437,98 @@ const Home = () => {
 
 
             {/* contact us container */}
-            <div className="bg-[url('./assets/Backfooter.svg')]  h-[197px] flex flex-col items-center justify-center gap-8 md:flex-row md:h-[154px] lg:px-10 md:justify-between mt-10">
+            <div className="bg-[url('./assets/Backfooter.svg')]  h-[197px] flex flex-col items-center justify-center gap-8 md:flex-row md:h-[154px] lg:h-[261px] lg:px-10 md:justify-between mt-24 mx-3 sm:mx-5 lg:mx-10 rounded-[15px]">
 
             {/* text div */}
             <div className="text-center md:text-left text-white  md:w-[2/5]">
-            <p className='md:font-bold md:text-[20px] lg:text-[32px]]'>Lets Ready to Explore The World With Us.</p>
+            <p className='md:font-bold md:text-[20px] lg:w-[451px] lg:text-[42px] lg:leading-[50px] lg:my-[20px]'>Lets Ready to Explore The World With Us.</p>
             <p className='hidden md:flex'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et quis incidunt iusto!</p>
             </div>
 
             {/* button div */}
-            <button className='home-contact-us-btn'>Contact Us</button>
+            <button className='home-contact-us-btn font-bold text-center'>Contact Us</button>
                
             </div>
 
 
+         {/* home reviews page */}
+
+         <div className='text-center mx-6 mt-16'>
+            <h2 className='font-bold text-[24px] leading-[32px] '>What Our Clients Says About Us</h2>
+         </div>
 
 
+
+         {/* reviews card main div*/}
+     <div className='mt-8  flex items-center justify-center md:justify-evenly'>
+
+        {/* card 1 */}
+         <div className='hidden md:flex   w-[300px] sm:w-[410px] md:w-[302px] lg:[w-336px] '>
+            <div className=' flex flex-col items-center justify-center gap-2 px-5 text-center home-client-reviews-card-bg'>
+                <img src={homeclientUserImg} alt=""  className='py-3'/>
+                <p className='font-bold mt-[-10px] text-[20px]'>Trina Davis</p>
+                <p className='text-[16px] font-bold text-[#555555]'>Toranto, Canada</p>
+                <p className='text-[14px] text-[#5A5A5A] py-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam voluptate veniam repudiandae quod animi, dolorum, tempore duci</p>
+                <p className='flex gap-2 py-2 pb-3'>
+                    <img src={clientStarImg} alt="" />
+                    <img src={clientStarImg} alt="" />
+                    <img src={clientStarImg} alt="" />
+                    <img src={clientStarImg} alt="" />
+                    <img src={clientStarImg} alt="" />
+                </p>
+            </div>
+         </div>
+
+
+
+           {/* card 2 */}
+           <div className='hidden lg:flex   w-[300px] sm:w-[410px] md:w-[302px] lg:[w-336px] '>
+            <div className=' flex flex-col items-center justify-center gap-2 px-5 text-center home-client-reviews-card-bg'>
+                <img src={homeclientUserImg} alt="" className='py-3'/>
+                <p className='font-bold mt-[-10px] text-[20px]'>Trina Davis</p>
+                <p className='text-[16px] font-bold text-[#555555]'>Toranto, Canada</p>
+                <p className='text-[14px] text-[#5A5A5A] py-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam voluptate veniam repudiandae quod animi, dolorum, tempore duci</p>
+                <p className='flex gap-2 py-2 pb-3'>
+                    <img src={clientStarImg} alt="" />
+                    <img src={clientStarImg} alt="" />
+                    <img src={clientStarImg} alt="" />
+                    <img src={clientStarImg} alt="" />
+                    <img src={clientStarImg} alt="" />
+                </p>
+            </div>
+         </div>
+
+
+
+         {/* card 3 */}
+         <div className='  w-[300px] sm:w-[410px] md:w-[302px] lg:[w-336px] '>
+            <div className='flex flex-col items-center justify-center gap-2 px-5 text-center home-client-reviews-card-bg'>
+                <img src={homeclientUserImg} alt="" className='py-3'/>
+                <p className='font-bold mt-[-10px] text-[20px]'>Trina Davis</p>
+                <p className='text-[16px] font-bold text-[#555555]'>Toranto, Canada</p>
+                <p className='text-[14px] text-[#5A5A5A] py-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam voluptate veniam repudiandae quod animi, dolorum, tempore duci</p>
+                <p className='flex gap-2 py-2 pb-3'>
+                    <img src={clientStarImg} alt="" />
+                    <img src={clientStarImg} alt="" />
+                    <img src={clientStarImg} alt="" />
+                    <img src={clientStarImg} alt="" />
+                    <img src={clientStarImg} alt="" />
+                </p>
+            </div>
+         </div>
+
+
+
+{/* review card main div ends */}
+</div>
+
+
+
+<div className='flex items-center justify-center gap-4 py-11'>
+                <img src={homeCirclWhiteImg} alt="w" />
+                <img src={homeCirlceBlue} alt="w" />
+                <img src={homeCirclWhiteImg} alt="w" />
+            </div>
 
         </>
     )
