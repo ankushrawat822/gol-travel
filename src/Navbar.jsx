@@ -52,7 +52,9 @@ const Navbar = () => {
                </Link>      
                 </li>
                 <li className='flex items-center gap-1'>
-                    About Lakshadweep <IoIosArrowDown></IoIosArrowDown>
+                <Link className='flex items-center gap-1' 
+                to='/at-a-glance'>About Lakshadweep <IoIosArrowDown></IoIosArrowDown> 
+               </Link>  
                 </li>
                 <li>
                     Abou Us
@@ -102,7 +104,9 @@ const Navbar = () => {
                </Link> 
                 </li>
                 <li className='flex items-center gap-1'>
-                    About Lakshadweep <IoIosArrowDown></IoIosArrowDown>
+                <Link className='flex items-center gap-1' 
+                to='/at-a-glance'>About Lakshadweep <IoIosArrowDown></IoIosArrowDown> 
+               </Link>
                 </li>
                 <li>
                     Abou Us
