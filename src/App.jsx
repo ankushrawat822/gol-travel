@@ -7,6 +7,7 @@ import Video from './Video'
 import Support from './Support'
 import Package from './Package'
 import AboutLakshadweep from './AboutLakshadweep'
+import Island from './Island'
 import Footer from './Footer'
 import { Routes, Route } from 'react-router-dom'
 import NotFound from './NotFound'
@@ -25,6 +26,8 @@ function App() {
    <Route  path='/support' element={<Support></Support>}/>
 
    <Route  path='/at-a-glance' element={<AboutLakshadweep></AboutLakshadweep>}/>
+
+   <Route  path='/island' element={<Island></Island>}/>
 
    <Route  path='/package' element={<Package></Package>}/>
 

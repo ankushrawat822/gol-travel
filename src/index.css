@@ -16,6 +16,15 @@ body{
 }
 
 
+
+/* navbar  */
+.navmenus-about-lakshwadeep{
+  position: absolute;
+  right: 50%;
+  top: 11%;
+  z-index: 3;
+}
+
 /* mobile css menu */
 .mobile-menu-links-conatiner{
  
@@ -188,11 +197,6 @@ border-radius: 5px;
   width: 90vw;
   height: 430px;
   border-radius: 12px;
-}
-
-.downoad-img-div h1 , p , img{
-  /* margin-left: 2.5rem; */
-
 }
 
 .downoad-img-div p {
