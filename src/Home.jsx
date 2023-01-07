@@ -7,6 +7,7 @@ import homelocationIcon from './assets/home-page-location-icon.svg'
 import homeStarImg from './assets/home-star-img.svg'
 import homeCirclWhiteImg from './assets/home-circle-white-img.svg'
 import homeCirlceBlue from './assets/home-circle-blue-img.svg'
+import homeKaravatiIsland from './assets/home-island-karavati.svg'
 
 
 const Home = () => {
@@ -83,7 +84,7 @@ const Home = () => {
                 <div className=' w-[300px] sm:w-[410px]  flex flex-col relative'>
 
                     <div className='flex flex-col  items-center md:flex-col  '>
-                        <div className="h-[348px]  bg-[url('./assets/home-page-indonesia.svg')] bg-cover w-[300px] sm:w-[410px] rounded-t-lg ">
+                        <div className="h-[348px]  bg-[url('./assets/home-page-indonesia.svg')] bg-cover w-[300px] sm:w-[410px] lg:w-[337px] rounded-t-lg ">
                             <button className='home-indonedia-price-btn'>&#8377;500</button>
                         </div>
 
@@ -122,7 +123,7 @@ const Home = () => {
                 <div className=' w-[300px] sm:w-[410px]'>
 
                     <div className='flex flex-col  items-center md:flex-col '>
-                        <div className="h-[348px]  bg-[url('./assets/home-indonesia-img2.svg')] bg-cover w-[300px] sm:w-[410px] rounded-t-lg relative">
+                        <div className="h-[348px]  bg-[url('./assets/home-indonesia-img2.svg')] bg-cover w-[300px] sm:w-[410px] rounded-t-lg relative lg:w-[337px]">
                             <button className='home-indonedia-price-btn'>&#8377;500</button>
                         </div>
 
@@ -159,7 +160,7 @@ const Home = () => {
                 <div className='hidden lg:flex w-[300px] sm:w-[410px] '>
 
                     <div className='flex flex-col  items-center md:flex-col relative'>
-                        <div className="h-[348px]  bg-[url('./assets/home-indonesia-img3.svg')] bg-cover w-[300px] sm:w-[410px] rounded-t-lg ">
+                        <div className="h-[348px]  bg-[url('./assets/home-indonesia-img3.svg')] bg-cover w-[300px] sm:w-[410px] rounded-t-lg lg:w-[337px]">
                             <button className='home-indonedia-price-btn'>&#8377;500</button>
                         </div>
 
@@ -201,14 +202,251 @@ const Home = () => {
             </div>
 
 
-      <div className="flex items-center justify-center">
-          <button className='home-hero-discover-btn mt-10'>Discover Now</button>
-      </div>
-        
+            <div className="flex items-center justify-center">
+                <button className='home-hero-discover-btn mt-10'>Discover Now</button>
+            </div>
+
+
+            {/* island stays */}
+            <div className='flex flex-col items-center justify-center text-center mt-9 '>
+                <h3 className='font-bold text-[24px] py-2'>Island Stays</h3>
+                <p>One can choose from a variety of beautiful coral islands which offers different staying experience from..</p>
+            </div>
+
+            {/* island cards main */}
+            <div className='mt-6 flex flex-col gap-5 items-center justify-evenly lg:px-16 lg:gap-10  md:flex-row md:flex-wrap '>
+
+                {/* first card div */}
+                <div className='flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] 
+                '>
+                    {/* img div */}
+                    <div>
+                        <img src={homeKaravatiIsland} alt="" />
+                    </div>
+                    {/* below img div */}
+                    <div className='flex flex-col pl-2'>
+                        {/* h1 and p div */}
+                        <div className='flex flex-col w-'>
+                            <h3 className='font-bold'>Kavaratti</h3>
+                            <p>Kavaratti is the capital of the Union Territory of Lakshadweep having...</p>
+                        </div>
+                        {/* rating and button */}
+                        <div className='flex justify-between items-center'>
+                            {/* reviews */}
+                            <div className='flex gap-1 py-3'>
+                                <img src={homeStarImg} alt="star" />
+                                <p className='font-bold'>4.5</p>
+                                <p>(1.5k Review)</p>
+                            </div>
+                            {/* explore more btn */}
+
+                            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold'>Explore More</button>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+                 
+
+                  {/* second card div */}
+                <div className='flex flex-col w-[300px]  sm:w-[404px] lg:w-[336px] sm:px-3 '>
+                    {/* img div */}
+                    <div>
+                        <img src={homeKaravatiIsland} alt="" />
+                    </div>
+                    {/* below img div */}
+                    <div className='flex flex-col pl-2'>
+                        {/* h1 and p div */}
+                        <div className='flex flex-col w-'>
+                            <h3 className='font-bold'>Kavaratti</h3>
+                            <p>Kavaratti is the capital of the Union Territory of Lakshadweep having...</p>
+                        </div>
+                        {/* rating and button */}
+                        <div className='flex justify-between items-center'>
+                            {/* reviews */}
+                            <div className='flex gap-1 py-3'>
+                                <img src={homeStarImg} alt="star" />
+                                <p className='font-bold'>4.5</p>
+                                <p>(1.5k Review)</p>
+                            </div>
+                            {/* explore more btn */}
+
+                            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold'>Explore More</button>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
 
 
 
 
+
+               {/* third card div */}
+               <div className='flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] '>
+                    {/* img div */}
+                    <div>
+                        <img src={homeKaravatiIsland} alt="" />
+                    </div>
+                    {/* below img div */}
+                    <div className='flex flex-col pl-2'>
+                        {/* h1 and p div */}
+                        <div className='flex flex-col w-'>
+                            <h3 className='font-bold'>Kavaratti</h3>
+                            <p>Kavaratti is the capital of the Union Territory of Lakshadweep having...</p>
+                        </div>
+                        {/* rating and button */}
+                        <div className='flex justify-between items-center'>
+                            {/* reviews */}
+                            <div className='flex gap-1 py-3'>
+                                <img src={homeStarImg} alt="star" />
+                                <p className='font-bold'>4.5</p>
+                                <p>(1.5k Review)</p>
+                            </div>
+                            {/* explore more btn */}
+
+                            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold'>Explore More</button>
+
+                        </div>
+                    </div>
+
+
+
+                </div>    
+               {/* third card ends */}
+
+
+
+                {/* forth card div */}
+                <div className='hidden md:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] '>
+                    {/* img div */}
+                    <div>
+                        <img src={homeKaravatiIsland} alt="" />
+                    </div>
+                    {/* below img div */}
+                    <div className='flex flex-col pl-2'>
+                        {/* h1 and p div */}
+                        <div className='flex flex-col w-'>
+                            <h3 className='font-bold'>Kavaratti</h3>
+                            <p>Kavaratti is the capital of the Union Territory of Lakshadweep having...</p>
+                        </div>
+                        {/* rating and button */}
+                        <div className='flex justify-between items-center'>
+                            {/* reviews */}
+                            <div className='flex gap-1 py-3'>
+                                <img src={homeStarImg} alt="star" />
+                                <p className='font-bold'>4.5</p>
+                                <p>(1.5k Review)</p>
+                            </div>
+                            {/* explore more btn */}
+
+                            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold'>Explore More</button>
+
+                        </div>
+                    </div>
+
+
+
+                </div>    
+               {/* forth card ends */}
+
+
+
+
+
+                {/* five card div */}
+                <div className='hidden lg:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] '>
+                    {/* img div */}
+                    <div>
+                        <img src={homeKaravatiIsland} alt="" />
+                    </div>
+                    {/* below img div */}
+                    <div className='flex flex-col pl-2'>
+                        {/* h1 and p div */}
+                        <div className='flex flex-col w-'>
+                            <h3 className='font-bold'>Kavaratti</h3>
+                            <p>Kavaratti is the capital of the Union Territory of Lakshadweep having...</p>
+                        </div>
+                        {/* rating and button */}
+                        <div className='flex justify-between items-center'>
+                            {/* reviews */}
+                            <div className='flex gap-1 py-3'>
+                                <img src={homeStarImg} alt="star" />
+                                <p className='font-bold'>4.5</p>
+                                <p>(1.5k Review)</p>
+                            </div>
+                            {/* explore more btn */}
+
+                            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold'>Explore More</button>
+
+                        </div>
+                    </div>
+
+
+
+                </div>    
+               {/* five card ends */}
+
+
+
+             {/* six card div */}
+ <div className='hidden lg:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px]'>
+                    {/* img div */}
+                    <div>
+                        <img src={homeKaravatiIsland} alt="" />
+                    </div>
+                    {/* below img div */}
+                    <div className='flex flex-col pl-2'>
+                        {/* h1 and p div */}
+                        <div className='flex flex-col w-'>
+                            <h3 className='font-bold'>Kavaratti</h3>
+                            <p>Kavaratti is the capital of the Union Territory of Lakshadweep having...</p>
+                        </div>
+                        {/* rating and button */}
+                        <div className='flex justify-between items-center'>
+                            {/* reviews */}
+                            <div className='flex gap-1 py-3'>
+                                <img src={homeStarImg} alt="star" />
+                                <p className='font-bold'>4.5</p>
+                                <p>(1.5k Review)</p>
+                            </div>
+                            {/* explore more btn */}
+
+                            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold'>Explore More</button>
+
+                        </div>
+                    </div>
+
+
+
+                </div>    
+               {/* six card ends */}
+
+            </div>
+
+
+
+
+            {/* contact us container */}
+            <div className="bg-[url('./assets/Backfooter.svg')]  h-[197px] flex flex-col items-center justify-center gap-8 md:flex-row md:h-[154px] lg:px-10 md:justify-between mt-10">
+
+            {/* text div */}
+            <div className="text-center md:text-left text-white  md:w-[2/5]">
+            <p className='md:font-bold md:text-[20px] lg:text-[32px]]'>Lets Ready to Explore The World With Us.</p>
+            <p className='hidden md:flex'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et quis incidunt iusto!</p>
+            </div>
+
+            {/* button div */}
+            <button className='home-contact-us-btn'>Contact Us</button>
+               
+            </div>
 
 
 
