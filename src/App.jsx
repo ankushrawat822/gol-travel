@@ -7,6 +7,7 @@ import Video from './Video'
 import Support from './Support'
 import Package from './Package'
 import AboutLakshadweep from './AboutLakshadweep'
+import Gallery from './Gallery'
 import Island from './Island'
 import Footer from './Footer'
 import { Routes, Route } from 'react-router-dom'
@@ -30,6 +31,8 @@ function App() {
    <Route  path='/island' element={<Island></Island>}/>
 
    <Route  path='/package' element={<Package></Package>}/>
+
+   <Route  path='/gallery' element={<Gallery></Gallery>}/>
 
    <Route path='*' element={<NotFound></NotFound>}> </Route>
  </Routes>
