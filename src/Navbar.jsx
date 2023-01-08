@@ -44,7 +44,14 @@ const [showALmenuMobile, setShowALmenuMobile] = useState(false)
                 <img className='gradient-div map-img' src={gradient} alt="gradient" />
                 <img className='map-img' src={map} alt="map" />
                 <div className='position-circle'>
-                    <img className='center-circle' src={circle} alt='circle' />
+                    {/* <img className='center-circle' src={circle} alt='circle' /> */}
+                    <div class="circles">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
                 </div>
             </div>
 
@@ -102,7 +109,9 @@ const [showALmenuMobile, setShowALmenuMobile] = useState(false)
                                 About Lakshadweep <IoIosArrowDown></IoIosArrowDown>
                             </li>
                             <li>
-                                About Us
+                            <Link className='flex items-center gap-1'
+                                to='/about'>About
+                            </Link>
                             </li>
                             <li>
                                 Gol
@@ -177,7 +186,9 @@ const [showALmenuMobile, setShowALmenuMobile] = useState(false)
 
             {/*  about lakshwadeep drop down btn ends  */}
                         <li>
-                            About Us
+                        <Link className='flex items-center gap-1'
+                                to='/about'>About
+                            </Link>
                         </li>
                         <li>
                             Gol
