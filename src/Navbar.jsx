@@ -168,6 +168,9 @@ const [showALmenuMobile, setShowALmenuMobile] = useState(false)
                                 <li onClick={handleALliClickedEventToCloseMobile}><Link className='flex items-center gap-1'
                                     to='/island'> Island
                                 </Link></li>
+                                <li onClick={handleALliClickedEventToCloseMobile}><Link className='flex items-center gap-1'
+                                    to='/gallery'> Gallery
+                                </Link></li>
                 </ul>
             </div>
             }
