@@ -15,14 +15,14 @@ const Booking = () => {
 
 
             <div className='flex flex-col items-center justify-center gap-1 '>
-                <p className='text-[20px]'>Email</p>
-                <input className='booking-email-input' type="email" />
-                <p  className='text-[20px]'>Booking ID</p>
-                <input className='booking-email-input' type="text" />
-                <button className='booking-find-btn bg-[#3282AD] text-[24px] text-white font-bold flex items-center justify-center  btn-hover-effect-blue-to-white-bg'>Find</button>
+                <p className='text-[20px] lg:py-2'>Email</p>
+                <input className='booking-email-input lg:w-[598px]' type="email" />
+                <p  className='text-[20px] lg:py-2'>Booking ID</p>
+                <input className='booking-email-input  lg:w-[598px]' type="text" />
+                <button className='booking-find-btn bg-[#3282AD]  lg:w-[598px] text-[24px] text-white font-bold flex items-center justify-center  btn-hover-effect-blue-to-white-bg lg:mt-7'>Find</button>
             </div>
 
-    <img className='hidden sm:flex' src={BookingImg} alt="" />
+    <img className='hidden sm:flex lg:w-[540px] lg:h-[637px]' src={BookingImg} alt="" />
 
 
             </div>

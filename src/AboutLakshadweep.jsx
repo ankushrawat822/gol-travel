@@ -27,26 +27,26 @@ const AboutLakshadweep = () => {
                 <div className='flex gap-5 items-center justify-between'>
 
                     {/* div 1 */}
-                    <div className=" relative flex items-center justify-center bg-[url('./assets/AtAGlance-explore-img1.svg')] md:w-[196px] md:h-[153px] bg-cover  lg:w-[247px] lg:h-[192px]">
+                    <div className=" relative flex items-center div-img rounded-[8px] justify-center bg-[url('./assets/AtAGlance-explore-img1.svg')] md:w-[196px] md:h-[153px] bg-cover  lg:w-[247px] lg:h-[192px]">
                         <p className='text-white absolute bottom-5'>Agatti</p>
                     </div>
 
                     {/* div 2 */}
-                    <div className=" relative flex items-center justify-center bg-[url('./assets/AtAGlance-explore-img1.svg')] md:w-[196px] md:h-[153px] bg-cover lg:w-[247px] lg:h-[192px]">
+                    <div className=" relative flex items-center div-img rounded-[8px] justify-center bg-[url('./assets/AtAGlance-explore-img1.svg')] md:w-[196px] md:h-[153px] bg-cover lg:w-[247px] lg:h-[192px]">
                         <p className='text-white absolute bottom-5'>Kavaratti</p>
                     </div>
 
 
 
                     {/* div 3 */}
-                    <div className="hidden lg:flex relative items-center justify-center bg-[url('./assets/AtAGlance-explore-img1.svg')] md:w-[196px] md:h-[153px] bg-cover lg:w-[247px] lg:h-[192px]">
+                    <div className="hidden lg:flex relative items-center div-img rounded-[8px] justify-center bg-[url('./assets/AtAGlance-explore-img1.svg')] md:w-[196px] md:h-[153px] bg-cover lg:w-[247px] lg:h-[192px]">
                         <p className='text-white absolute bottom-5'>Kadmat</p>
                     </div>
 
 
 
                     {/* div 4 */}
-                    <div className=" relative flex items-center justify-center bg-[url('./assets/AtAGlance-explore-img1.svg')] md:w-[196px] md:h-[153px] bg-cover lg:w-[247px] lg:h-[192px]">
+                    <div className=" relative flex items-center justify-center div-img rounded-[8px] bg-[url('./assets/AtAGlance-explore-img1.svg')] md:w-[196px] md:h-[153px] bg-cover lg:w-[247px] lg:h-[192px]">
                         <p className='text-white absolute bottom-5'>Bangaram</p>
                     </div>
 
@@ -117,7 +117,7 @@ const AboutLakshadweep = () => {
 
 
                     {/* div 1 */}
-                    <div className='at-a-glance-activity-div-bg-style flex flex-col items-center justify-center gap-2 p-6 w-[193px] h-[172px]'>
+                    <div className='at-a-glance-activity-div-bg-style flex flex-col items-center justify-center gap-2 p-6 w-[193px] h-[172px] light-blue-shade-hover'>
                         <img src={Scuba} alt="" />
                         <div className='at-a-glance-activity-small-div1'></div>
                         <p className='font-bold'>Scuba diving</p>
@@ -125,7 +125,7 @@ const AboutLakshadweep = () => {
 
 
                     {/* div 2 */}
-                    <div className='at-a-glance-activity-div-bg-style flex flex-col items-center justify-center gap-2 p-6 w-[193px] h-[172px]'>
+                    <div className='at-a-glance-activity-div-bg-style flex flex-col items-center justify-center gap-2 p-6 w-[193px] h-[172px] light-blue-shade-hover'>
                         <img src={fishing} alt="" />
                         <div className='at-a-glance-activity-small-div2'></div>
                         <p className='font-bold'>Fishing</p>
@@ -136,7 +136,7 @@ const AboutLakshadweep = () => {
 
 
                     {/* div 3 */}
-                    <div className='at-a-glance-activity-div-bg-style flex flex-col items-center justify-center gap-2 p-6 w-[193px] h-[172px]'>
+                    <div className='at-a-glance-activity-div-bg-style flex flex-col items-center justify-center gap-2 p-6 w-[193px] h-[172px] light-blue-shade-hover'>
                         <img src={boating} alt="" />
                         <div className='at-a-glance-activity-small-div3'></div>
                         <p className='font-bold'>Boating</p>
@@ -145,7 +145,7 @@ const AboutLakshadweep = () => {
 
 
                     {/* div 4*/}
-                    <div className='at-a-glance-activity-div-bg-style flex flex-col items-center justify-center gap-2 p-6 w-[193px] h-[172px]'>
+                    <div className='at-a-glance-activity-div-bg-style flex flex-col items-center justify-center gap-2 p-6 w-[193px] h-[172px] light-blue-shade-hover'>
                         <img src={turtle} alt="" />
                         <div className='at-a-glance-activity-small-div4'></div>
                         <p className='font-bold'>Turtle watch</p>

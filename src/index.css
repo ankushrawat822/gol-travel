@@ -996,6 +996,12 @@ border-radius: 8px;
    
   }
  
+
+  .bg-shadow-hover-effect:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+
   .btn-hover-effect-blue-to-white-bg:hover{
     background-color: white;
     border: 1px solid #3282AD;
@@ -1020,6 +1026,43 @@ border-radius: 8px;
     
     background-size: 100%;
   }
+
+  .zoom-out-img-effect{
+    transform: scale(1.5);
+  }
+
+  .zoom-out-img-effect:hover{
+    transform: scale(1);
+  }
+
+
+  .grey-img-effect{
+    filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  }
+
+  .grey-img-effect:hover{
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+  }
+
+
+  .turn-into-blur{
+    -webkit-filter:  blur(0);
+	filter:  blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .6s ease-in-out;
+  }
+
+  .turn-into-blur:hover{
+    -webkit-filter: blur(3px);
+    filter:  blur(3px);
+  }
+
+
+
+
 
 
   .img-tag-effects{
@@ -1057,6 +1100,10 @@ background: #3282AD;
 border-radius: 10px;
 }
 
+
+.light-blue-shade-hover:hover{
+  background-color: rgba(18, 126, 220, 0.092);
+}
 
 
 

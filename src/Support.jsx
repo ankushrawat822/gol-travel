@@ -61,7 +61,7 @@ const handelOpen5 = ()=>{
            { open1 && <p className='py-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus similique fugiat doloremque ad?</p>   }  
             </div>
             <div>
-           { open1 ?  <img onClick={handelOpen1} src={minus} alt="m" /> :  <img onClick={handelOpen1} src={plus} alt="p" /> }  
+           { open1 ?  <img className='mt-16 md:mt-10' onClick={handelOpen1} src={minus} alt="m" /> :  <img className='mt-5 md:mt-2' onClick={handelOpen1} src={plus} alt="p" /> }  
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ const handelOpen5 = ()=>{
            { open2 && <p className='py-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus similique fugiat doloremque ad?</p>   }  
             </div>
             <div>
-           { open2 ?  <img onClick={handelOpen2} src={minus} alt="m" /> :  <img onClick={handelOpen2} src={plus} alt="p" /> }  
+           { open2 ?  <img className='mt-16  md:mt-10' onClick={handelOpen2} src={minus} alt="m" /> :  <img className='mt-5  md:mt-2' onClick={handelOpen2} src={plus} alt="p" /> }  
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@ const handelOpen5 = ()=>{
            { open3 && <p className='py-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus similique fugiat doloremque ad?</p>   }  
             </div>
             <div>
-           { open3 ?  <img onClick={handelOpen3} src={minus} alt="m" /> :  <img onClick={handelOpen3} src={plus} alt="p" /> }  
+           { open3 ?  <img className='mt-16  md:mt-10' onClick={handelOpen3} src={minus} alt="m" /> :  <img className='mt-5  md:mt-2' onClick={handelOpen3} src={plus} alt="p" /> }  
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@ const handelOpen5 = ()=>{
            { open4 && <p className='py-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus similique fugiat doloremque ad?</p>   }  
             </div>
             <div>
-           { open4 ?  <img onClick={handelOpen4} src={minus} alt="m" /> :  <img onClick={handelOpen4} src={plus} alt="p" /> }  
+           { open4 ?  <img className='mt-16  md:mt-10' onClick={handelOpen4} src={minus} alt="m" /> :  <img className='mt-5 md:mt-2' onClick={handelOpen4} src={plus} alt="p" /> }  
             </div>
           </div>
         </div>
@@ -114,7 +114,7 @@ const handelOpen5 = ()=>{
            { open5 && <p className='py-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus similique fugiat doloremque ad?</p>   }  
             </div>
             <div>
-           { open5 ?  <img onClick={handelOpen5} src={minus} alt="m" /> :  <img onClick={handelOpen5} src={plus} alt="p" /> }  
+           { open5 ?  <img className='mt-16  md:mt-10' onClick={handelOpen5} src={minus} alt="m" /> :  <img className='mt-5  md:mt-2' onClick={handelOpen5} src={plus} alt="p" /> }  
             </div>
           </div>
         </div>
@@ -130,7 +130,7 @@ const handelOpen5 = ()=>{
           <div className='flex-col items-center justify-center text-center'>
             <h1 className='font-bold text-center text-[32px] py-6'>Still have questions?</h1>
             <p className='py-4'>Can't find the answer you're looking for? Please chat to our friendly team</p>
-            <button className='get-in-touch-btn font-bold text-white'>Get in touch</button>
+            <button className='get-in-touch-btn font-bold text-white btn-hover-effect-blue-to-white-bg'>Get in touch</button>
           </div>
 
           <div>
@@ -173,8 +173,8 @@ const handelOpen5 = ()=>{
       <div className='support-map-inner-div'>
         <img src={supportMapImg} alt="map" />
       </div>
-      <div className='support-map-inputs-container'>
-      <div className='flex-col items-center '>
+      <div className='support-map-inputs-container flex flex-col items-center justify-center'>
+      <div className='flex text-justify flex-col items-center justify-center md:items-start md:justify-start'>
       <p className='py-2'>FIRST NAME</p>
       <input className='support-map-inputs py-3 px-5' type="text" />
       <p className='py-2'>LAST NAME</p>
@@ -189,7 +189,7 @@ const handelOpen5 = ()=>{
       </div>
 
       <div className='flex text-center items-center justify-center'>
-      <button className='support-end-button my-8'>
+      <button className='support-end-button my-16 btn-hover-effect-blue-to-white-bg'>
        Submit
       </button>
      

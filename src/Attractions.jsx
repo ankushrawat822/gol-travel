@@ -27,7 +27,7 @@ const Attractions = () => {
 
 
                 {/* div 1 */}
-                <div className='at-a-glance-activity-div-bg-style flex flex-col items-center justify-center gap-2 p-6 w-[193px] h-[172px]'>
+                <div className='at-a-glance-activity-div-bg-style flex flex-col items-center justify-center gap-2 p-6 w-[193px] h-[172px] light-blue-shade-hover'>
                     <img src={Scuba} alt="" />
                     <div className='at-a-glance-activity-small-div1'></div>
                     <p className='font-bold'>Scuba diving</p>
@@ -35,7 +35,7 @@ const Attractions = () => {
 
 
                 {/* div 2 */}
-                <div className='at-a-glance-activity-div-bg-style flex flex-col items-center justify-center gap-2 p-6 w-[193px] h-[172px]'>
+                <div className='at-a-glance-activity-div-bg-style flex flex-col items-center justify-center gap-2 p-6 w-[193px] h-[172px] light-blue-shade-hover'>
                     <img src={fishing} alt="" />
                     <div className='at-a-glance-activity-small-div2'></div>
                     <p className='font-bold'>Fishing</p>
@@ -46,7 +46,7 @@ const Attractions = () => {
 
 
                 {/* div 3 */}
-                <div className='at-a-glance-activity-div-bg-style flex flex-col items-center justify-center gap-2 p-6 w-[193px] h-[172px]'>
+                <div className='at-a-glance-activity-div-bg-style flex flex-col items-center justify-center gap-2 p-6 w-[193px] h-[172px] light-blue-shade-hover'>
                     <img src={boating} alt="" />
                     <div className='at-a-glance-activity-small-div3'></div>
                     <p className='font-bold'>Boating</p>
@@ -55,7 +55,7 @@ const Attractions = () => {
 
 
                 {/* div 4*/}
-                <div className='at-a-glance-activity-div-bg-style flex flex-col items-center justify-center gap-2 p-6 w-[193px] h-[172px]'>
+                <div className='at-a-glance-activity-div-bg-style flex flex-col items-center justify-center gap-2 p-6 w-[193px] h-[172px] light-blue-shade-hover'>
                     <img src={turtle} alt="" />
                     <div className='at-a-glance-activity-small-div4'></div>
                     <p className='font-bold'>Turtle watch</p>
@@ -70,7 +70,7 @@ const Attractions = () => {
             <div className='mt-11 '>
                 {/* card div 1 */}
                 <div className='flex flex-col items-center justify-center sm:flex-row sm:justify-evenly gap-5 px-3 attraction-drop-shadow py-5'>
-                    <img src={AttractionScubaDiving} alt="" />
+                    <img className='grey-img-effect lg:w-[409px] lg:h-[347px]' src={AttractionScubaDiving} alt="" />
                     {/* text */}
                     <div className='sm:w-2/4'>
                         <div className='flex items-center justify-between'>
@@ -89,7 +89,7 @@ const Attractions = () => {
 
                 {/* card div 2 */}
                 <div className='flex flex-col items-center justify-center sm:flex-row-reverse sm:justify-evenly gap-5 px-3 attraction-drop-shadow py-5'>
-                    <img src={AttractionScubaDiving} alt="" />
+                    <img className='grey-img-effect lg:w-[409px] lg:h-[347px]' src={AttractionScubaDiving} alt="" />
                     {/* text */}
                     <div className='sm:w-2/4'>
                         <div className='flex items-center justify-between'>
@@ -111,7 +111,7 @@ const Attractions = () => {
 
                   {/* card div 1 */}
                   <div className='flex flex-col items-center justify-center sm:flex-row sm:justify-evenly gap-5 px-3 attraction-drop-shadow py-5'>
-                    <img src={AttractionScubaDiving} alt="" />
+                    <img className='grey-img-effect lg:w-[409px] lg:h-[347px]' src={AttractionScubaDiving} alt="" />
                     {/* text */}
                     <div className='sm:w-2/4'>
                         <div className='flex items-center justify-between'>
@@ -130,7 +130,7 @@ const Attractions = () => {
 
                 {/* card div 2 */}
                 <div className='flex flex-col items-center justify-center sm:flex-row-reverse sm:justify-evenly gap-5 px-3 attraction-drop-shadow py-5'>
-                    <img src={AttractionScubaDiving} alt="" />
+                    <img className='grey-img-effect lg:w-[409px] lg:h-[347px]' src={AttractionScubaDiving} alt="" />
                     {/* text */}
                     <div className='sm:w-2/4'>
                         <div className='flex items-center justify-between'>
@@ -151,7 +151,7 @@ const Attractions = () => {
 
 
             <div className='flex items-center justify-center mt-10'>
-            <button className='home-hero-discover-btn'>Discover More</button>
+            <button className='home-hero-discover-btn home-all-btn-hover-effects'>Discover More</button>
             </div>
 
 

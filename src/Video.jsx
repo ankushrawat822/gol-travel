@@ -39,9 +39,9 @@ const Video = () => {
 
 
 
-                <div className='second-video-container'>
+                <div className='second-video-container mt-11 mb-11'>
                     <div className='second-text-container text-center py-6'>
-                        <h1>Lorem ipsum dolor sit amet consectetur</h1>
+                        <h1 className='py-6'>Lorem ipsum dolor sit amet consectetur</h1>
                         <p className='text-center'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum vero unde praesentium vitae aspernatur natus asperiores nam quidem tempore.unde praesentium vitae aspernatur natus asperiores nam quidem tempore. 
                          </p>
                     </div>
@@ -85,7 +85,7 @@ const Video = () => {
                 </div>
 
             <div className='flex items-center justify-center'>
-            <button className='videos-button'>Discover More</button>
+            <button className='videos-button font-bold text-[#3282AD] home-all-btn-hover-effects'>Discover More</button>
             </div>
             
 

@@ -35,7 +35,7 @@ const Island = () => {
          <div className=' mt-24 flex flex-col gap-5 items-center justify-evenly lg:px-16 lg:gap-10 lg:gap-y-24  md:flex-row md:flex-wrap '>
 
 {/* first card div */}
-<div className='flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] md:px-0 island-stays-drop-shadow-card
+<div className='bg-shadow-hover-effect flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] md:px-0 island-stays-drop-shadow-card
 '>
     {/* img div */}
     <div>
@@ -72,7 +72,7 @@ const Island = () => {
  
 
   {/* second card div */}
-<div className='flex flex-col w-[300px]  sm:w-[404px] lg:w-[336px] sm:px-3  md:px-0 island-stays-drop-shadow-card'>
+<div className='bg-shadow-hover-effect flex flex-col w-[300px]  sm:w-[404px] lg:w-[336px] sm:px-3  md:px-0 island-stays-drop-shadow-card'>
     {/* img div */}
     <div>
         <img src={islandPageKaravatiImg} alt="" />
@@ -108,7 +108,7 @@ const Island = () => {
 
 
 {/* third card div */}
-<div className='flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px]  md:px-0 island-stays-drop-shadow-card'>
+<div className='bg-shadow-hover-effect flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px]  md:px-0 island-stays-drop-shadow-card'>
     {/* img div */}
     <div>
         <img src={islandPageKaravatiImg} alt="" />
@@ -143,7 +143,7 @@ const Island = () => {
 
 
 {/* forth card div */}
-<div className='hidden md:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px]  md:px-0 island-stays-drop-shadow-card'>
+<div className='bg-shadow-hover-effect hidden md:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px]  md:px-0 island-stays-drop-shadow-card'>
     {/* img div */}
     <div>
         <img src={islandPageKaravatiImg} alt="" />
@@ -180,7 +180,7 @@ const Island = () => {
 
 
 {/* five card div */}
-<div className='hidden lg:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px]  md:px-0 island-stays-drop-shadow-card'>
+<div className='bg-shadow-hover-effect hidden lg:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px]  md:px-0 island-stays-drop-shadow-card'>
     {/* img div */}
     <div>
         <img src={islandPageKaravatiImg} alt="" />
@@ -215,7 +215,7 @@ const Island = () => {
 
 
 {/* six card div */}
-<div className='hidden lg:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px]  md:px-0 island-stays-drop-shadow-card'>
+<div className='bg-shadow-hover-effect hidden lg:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px]  md:px-0 island-stays-drop-shadow-card'>
     {/* img div */}
     <div>
         <img src={islandPageKaravatiImg} alt="" />

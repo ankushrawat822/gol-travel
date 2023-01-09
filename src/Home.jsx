@@ -231,7 +231,7 @@ const Home = () => {
             <div className='mt-16 flex flex-col gap-5 items-center justify-evenly lg:px-16 lg:gap-10  md:flex-row md:flex-wrap '>
 
                 {/* first card div */}
-                <div className='flex flex-col w-[300px] sm:w-[404px] sm:px-3 lg:w-[336px]  island-stays-drop-shadow-card   md:px-0  
+                <div className='flex flex-col w-[300px] sm:w-[404px] sm:px-3 lg:w-[336px]  island-stays-drop-shadow-card bg-shadow-hover-effect  md:px-0  
                 '>
                     {/* img div */}
                     <div className='bg-black rounded-[8px]' >
@@ -268,7 +268,7 @@ const Home = () => {
 
 
                 {/* second card div */}
-                <div className='flex flex-col w-[300px]  sm:w-[404px] lg:w-[336px] sm:px-3  island-stays-drop-shadow-card   md:px-0 '>
+                <div className='bg-shadow-hover-effect flex flex-col w-[300px]  sm:w-[404px] lg:w-[336px] sm:px-3  island-stays-drop-shadow-card   md:px-0 '>
                     {/* img div */}
                     <div className='bg-black rounded-[8px]'>
                         <img className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
@@ -304,7 +304,7 @@ const Home = () => {
 
 
                 {/* third card div */}
-                <div className='flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] island-stays-drop-shadow-card   md:px-0 '>
+                <div className='bg-shadow-hover-effect flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] island-stays-drop-shadow-card   md:px-0 '>
                     {/* img div */}
                     <div className='bg-black rounded-[8px]'>
                         <img className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
@@ -339,7 +339,7 @@ const Home = () => {
 
 
                 {/* forth card div */}
-                <div className='hidden md:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] island-stays-drop-shadow-card   md:px-0  '>
+                <div className='bg-shadow-hover-effect hidden md:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] island-stays-drop-shadow-card   md:px-0  '>
                     {/* img div */}
                     <div className='bg-black rounded-[8px]'>
                         <img  className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
@@ -376,7 +376,7 @@ const Home = () => {
 
 
                 {/* five card div */}
-                <div className='hidden lg:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] island-stays-drop-shadow-card   md:px-0  '>
+                <div className='bg-shadow-hover-effect hidden lg:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] island-stays-drop-shadow-card   md:px-0  '>
                     {/* img div */}
                     <div className='bg-black rounded-[8px]'>
                         <img className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
@@ -411,7 +411,7 @@ const Home = () => {
 
 
                 {/* six card div */}
-                <div className='hidden lg:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] island-stays-drop-shadow-card   md:px-0 '>
+                <div className='bg-shadow-hover-effect hidden lg:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] island-stays-drop-shadow-card   md:px-0 '>
                     {/* img div */}
                     <div className='bg-black rounded-[8px]'>
                         <img className='img-tag-effects ' src={homeKaravatiIsland} alt="" />

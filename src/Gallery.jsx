@@ -36,11 +36,11 @@ const Gallery = () => {
        <div className='flex flex-col items-center justify-center md:flex-row gap-10   '>
             {/* first div */}
             <div className='md:w-[384px] md:h-[248px] lg:w-[809px] lg:h-[377px] '>
-                <img className='object-cover rounded-[7px] md:w-[384px] md:h-[248px] lg:w-[809px] lg:h-[377px]'  src={gallerySectionImg1} alt="gallerySectionImg1" />
+                <img className='turn-into-blur object-cover rounded-[7px] md:w-[384px] md:h-[248px] lg:w-[809px] lg:h-[377px]'  src={gallerySectionImg1} alt="gallerySectionImg1" />
             </div>
             {/* second div */}
             <div className='md:w-[221px] md:h-[248px] lg:w-[393px] lg:h-[377px]  '>
-            <img className='object-cover rounded-[7px] md:w-[221px] md:h-[248px] lg:w-[393px] lg:h-[377px]' src={gallerySectionImg1} alt="gallerySectionImg1" />
+            <img className=' turn-into-blur  object-cover rounded-[7px] md:w-[221px] md:h-[248px] lg:w-[393px] lg:h-[377px]' src={gallerySectionImg1} alt="gallerySectionImg1" />
             </div>
        </div>
        {/* lower div */}
@@ -48,17 +48,17 @@ const Gallery = () => {
 
         {/* third hidden on mobile div */}
         <div className='hidden lg:flex lg:w-[289px] lg:h-[377px]'>
-            <img className='object-cover rounded-[7px] md:w-[303px] md:h-[248px] lg:w-[289px] lg:h-[377px]' src={gallerySectionImg1} alt="gallerySectionImg1" />
+            <img className=' turn-into-blur  object-cover rounded-[7px] md:w-[303px] md:h-[248px] lg:w-[289px] lg:h-[377px]' src={gallerySectionImg1} alt="gallerySectionImg1" />
             </div>
 
 
             {/* first div */}
             <div className='md:w-[303px] md:h-[248px] lg:w-[391px] lg:h-[377px]'>
-            <img className='object-cover rounded-[7px] md:w-[303px] md:h-[248px] lg:w-[391px] lg:h-[377px]' src={gallerySectionImg1} alt="gallerySectionImg1" />
+            <img className=' turn-into-blur object-cover rounded-[7px] md:w-[303px] md:h-[248px] lg:w-[391px] lg:h-[377px]' src={gallerySectionImg1} alt="gallerySectionImg1" />
             </div>
             {/* second div */}
             <div className='md:w-[302px] md:h-[248px] lg:w-[495px] lg:h-[377px]'>
-            <img className='object-cover rounded-[7px] md:w-[302px] md:h-[248px] lg:w-[495px] lg:h-[377px]' src={gallerySectionImg1} alt="gallerySectionImg1" />
+            <img className=' turn-into-blur object-cover rounded-[7px] md:w-[302px] md:h-[248px] lg:w-[495px] lg:h-[377px]' src={gallerySectionImg1} alt="gallerySectionImg1" />
             </div>
        </div>
    </div>
@@ -66,7 +66,7 @@ const Gallery = () => {
 
 {/* discover more btn */}
 <div className="flex items-center justify-center">
-                <button className='home-hero-discover-btn mt-10'>Discover Now</button>
+                <button className='home-hero-discover-btn mt-10 home-all-btn-hover-effects'>Discover Now</button>
             </div>
 
 
@@ -91,7 +91,7 @@ const Gallery = () => {
  
  {/* mobile hidden div  img*/}
     <div className='hidden md:flex items-center justify-center  mt-20'>
-        <img className='hidden md:flex lg:w-[522px] h-[555px]' src={gallerySection3img2} alt="gallerySection3img1" />
+        <img className='hidden md:flex lg:w-[522px] h-[555px] turn-into-blur' src={gallerySection3img2} alt="gallerySection3img1" />
     </div>
    
 {/* second main div */}
@@ -106,7 +106,7 @@ const Gallery = () => {
 
 {/* img div */}
         <div className='flex items-center justify-center'>
-            <img src={gallerySection3img1} alt="gallerySection3img1" />
+            <img className='turn-into-blur' src={gallerySection3img1} alt="gallerySection3img1" />
         </div>
   
     </div>
