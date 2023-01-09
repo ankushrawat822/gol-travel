@@ -10,7 +10,7 @@ import phone from './assets/phone.svg'
 import boat from './assets/boat.svg'
 
 
-const Package = () => {
+const Maldives = () => {
 
   const [adultCount, setAdultCount] = useState(2)
 
@@ -276,4 +276,4 @@ const Package = () => {
   )
 }
 
-export default Package
+export default Maldives

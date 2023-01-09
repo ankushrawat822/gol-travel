@@ -20,8 +20,20 @@ const Navbar = () => {
         setShowALmenu(prev => !prev)
     }
 
+// package menu
+    const [showPmenu, setShowPmenu] = useState(false)
 
-//  mobile
+    const handleOnClickPackage = () => {
+        setShowPmenu(prev => !prev)
+        console.log('hello')
+    }
+
+    const handlePliClickedEventToClose = () => {
+        setShowPmenu(prev => !prev)
+    }
+
+
+//  mobile about lakshawadeep
 
 const [showALmenuMobile, setShowALmenuMobile] = useState(false)
 
@@ -33,11 +45,29 @@ const [showALmenuMobile, setShowALmenuMobile] = useState(false)
         setShowALmenuMobile(prev => !prev)
     }
 
+
+    // mobile all menu links
+
     const [showMenu, setShowMenu] = useState(false)
 
     const handelMenu = () => {
         setShowMenu(prev => !prev);
     }
+
+
+    //  mobile package
+
+const [showPmenuMobile, setShowPmenuMobile] = useState(false)
+
+const handlePliClickedEventToCloseMobile = () => {
+    setShowPmenuMobile(prev => !prev)
+}
+
+const handleOnClickPackageMobile = () => {
+    setShowPmenuMobile(prev => !prev)
+}
+
+
     return (
         <>
             <div className='map-div outter-map-div'>
@@ -59,7 +89,7 @@ const [showALmenuMobile, setShowALmenuMobile] = useState(false)
             {/* about lakshwadeep drop desktop down btn starts */}
 
             { showALmenu && <div className='navmenus-about-lakshwadeep'>
-                <ul className='flex flex-col gap-3'>
+                <ul className='flex flex-col gap-3 navmenus-about-lakshwadeep-ul'>
                     <li onClick={handleALliClickedEventToClose}><Link className='flex items-center gap-1'
                                     to='/video'> videos
                                 </Link></li>
@@ -81,6 +111,23 @@ const [showALmenuMobile, setShowALmenuMobile] = useState(false)
 
             {/*  about lakshwadeep drop down btn ends  */}
 
+
+             {/* Package drop desktop down btn starts */}
+
+             { showPmenu && <div className='navmenus-package'>
+                <ul className='flex flex-col gap-3  navmenus-package-ul'>
+                    <li onClick={handlePliClickedEventToClose}><Link className='flex items-center gap-1'
+                                    to='/maldives'> Maldives
+                                </Link></li>
+                               
+                </ul>
+            </div>
+            }
+
+            {/*  package drop down btn ends  */}
+
+
+{/* desktop navbar starts */}
             <div className='flex items-center justify-between px-16 pt-9 mobile-navbar-style'>
 
                 <div className='lg:hidden ' >
@@ -97,15 +144,14 @@ const [showALmenuMobile, setShowALmenuMobile] = useState(false)
                 {/* links */}
 
                 <div className='hidden lg:flex'>
-                    <div>
-                        <ul className='flex gap-x-9'>
+                    <div className='navbar-desktop-div-hover'>
+                        <ul className='flex  lg:w-[790px] lg:justify-between lg:items-center'>
                             <li>
                                 Find Reservations
                             </li>
-                            <li className='flex items-center gap-1 select-none'>
-                                <Link className='flex items-center gap-1'
-                                    to='/package'>Packages <IoIosArrowDown></IoIosArrowDown>
-                                </Link>
+                            <li className='flex items-center gap-1 select-none' onClick={handleOnClickPackage}>
+                                
+                                Packages <IoIosArrowDown></IoIosArrowDown>
                             </li>
                             <li className='flex items-center gap-1 cursor-pointer select-none' onClick={handleOnClickAboutLakshwadeep}>
                     
@@ -159,11 +205,28 @@ const [showALmenuMobile, setShowALmenuMobile] = useState(false)
                         <li>
                             Find Reservations
                         </li>
-                        <li className='flex items-center gap-1'>
-                            <Link className='flex items-center gap-1'
-                                to='/package'>Packages <IoIosArrowDown></IoIosArrowDown>
-                            </Link>
+                        <li className='flex items-center gap-1' onClick={handleOnClickPackageMobile}>
+                           
+                            Packages <IoIosArrowDown></IoIosArrowDown>
                         </li>
+
+                          {/* Packages drop down btn starts */}
+
+            { showPmenuMobile && <div className='navmenus-about-lakshwadeep-mobile'>
+                <ul className='flex flex-col gap-3'>
+                    <li onClick={handlePliClickedEventToCloseMobile}><Link className='flex items-center gap-1'
+                                    to='/maldives'> Maldives
+                                </Link></li>
+                               
+                </ul>
+            </div>
+            }
+
+            {/*  Packages drop down btn ends  */}
+
+
+
+
                         <li className='flex items-center gap-1' onClick={handleALliClickedEventToCloseMobile}>
                           
                             About Lakshadweep <IoIosArrowDown></IoIosArrowDown>

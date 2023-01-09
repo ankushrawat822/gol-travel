@@ -17,12 +17,51 @@ body{
 
 
 
+
+
 /* navbar  */
 .navmenus-about-lakshwadeep{
   position: absolute;
   right: 49%;
   top: 11%;
   z-index: 3;
+}
+
+
+.navmenus-package{
+  position: absolute;
+  right: 60%;
+  top: 11%;
+  z-index: 3;
+  
+}
+
+.navbar-desktop-div-hover ul li{
+  padding: 4px 6px;
+}
+
+
+.navbar-desktop-div-hover ul li:hover{
+  background-color: rgba(128, 128, 128, 0.193);
+  border-radius: 8px;
+}
+
+.navmenus-about-lakshwadeep-ul li {
+  padding: 4px 6px;
+}
+
+.navmenus-about-lakshwadeep-ul li:hover {
+  background-color: rgba(128, 128, 128, 0.193);
+  border-radius: 8px;
+}
+
+.navmenus-package-ul li {
+  padding: 4px 6px;
+}
+
+.navmenus-package-ul li:hover {
+  background-color: rgba(128, 128, 128, 0.193);
+  border-radius: 8px;
 }
 
 /* mobile css menu */
@@ -650,9 +689,9 @@ border-radius: 5px;
 .home-hero-main-div{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100vw;
-  gap: 30px;
+  
   padding: 0px 5%;
 }
 
@@ -699,9 +738,19 @@ color: #3282AD;
 
 
 .home-hero-flying-input-div{
-  width: 100vw;
-  padding: 60px 5%;
+  /* width: 100vw; */
+  
+  padding-left: 30px;
+  padding-right: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
+}
+
+.home-page-where-flying-drop-shadow{
+background: #FFFFFF;
+box-shadow: 0px 4px 25px rgba(141, 198, 211, 0.15);
+border-radius: 16px;
 }
 
 .home-hero-show-flight-btn{
@@ -894,6 +943,13 @@ border-radius: 8px;
 
 
 
+.attraction-drop-shadow{
+padding: 16px; 
+background: #FFFFFF;
+box-shadow: 0px 4px 25px rgba(141, 198, 211, 0.15);
+border-radius: 8px;
+
+  }
 
 
 
@@ -918,6 +974,67 @@ border-radius: 8px;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*  all hover effects  */
+  .home-all-btn-hover-effects:hover{
+     background-color: #3282AD;
+     color: white;
+   
+  }
+ 
+  .btn-hover-effect-blue-to-white-bg:hover{
+    background-color: white;
+    border: 1px solid #3282AD;
+    color: #3282AD;
+  }
+
+  .island-stays-drop-shadow-card{
+   background: white;
+filter: drop-shadow(0px 4px 25px rgba(50, 130, 173, 0.15));
+border-radius: 8px;
+  }
+
+
+  /* image hover */
+  .div-img{
+    background-size:cover;
+    background-size: 150%;
+    transition: 1s all ease-in-out;
+  }
+
+  .div-img:hover{
+    
+    background-size: 100%;
+  }
+
+
+  .img-tag-effects{
+   
+    transition: all 0.7s;
+    filter: opacity(.7);
+    -webkit-filter: opacity(.7); 
+  
+  }
+
+  .img-tag-effects:hover{
+    filter: opacity(1);
+    -webkit-filter: opacity(1); 
+    -moz-filter: opacity(1)
+  }
 
 
 
@@ -1008,6 +1125,15 @@ border-radius: 8px;
  .second-inner-videos{
   padding: 20px 0px;
  }
+
+
+
+
+
+
+
+
+
 
  /* support styles */
  .support-getintouch-container{

@@ -5,7 +5,7 @@ import Navbar  from './Navbar'
 import Home from './Home'
 import Video from './Video'
 import Support from './Support'
-import Package from './Package'
+import Maldives from './Maldives'
 import AboutLakshadweep from './AboutLakshadweep'
 import Gallery from './Gallery'
 import Island from './Island'
@@ -31,7 +31,7 @@ function App() {
 
    <Route  path='/island' element={<Island></Island>}/>
 
-   <Route  path='/package' element={<Package></Package>}/>
+   <Route  path='/maldives' element={<Maldives></Maldives>}/>
 
    <Route  path='/gallery' element={<Gallery></Gallery>}/>
 

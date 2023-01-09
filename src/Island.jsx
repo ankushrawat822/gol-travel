@@ -35,7 +35,7 @@ const Island = () => {
          <div className=' mt-24 flex flex-col gap-5 items-center justify-evenly lg:px-16 lg:gap-10 lg:gap-y-24  md:flex-row md:flex-wrap '>
 
 {/* first card div */}
-<div className='flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] 
+<div className='flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] md:px-0 island-stays-drop-shadow-card
 '>
     {/* img div */}
     <div>
@@ -58,7 +58,7 @@ const Island = () => {
             </div>
             {/* explore more btn */}
 
-            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold'>Explore More</button>
+            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg btn-hover-effect-blue-to-white-bg md:mr-2'>Explore More</button>
 
         </div>
     </div>
@@ -72,7 +72,7 @@ const Island = () => {
  
 
   {/* second card div */}
-<div className='flex flex-col w-[300px]  sm:w-[404px] lg:w-[336px] sm:px-3 '>
+<div className='flex flex-col w-[300px]  sm:w-[404px] lg:w-[336px] sm:px-3  md:px-0 island-stays-drop-shadow-card'>
     {/* img div */}
     <div>
         <img src={islandPageKaravatiImg} alt="" />
@@ -94,7 +94,7 @@ const Island = () => {
             </div>
             {/* explore more btn */}
 
-            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold'>Explore More</button>
+            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg md:mr-2'>Explore More</button>
 
         </div>
     </div>
@@ -108,7 +108,7 @@ const Island = () => {
 
 
 {/* third card div */}
-<div className='flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] '>
+<div className='flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px]  md:px-0 island-stays-drop-shadow-card'>
     {/* img div */}
     <div>
         <img src={islandPageKaravatiImg} alt="" />
@@ -130,7 +130,7 @@ const Island = () => {
             </div>
             {/* explore more btn */}
 
-            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold'>Explore More</button>
+            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg md:mr-2'>Explore More</button>
 
         </div>
     </div>
@@ -143,7 +143,7 @@ const Island = () => {
 
 
 {/* forth card div */}
-<div className='hidden md:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] '>
+<div className='hidden md:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px]  md:px-0 island-stays-drop-shadow-card'>
     {/* img div */}
     <div>
         <img src={islandPageKaravatiImg} alt="" />
@@ -165,7 +165,7 @@ const Island = () => {
             </div>
             {/* explore more btn */}
 
-            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold'>Explore More</button>
+            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg md:mr-2'>Explore More</button>
 
         </div>
     </div>
@@ -180,7 +180,7 @@ const Island = () => {
 
 
 {/* five card div */}
-<div className='hidden lg:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] '>
+<div className='hidden lg:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px]  md:px-0 island-stays-drop-shadow-card'>
     {/* img div */}
     <div>
         <img src={islandPageKaravatiImg} alt="" />
@@ -202,7 +202,7 @@ const Island = () => {
             </div>
             {/* explore more btn */}
 
-            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold'>Explore More</button>
+            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg md:mr-2'>Explore More</button>
 
         </div>
     </div>
@@ -215,7 +215,7 @@ const Island = () => {
 
 
 {/* six card div */}
-<div className='hidden lg:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px]'>
+<div className='hidden lg:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px]  md:px-0 island-stays-drop-shadow-card'>
     {/* img div */}
     <div>
         <img src={islandPageKaravatiImg} alt="" />
@@ -237,7 +237,7 @@ const Island = () => {
             </div>
             {/* explore more btn */}
 
-            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold'>Explore More</button>
+            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg md:mr-2'>Explore More</button>
 
         </div>
     </div>
@@ -251,7 +251,7 @@ const Island = () => {
 
 {/* discover btn */}
 <div className='flex items-center justify-center mt-6'>
-<button className='home-hero-discover-btn mt-10'>Discover More</button>
+<button className='home-hero-discover-btn mt-10 home-all-btn-hover-effects'>Discover More</button>
 </div>
  
 
@@ -268,7 +268,7 @@ const Island = () => {
             <p  className='flex items-center py-2'> <IoIosArrowForward></IoIosArrowForward> Lorem ipsum dolor sit amet. </p>
             <p  className='flex items-center '> <IoIosArrowForward></IoIosArrowForward> Lorem ipsum dolor sit amet consectetur. </p>
             <button className='island-page-discover-div-contact-btn 
-             my-10'>Contact Us</button>
+             my-10 btn-hover-effect-blue-to-white-bg'>Contact Us</button>
         </div>
 
    </div>
@@ -290,7 +290,7 @@ const Island = () => {
     <input className='island-page-input w-[280px] pl-20' placeholder='Enter your Email' type="email" />
    
     </div>
-    <button className='island-page-subscribe-btn'>SUBSCRIBE</button>
+    <button className='island-page-subscribe-btn btn-hover-effect-blue-to-white-bg'>SUBSCRIBE</button>
     
  </div>
 

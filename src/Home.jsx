@@ -15,59 +15,71 @@ import homeclientUserImg from './assets/home-client-user-img.svg'
 const Home = () => {
     return (
         <>
+            <div className='mt-16'>
+                {/* hero section */}
+                <div className='home-hero-main-div lg:gap-32 '>
 
-            {/* hero section */}
-            <div className='home-hero-main-div mt-16 '>
+                    <div className='home-hero-text-main-container '>
 
-                <div className='home-hero-text-main-container '>
-
-                    <button className='home-hero-visit-button
+                        <button className='home-hero-visit-button home-all-btn-hover-effects
                      flex items-center justify-center gap-4 
                      text-[36px] my-8'>Visit <img src={homeVisitBtnIcon} alt="" />
-                    </button>
+                        </button>
 
-                    <div>
-                        <h1 className='home-hero-top-and-botton-text'>The Exotic</h1>
-                        <h1 className='home-hero-lakshadweep-text-hr'>Lakshadweep</h1>
-                        <h1 className='home-hero-top-and-botton-text'>Island</h1>
+                        <div>
+                            <h1 className='home-hero-top-and-botton-text'>The Exotic</h1>
+                            <h1 className='home-hero-lakshadweep-text-hr'>Lakshadweep</h1>
+                            <h1 className='home-hero-top-and-botton-text'>Island</h1>
+                        </div>
+
+                        <button className='home-hero-discover-btn mt-10 home-all-btn-hover-effects'>Discover Now</button>
+
                     </div>
 
-                    <button className='home-hero-discover-btn mt-10'>Discover Now</button>
 
+                    <div className='hero-img-or-svg-section '>
+                        <img src={homeHeroGirl} alt="homeHeroGirl" />
+                    </div>
                 </div>
 
 
-                <div className='hero-img-or-svg-section'>
-                    <img src={homeHeroGirl} alt="homeHeroGirl" />
+
+            </div>
+
+
+            {/* where are you flying */}
+
+            <div className='flex flex-col items-center justify-center relative mt-12  lg:mx-28  home-page-where-flying-drop-shadow'>
+
+
+
+                <div className='home-hero-flying-input-div flex flex-col items-start justify-start w-screen  lg:pb-28  lg:w-[1160px]'>
+
+                    <div className='py-5'>
+                        <p className='font-bold'>Where are you flying?</p>
+                    </div>
+
+                    <div className='flex sm:flex-col md:flex-row  items-center justify-center sm:justify-evenly flex-wrap gap-5 lg:gap-10'>
+
+                        <TextField id="outlined-basic" variant="outlined" label="From - To" placeholder='Lahore - Karachi'></TextField>
+
+                        <TextField id="outlined-basic" variant="outlined" label="Trip" placeholder='Reture'></TextField>
+
+                        <TextField id="outlined-basic" variant="outlined" label="Depart - Return" placeholder='07 Nov 22 - 13 NOv 22'></TextField>
+
+                        <TextField id="outlined-basic" variant="outlined" label="Passenger - Class" placeholder='1 Passenger , Economy'></TextField>
+                    </div>
+
+                </div>
+
+                <div className='lg:absolute bottom-[10px] right-40  flex gap-4 items-center  justify-center md:items-end md:justify-end md:mr-16'>
+                    <button>+ Add Promo Code</button>
+                    <button className='home-hero-show-flight-btn flex items-center justify-center text-white '> <img src={showFlightImg} alt="showFlightImg" />Show Flights</button>
                 </div>
             </div>
 
 
-            <div className='home-hero-flying-input-div w-screen '>
-
-                <div className='py-5'>
-                    <p className='font-bold'>Where are you flying?</p>
-                </div>
-
-                <div className='flex sm:flex-col md:flex-row  items-center justify-center sm:justify-between flex-wrap gap-5'>
-
-                    <TextField id="outlined-basic" variant="outlined" label="From - To" placeholder='Lahore - Karachi'></TextField>
-
-                    <TextField id="outlined-basic" variant="outlined" label="Trip" placeholder='Reture'></TextField>
-
-                    <TextField id="outlined-basic" variant="outlined" label="Depart - Return" placeholder='07 Nov 22 - 13 NOv 22'></TextField>
-
-                    <TextField id="outlined-basic" variant="outlined" label="Passenger - Class" placeholder='1 Passenger , Economy'></TextField>
-                </div>
-
-            </div>
-
-            <div className='flex gap-4 items-center justify-center md:items-end md:justify-end md:mr-16'>
-                <button>+ Add Promo Code</button>
-                <button className='home-hero-show-flight-btn flex items-center justify-center text-white'> <img src={showFlightImg} alt="showFlightImg" />Show Flights</button>
-            </div>
-
-
+{/* best packages div main */}
             <div className='text-center'>
                 <h1 className='font-bold text-[24px] py-4 mt-16'>Best Packages For You</h1>
                 <p>This is a unique experience on ship, sea and land, exploring different coral island of Lakshadweep</p>
@@ -86,7 +98,7 @@ const Home = () => {
                 <div className=' w-[300px] sm:w-[410px]  flex flex-col relative'>
 
                     <div className='flex flex-col  items-center md:flex-col  '>
-                        <div className="h-[348px]  bg-[url('./assets/home-page-indonesia.svg')] bg-cover w-[300px] sm:w-[410px] lg:w-[337px] rounded-t-lg ">
+                        <div className="h-[348px] div-img  bg-[url('./assets/home-page-indonesia.svg')]  w-[300px] sm:w-[410px] lg:w-[337px] rounded-t-lg ">
                             <button className='home-indonedia-price-btn lg:right-[44px]'>&#8377;500</button>
                         </div>
 
@@ -109,7 +121,7 @@ const Home = () => {
 
                             <div className='flex flex-col items-center justify-center px-6'>
                                 <p>Explore the Beauty of the island for 3 days and 2 nights with our travel agency...</p>
-                                <button className='home-indonesia-book-now-btn my-7 text-white font-bold'>Book Now</button>
+                                <button className='home-indonesia-book-now-btn my-7 text-white font-bold btn-hover-effect-blue-to-white-bg'>Book Now</button>
                             </div>
 
                         </div>
@@ -125,7 +137,7 @@ const Home = () => {
                 <div className=' w-[300px] sm:w-[410px]'>
 
                     <div className='flex flex-col  items-center md:flex-col '>
-                        <div className="h-[348px]  bg-[url('./assets/home-indonesia-img2.svg')] bg-cover w-[300px] sm:w-[410px] rounded-t-lg relative lg:w-[337px]">
+                        <div className="h-[348px] div-img bg-[url('./assets/home-indonesia-img2.svg')] bg-cover w-[300px] sm:w-[410px] rounded-t-lg relative lg:w-[337px]">
                             <button className='home-indonedia-price-btn'>&#8377;500</button>
                         </div>
 
@@ -148,7 +160,7 @@ const Home = () => {
 
                             <div className='flex flex-col items-center justify-center px-6'>
                                 <p>Explore the Beauty of the island for 3 days and 2 nights with our travel agency...</p>
-                                <button className='home-indonesia-book-now-btn my-7 text-white font-bold'>Book Now</button>
+                                <button className='home-indonesia-book-now-btn my-7 text-white font-bold btn-hover-effect-blue-to-white-bg'>Book Now</button>
                             </div>
 
                         </div>
@@ -162,7 +174,7 @@ const Home = () => {
                 <div className='hidden lg:flex w-[300px] sm:w-[410px] '>
 
                     <div className='flex flex-col  items-center md:flex-col relative'>
-                        <div className="h-[348px]  bg-[url('./assets/home-indonesia-img3.svg')] bg-cover w-[300px] sm:w-[410px] rounded-t-lg lg:w-[337px]">
+                        <div className="h-[348px] div-img bg-[url('./assets/home-indonesia-img3.svg')] bg-cover w-[300px] sm:w-[410px] rounded-t-lg lg:w-[337px]">
                             <button className='home-indonedia-price-btn'>&#8377;500</button>
                         </div>
 
@@ -185,7 +197,7 @@ const Home = () => {
 
                             <div className='flex flex-col items-center justify-center px-6'>
                                 <p>Explore the Beauty of the island for 3 days and 2 nights with our travel agency...</p>
-                                <button className='home-indonesia-book-now-btn my-7 text-white font-bold'>Book Now</button>
+                                <button className='home-indonesia-book-now-btn my-7 text-white font-bold btn-hover-effect-blue-to-white-bg'>Book Now</button>
                             </div>
 
                         </div>
@@ -205,7 +217,7 @@ const Home = () => {
 
 
             <div className="flex items-center justify-center">
-                <button className='home-hero-discover-btn mt-10'>Discover Now</button>
+                <button className='home-hero-discover-btn mt-10 home-all-btn-hover-effects'>Discover Now</button>
             </div>
 
 
@@ -216,14 +228,14 @@ const Home = () => {
             </div>
 
             {/* island cards main */}
-            <div className='mt-6 flex flex-col gap-5 items-center justify-evenly lg:px-16 lg:gap-10  md:flex-row md:flex-wrap '>
+            <div className='mt-16 flex flex-col gap-5 items-center justify-evenly lg:px-16 lg:gap-10  md:flex-row md:flex-wrap '>
 
                 {/* first card div */}
-                <div className='flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] 
+                <div className='flex flex-col w-[300px] sm:w-[404px] sm:px-3 lg:w-[336px]  island-stays-drop-shadow-card   md:px-0  
                 '>
                     {/* img div */}
-                    <div>
-                        <img src={homeKaravatiIsland} alt="" />
+                    <div className='bg-black rounded-[8px]' >
+                        <img className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
                     </div>
                     {/* below img div */}
                     <div className='flex flex-col pl-2'>
@@ -242,43 +254,7 @@ const Home = () => {
                             </div>
                             {/* explore more btn */}
 
-                            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold'>Explore More</button>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-
-
-                 
-
-                  {/* second card div */}
-                <div className='flex flex-col w-[300px]  sm:w-[404px] lg:w-[336px] sm:px-3 '>
-                    {/* img div */}
-                    <div>
-                        <img src={homeKaravatiIsland} alt="" />
-                    </div>
-                    {/* below img div */}
-                    <div className='flex flex-col pl-2'>
-                        {/* h1 and p div */}
-                        <div className='flex flex-col w-'>
-                            <h3 className='font-bold'>Kavaratti</h3>
-                            <p>Kavaratti is the capital of the Union Territory of Lakshadweep having...</p>
-                        </div>
-                        {/* rating and button */}
-                        <div className='flex justify-between items-center'>
-                            {/* reviews */}
-                            <div className='flex gap-1 py-3'>
-                                <img src={homeStarImg} alt="star" />
-                                <p className='font-bold'>4.5</p>
-                                <p>(1.5k Review)</p>
-                            </div>
-                            {/* explore more btn */}
-
-                            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold'>Explore More</button>
+                            <button className='rounded-[5px] md:mr-3 flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg'>Explore More</button>
 
                         </div>
                     </div>
@@ -291,11 +267,11 @@ const Home = () => {
 
 
 
-               {/* third card div */}
-               <div className='flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] '>
+                {/* second card div */}
+                <div className='flex flex-col w-[300px]  sm:w-[404px] lg:w-[336px] sm:px-3  island-stays-drop-shadow-card   md:px-0 '>
                     {/* img div */}
-                    <div>
-                        <img src={homeKaravatiIsland} alt="" />
+                    <div className='bg-black rounded-[8px]'>
+                        <img className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
                     </div>
                     {/* below img div */}
                     <div className='flex flex-col pl-2'>
@@ -314,23 +290,59 @@ const Home = () => {
                             </div>
                             {/* explore more btn */}
 
-                            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold'>Explore More</button>
+                            <button className='rounded-[5px] md:mr-3 flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg'>Explore More</button>
 
                         </div>
                     </div>
 
 
 
-                </div>    
-               {/* third card ends */}
+                </div>
+
+
+
+
+
+                {/* third card div */}
+                <div className='flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] island-stays-drop-shadow-card   md:px-0 '>
+                    {/* img div */}
+                    <div className='bg-black rounded-[8px]'>
+                        <img className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
+                    </div>
+                    {/* below img div */}
+                    <div className='flex flex-col pl-2'>
+                        {/* h1 and p div */}
+                        <div className='flex flex-col w-'>
+                            <h3 className='font-bold'>Kavaratti</h3>
+                            <p>Kavaratti is the capital of the Union Territory of Lakshadweep having...</p>
+                        </div>
+                        {/* rating and button */}
+                        <div className='flex justify-between items-center'>
+                            {/* reviews */}
+                            <div className='flex gap-1 py-3'>
+                                <img src={homeStarImg} alt="star" />
+                                <p className='font-bold'>4.5</p>
+                                <p>(1.5k Review)</p>
+                            </div>
+                            {/* explore more btn */}
+
+                            <button className='rounded-[5px] md:mr-3 flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg'>Explore More</button>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+                {/* third card ends */}
 
 
 
                 {/* forth card div */}
-                <div className='hidden md:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] '>
+                <div className='hidden md:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] island-stays-drop-shadow-card   md:px-0  '>
                     {/* img div */}
-                    <div>
-                        <img src={homeKaravatiIsland} alt="" />
+                    <div className='bg-black rounded-[8px]'>
+                        <img  className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
                     </div>
                     {/* below img div */}
                     <div className='flex flex-col pl-2'>
@@ -349,25 +361,25 @@ const Home = () => {
                             </div>
                             {/* explore more btn */}
 
-                            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold'>Explore More</button>
+                            <button className='rounded-[5px] md:mr-3 flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg'>Explore More</button>
 
                         </div>
                     </div>
 
 
 
-                </div>    
-               {/* forth card ends */}
+                </div>
+                {/* forth card ends */}
 
 
 
 
 
                 {/* five card div */}
-                <div className='hidden lg:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] '>
+                <div className='hidden lg:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] island-stays-drop-shadow-card   md:px-0  '>
                     {/* img div */}
-                    <div>
-                        <img src={homeKaravatiIsland} alt="" />
+                    <div className='bg-black rounded-[8px]'>
+                        <img className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
                     </div>
                     {/* below img div */}
                     <div className='flex flex-col pl-2'>
@@ -386,23 +398,23 @@ const Home = () => {
                             </div>
                             {/* explore more btn */}
 
-                            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold'>Explore More</button>
+                            <button className='rounded-[5px] md:mr-3 flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg'>Explore More</button>
 
                         </div>
                     </div>
 
 
 
-                </div>    
-               {/* five card ends */}
+                </div>
+                {/* five card ends */}
 
 
 
-             {/* six card div */}
- <div className='hidden lg:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px]'>
+                {/* six card div */}
+                <div className='hidden lg:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] island-stays-drop-shadow-card   md:px-0 '>
                     {/* img div */}
-                    <div>
-                        <img src={homeKaravatiIsland} alt="" />
+                    <div className='bg-black rounded-[8px]'>
+                        <img className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
                     </div>
                     {/* below img div */}
                     <div className='flex flex-col pl-2'>
@@ -421,15 +433,15 @@ const Home = () => {
                             </div>
                             {/* explore more btn */}
 
-                            <button className='rounded-[5px] flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold'>Explore More</button>
+                            <button className='rounded-[5px] md:mr-3 flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg'>Explore More</button>
 
                         </div>
                     </div>
 
 
 
-                </div>    
-               {/* six card ends */}
+                </div>
+                {/* six card ends */}
 
             </div>
 
@@ -437,94 +449,94 @@ const Home = () => {
 
 
             {/* contact us container */}
-            <div className="bg-[url('./assets/Backfooter.svg')]  h-[197px] flex flex-col items-center justify-center gap-8 md:flex-row md:h-[154px] lg:h-[261px] lg:px-10 md:justify-between mt-24 mx-3 sm:mx-5 lg:mx-10 rounded-[15px]">
+            <div className="bg-[url('./assets/Backfooter.svg')]  h-[197px] flex flex-col items-center justify-center gap-8 md:flex-row md:h-[154px] lg:h-[261px] lg:px-10 md:justify-between mt-24 mx-3 sm:mx-5 lg:mx-24  rounded-[15px]">
 
-            {/* text div */}
-            <div className="text-center md:text-left text-white  md:w-[2/5]">
-            <p className='md:font-bold md:text-[20px] lg:w-[451px] lg:text-[42px] lg:leading-[50px] lg:my-[20px]'>Lets Ready to Explore The World With Us.</p>
-            <p className='hidden md:flex'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et quis incidunt iusto!</p>
+                {/* text div */}
+                <div className="text-center md:text-left text-white  md:w-[2/5]">
+                    <p className='md:font-bold md:text-[20px] lg:w-[451px] lg:text-[42px] lg:leading-[50px] lg:my-[20px]'>Lets Ready to Explore The World With Us.</p>
+                    <p className='hidden md:flex'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et quis incidunt iusto!</p>
+                </div>
+
+                {/* button div */}
+                <button className='home-contact-us-btn text-center home-all-btn-hover-effects'>Contact Us</button>
+
             </div>
 
-            {/* button div */}
-            <button className='home-contact-us-btn font-bold text-center'>Contact Us</button>
-               
+
+            {/* home reviews page */}
+
+            <div className='text-center mx-6 mt-24'>
+                <h2 className='font-bold text-[24px] leading-[32px] '>What Our Clients Says About Us</h2>
             </div>
 
 
-         {/* home reviews page */}
 
-         <div className='text-center mx-6 mt-16'>
-            <h2 className='font-bold text-[24px] leading-[32px] '>What Our Clients Says About Us</h2>
-         </div>
+            {/* reviews card main div*/}
+            <div className='mt-14  flex items-center justify-center md:justify-evenly'>
+
+                {/* card 1 */}
+                <div className='hidden md:flex   w-[300px] sm:w-[410px] md:w-[302px] lg:[w-336px] '>
+                    <div className=' flex flex-col items-center justify-center gap-2 px-5 text-center home-client-reviews-card-bg'>
+                        <img src={homeclientUserImg} alt="" className='py-3' />
+                        <p className='font-bold mt-[-10px] text-[20px]'>Trina Davis</p>
+                        <p className='text-[16px] font-bold text-[#555555]'>Toranto, Canada</p>
+                        <p className='text-[14px] text-[#5A5A5A] py-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam voluptate veniam repudiandae quod animi, dolorum, tempore duci</p>
+                        <p className='flex gap-2 py-2 pb-3'>
+                            <img src={clientStarImg} alt="" />
+                            <img src={clientStarImg} alt="" />
+                            <img src={clientStarImg} alt="" />
+                            <img src={clientStarImg} alt="" />
+                            <img src={clientStarImg} alt="" />
+                        </p>
+                    </div>
+                </div>
 
 
 
-         {/* reviews card main div*/}
-     <div className='mt-8  flex items-center justify-center md:justify-evenly'>
+                {/* card 2 */}
+                <div className='hidden lg:flex   w-[300px] sm:w-[410px] md:w-[302px] lg:[w-336px] '>
+                    <div className=' flex flex-col items-center justify-center gap-2 px-5 text-center home-client-reviews-card-bg'>
+                        <img src={homeclientUserImg} alt="" className='py-3' />
+                        <p className='font-bold mt-[-10px] text-[20px]'>Trina Davis</p>
+                        <p className='text-[16px] font-bold text-[#555555]'>Toranto, Canada</p>
+                        <p className='text-[14px] text-[#5A5A5A] py-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam voluptate veniam repudiandae quod animi, dolorum, tempore duci</p>
+                        <p className='flex gap-2 py-2 pb-3'>
+                            <img src={clientStarImg} alt="" />
+                            <img src={clientStarImg} alt="" />
+                            <img src={clientStarImg} alt="" />
+                            <img src={clientStarImg} alt="" />
+                            <img src={clientStarImg} alt="" />
+                        </p>
+                    </div>
+                </div>
 
-        {/* card 1 */}
-         <div className='hidden md:flex   w-[300px] sm:w-[410px] md:w-[302px] lg:[w-336px] '>
-            <div className=' flex flex-col items-center justify-center gap-2 px-5 text-center home-client-reviews-card-bg'>
-                <img src={homeclientUserImg} alt=""  className='py-3'/>
-                <p className='font-bold mt-[-10px] text-[20px]'>Trina Davis</p>
-                <p className='text-[16px] font-bold text-[#555555]'>Toranto, Canada</p>
-                <p className='text-[14px] text-[#5A5A5A] py-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam voluptate veniam repudiandae quod animi, dolorum, tempore duci</p>
-                <p className='flex gap-2 py-2 pb-3'>
-                    <img src={clientStarImg} alt="" />
-                    <img src={clientStarImg} alt="" />
-                    <img src={clientStarImg} alt="" />
-                    <img src={clientStarImg} alt="" />
-                    <img src={clientStarImg} alt="" />
-                </p>
+
+
+                {/* card 3 */}
+                <div className='  w-[300px] sm:w-[410px] md:w-[302px] lg:[w-336px] '>
+                    <div className='flex flex-col items-center justify-center gap-2 px-5 text-center home-client-reviews-card-bg'>
+                        <img src={homeclientUserImg} alt="" className='py-3' />
+                        <p className='font-bold mt-[-10px] text-[20px]'>Trina Davis</p>
+                        <p className='text-[16px] font-bold text-[#555555]'>Toranto, Canada</p>
+                        <p className='text-[14px] text-[#5A5A5A] py-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam voluptate veniam repudiandae quod animi, dolorum, tempore duci</p>
+                        <p className='flex gap-2 py-2 pb-3'>
+                            <img src={clientStarImg} alt="" />
+                            <img src={clientStarImg} alt="" />
+                            <img src={clientStarImg} alt="" />
+                            <img src={clientStarImg} alt="" />
+                            <img src={clientStarImg} alt="" />
+                        </p>
+                    </div>
+                </div>
+
+
+
+                {/* review card main div ends */}
             </div>
-         </div>
 
 
 
-           {/* card 2 */}
-           <div className='hidden lg:flex   w-[300px] sm:w-[410px] md:w-[302px] lg:[w-336px] '>
-            <div className=' flex flex-col items-center justify-center gap-2 px-5 text-center home-client-reviews-card-bg'>
-                <img src={homeclientUserImg} alt="" className='py-3'/>
-                <p className='font-bold mt-[-10px] text-[20px]'>Trina Davis</p>
-                <p className='text-[16px] font-bold text-[#555555]'>Toranto, Canada</p>
-                <p className='text-[14px] text-[#5A5A5A] py-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam voluptate veniam repudiandae quod animi, dolorum, tempore duci</p>
-                <p className='flex gap-2 py-2 pb-3'>
-                    <img src={clientStarImg} alt="" />
-                    <img src={clientStarImg} alt="" />
-                    <img src={clientStarImg} alt="" />
-                    <img src={clientStarImg} alt="" />
-                    <img src={clientStarImg} alt="" />
-                </p>
-            </div>
-         </div>
-
-
-
-         {/* card 3 */}
-         <div className='  w-[300px] sm:w-[410px] md:w-[302px] lg:[w-336px] '>
-            <div className='flex flex-col items-center justify-center gap-2 px-5 text-center home-client-reviews-card-bg'>
-                <img src={homeclientUserImg} alt="" className='py-3'/>
-                <p className='font-bold mt-[-10px] text-[20px]'>Trina Davis</p>
-                <p className='text-[16px] font-bold text-[#555555]'>Toranto, Canada</p>
-                <p className='text-[14px] text-[#5A5A5A] py-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam voluptate veniam repudiandae quod animi, dolorum, tempore duci</p>
-                <p className='flex gap-2 py-2 pb-3'>
-                    <img src={clientStarImg} alt="" />
-                    <img src={clientStarImg} alt="" />
-                    <img src={clientStarImg} alt="" />
-                    <img src={clientStarImg} alt="" />
-                    <img src={clientStarImg} alt="" />
-                </p>
-            </div>
-         </div>
-
-
-
-{/* review card main div ends */}
-</div>
-
-
-
-<div className='flex items-center justify-center gap-4 py-11'>
+            <div className='flex items-center justify-center gap-4 py-11'>
                 <img src={homeCirclWhiteImg} alt="w" />
                 <img src={homeCirlceBlue} alt="w" />
                 <img src={homeCirclWhiteImg} alt="w" />

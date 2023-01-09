@@ -85,7 +85,7 @@ const AboutLakshadweep = () => {
             {/* explore island button */}
             <div className='at-a-glance-explore-btn-div flex items-center justify-center mt-8 py-6  mx-10 
           '>
-                <button className='at-a-glance-exploreIsland-btn'>Explore Island</button>
+                <button className='at-a-glance-exploreIsland-btn btn-hover-effect-blue-to-white-bg'>Explore Island</button>
             </div>
 
             {/* text div  main */}
