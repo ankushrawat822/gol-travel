@@ -56,7 +56,7 @@ const [showALmenuMobile, setShowALmenuMobile] = useState(false)
             </div>
 
 
-            {/* about lakshwadeep drop down btn starts */}
+            {/* about lakshwadeep drop desktop down btn starts */}
 
             { showALmenu && <div className='navmenus-about-lakshwadeep'>
                 <ul className='flex flex-col gap-3'>
@@ -71,6 +71,9 @@ const [showALmenuMobile, setShowALmenuMobile] = useState(false)
                                 </Link></li>
                                 <li onClick={handleALliClickedEventToClose}><Link className='flex items-center gap-1'
                                     to='/gallery'> Gallery
+                                </Link></li>
+                                <li onClick={handleALliClickedEventToClose}><Link className='flex items-center gap-1'
+                                    to='/attractions'> Attractions
                                 </Link></li>
                 </ul>
             </div>
@@ -114,7 +117,9 @@ const [showALmenuMobile, setShowALmenuMobile] = useState(false)
                             </Link>
                             </li>
                             <li>
-                                Gol
+                            <Link className='flex items-center gap-1'
+                                to='/gol'>Gol
+                            </Link>
                             </li>
                             <li>
                                 <Link className='flex items-center gap-1'
@@ -180,6 +185,9 @@ const [showALmenuMobile, setShowALmenuMobile] = useState(false)
                                 <li onClick={handleALliClickedEventToCloseMobile}><Link className='flex items-center gap-1'
                                     to='/gallery'> Gallery
                                 </Link></li>
+                                <li onClick={handleALliClickedEventToCloseMobile}><Link className='flex items-center gap-1'
+                                    to='/attractions'> Attractions
+                                </Link></li>
                 </ul>
             </div>
             }
@@ -191,7 +199,9 @@ const [showALmenuMobile, setShowALmenuMobile] = useState(false)
                             </Link>
                         </li>
                         <li>
-                            Gol
+                        <Link className='flex items-center gap-1'
+                                to='/gol'>Gol
+                            </Link>
                         </li>
                         <li>
                             <Link className='flex items-center gap-1'

@@ -9,7 +9,9 @@ import Package from './Package'
 import AboutLakshadweep from './AboutLakshadweep'
 import Gallery from './Gallery'
 import Island from './Island'
+import Attractions from './Attractions'
 import About from './About'
+import Gol from './Gol'
 import Footer from './Footer'
 import { Routes, Route } from 'react-router-dom'
 import NotFound from './NotFound'
@@ -33,7 +35,11 @@ function App() {
 
    <Route  path='/gallery' element={<Gallery></Gallery>}/>
 
+   <Route  path='/attractions' element={<Attractions></Attractions>}/>
+
    <Route  path='/about' element={<About></About>}/>
+
+   <Route  path='/gol' element={<Gol></Gol>}/>
 
    <Route  path='/support' element={<Support></Support>}/>
 

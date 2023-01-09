@@ -882,6 +882,15 @@ border-radius: 5px;
   
   }
 
+  .Gol-venture-small-box-bg-shadow{
+    width: 131.53px;
+height: 144px;
+background: #FFFFFF;
+/* shadow effect-blue */
+box-shadow: 0px 4px 25px rgba(141, 198, 211, 0.15);
+border-radius: 8px;
+
+  }
 
 
 
