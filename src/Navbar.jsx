@@ -147,7 +147,9 @@ const handleOnClickPackageMobile = () => {
                     <div className='navbar-desktop-div-hover'>
                         <ul className='flex  lg:w-[790px] lg:justify-between lg:items-center'>
                             <li>
-                                Find Reservations
+                            <Link className='flex items-center gap-1'
+                                to='/booking'>Find Reservations
+                            </Link>
                             </li>
                             <li className='flex items-center gap-1 select-none' onClick={handleOnClickPackage}>
                                 

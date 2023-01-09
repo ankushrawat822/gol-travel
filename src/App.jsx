@@ -3,6 +3,7 @@ import './index.css'
 import React  from 'react'
 import Navbar  from './Navbar'
 import Home from './Home'
+import Booking from './Booking'
 import Video from './Video'
 import Support from './Support'
 import Maldives from './Maldives'
@@ -24,6 +25,8 @@ function App() {
  <Routes>
  
    <Route  path='/' element={<Home></Home>}/>
+
+   <Route  path='/booking' element={<Booking></Booking>}/>
 
    <Route  path='/video' element={<Video></Video>}/>
 

@@ -1037,8 +1037,25 @@ border-radius: 8px;
   }
 
 
+  /* booking */
+  .booking-email-input{
+    padding: 0px 10px;
+ width: 278px;
+ height: 57px;
+background: #FFFFFF;
+/* primary-color */
+border: 2px solid #3282AD;
+border-radius: 5px;
+  }
 
+.booking-find-btn{
+  margin-top: 10px;
+  width: 276px;
+height: 75px;
 
+background: #3282AD;
+border-radius: 10px;
+}
 
 
 
