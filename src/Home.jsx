@@ -21,7 +21,7 @@ const Home = () => {
 
                     <div className='home-hero-text-main-container '>
 
-                        <button className='home-hero-visit-button home-all-btn-hover-effects
+                        <button className='home-hero-visit-button 
                      flex items-center justify-center gap-4 
                      text-[36px] my-8'>Visit <img src={homeVisitBtnIcon} alt="" />
                         </button>
