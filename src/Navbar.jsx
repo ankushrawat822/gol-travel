@@ -205,7 +205,9 @@ const handleOnClickPackageMobile = () => {
                 <div className='mobile-menu-links-conatiner'>
                     <ul className='flex-col gap-20'>
                         <li>
-                            Find Reservations
+                        <Link className='flex items-center gap-1'
+                                to='/booking'>Find Reservations
+                            </Link>
                         </li>
                         <li className='flex items-center gap-1' onClick={handleOnClickPackageMobile}>
                            
