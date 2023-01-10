@@ -20,7 +20,7 @@ const Video = () => {
 
                 {/* contents */}
                 <div className=''>
-                    <img className='dots-img' src={dots} alt="dots" />
+                    <img className='hidden sm:dots-img' src={dots} alt="dots" />
                   
                 </div>
 

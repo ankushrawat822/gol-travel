@@ -201,8 +201,8 @@ const handleOnClickPackageMobile = () => {
 
 
             {/* mobile meny links div */}
-            {showMenu && <div>
-                <div className='mobile-menu-links-conatiner'>
+            {showMenu && <div className='absolute mobile-nav-no-scrolling w-screen h-screen bg-[#E5F8FE]'>
+                <div className='mobile-menu-links-conatiner '>
                     <ul className='flex-col gap-20'>
                         <li onClick={handelMenu}>
                         <Link className='flex items-center gap-1'

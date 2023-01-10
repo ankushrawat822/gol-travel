@@ -1212,10 +1212,13 @@ border-radius: 10px;
   color :#3282AD;
   font-weight: bold;
   padding: 3px 1px;
+  
 }
 
 
-
+.mobile-nav-no-scrolling{
+  overscroll-behavior-block: contain;
+}
 
 
 
