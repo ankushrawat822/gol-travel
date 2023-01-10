@@ -15,9 +15,6 @@ import homeclientUserImg from './assets/home-client-user-img.svg'
 const Home = () => {
 
 
-      
-
-
 
 
     return (
@@ -56,11 +53,12 @@ const Home = () => {
 
             {/* where are you flying */}
 
-            <div className='flex flex-col items-center justify-center relative mt-12  lg:mx-28  home-page-where-flying-drop-shadow'>
+            <div className='hidden sm:flex flex-col items-center justify-center relative mt-12  lg:mx-28  home-page-where-flying-drop-shadow'>
 
 
 
-                <div className='home-hero-flying-input-div flex flex-col items-start justify-start w-screen  lg:pb-28  lg:w-[1160px]'>
+                <div className='home-hero-flying-input-div  items-centerjuc
+                 flex flex-col sm:items-start sm:justify-start w-screen  lg:pb-28  lg:w-[1160px]'>
 
                     <div className='py-5'>
                         <p className='font-bold'>Where are you flying?</p>
