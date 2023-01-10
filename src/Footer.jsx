@@ -30,10 +30,10 @@ const Footer = () => {
 
     return (
         <>
-            <div className='hidden md:block'>
+            <div className='hidden md:block '>
 
-                <div className='footer-playstore-container flex justify-center items-center'>
-                    <div className='downoad-img-div'>
+                <div className='footer-playstore-container rounded-[10px] flex justify-center items-center'>
+                    <div className='downoad-img-div '>
 
                         <div className='inner-download-img'>
                             <h1 className='text-white'>Download our app</h1>
@@ -110,11 +110,11 @@ const Footer = () => {
 
             {/* mobile footer  */}
 
-   <div className='block md:hidden'>
+   <div className='block md:hidden mt-56'>
 
   
-            <div className='relative flex items-center justify-center z-10'>
-                <div className='relative bg-[url("./assets/footer-mobile-playstore-img.svg")] bg-cover w-screen mx-10 h-[103px] flex items-center justify-between px-3' >
+            <div className='relative flex items-center justify-center z-10 rounded-[5px]'>
+                <div className='relative rounded-[5px]  bg-[url("./assets/footer-mobile-playstore-img.svg")] bg-cover w-screen mx-10 h-[103px] flex items-center justify-between px-3' >
                     {/* text */}
                     <div className='w-3/5'>
                         <p className='text-white text-[16px] py-1 '>Download Our App</p>
