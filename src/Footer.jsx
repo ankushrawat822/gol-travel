@@ -137,10 +137,10 @@ const Footer = () => {
                     </div>
 
                     <ul className={`${showCompany ? ` flex ` : ' hidden '}flex-col items-center justify-center gap-2`}>
-                        <li>Events</li>
-                        <li>Blogs</li>
-                        <li>FAQ</li>
-                        <li>Join </li>
+                    <li className=''>Events</li>
+                                <li className=''>Blogs</li>
+                                <li className=''>FAQ</li>
+                                <li className=''>Join US</li>
                     </ul>
                 </div>
 
@@ -151,10 +151,10 @@ const Footer = () => {
                         <IoIosArrowDown></IoIosArrowDown>
                     </div>
                     <ul className={`${showAbout ? ` flex ` : ' hidden '}flex-col items-center justify-center gap-2`}>
-                        <li>Events</li>
-                        <li>Blogs</li>
-                        <li>FAQ</li>
-                        <li>Join </li>
+                    <li className=''>Project</li>
+                                <li className=''>Lorem</li>
+                                <li className=''>Services</li>
+                                <li className=''>Our Story</li>
                     </ul>
                 </div>
 
@@ -165,10 +165,8 @@ const Footer = () => {
                         <IoIosArrowDown></IoIosArrowDown>
                     </div>
                     <ul className={`${showContact ? ` flex ` : ' hidden '}flex-col items-center justify-center gap-2`}>
-                        <li>Events</li>
-                        <li>Blogs</li>
-                        <li>FAQ</li>
-                        <li>Join </li>
+                    <li className=''>abc@lorem.com</li>
+                                <li className=''>India</li>
                     </ul>
                 </div>
 
