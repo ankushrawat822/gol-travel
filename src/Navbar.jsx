@@ -128,7 +128,7 @@ const handleOnClickPackageMobile = () => {
 
 
 {/* desktop navbar starts */}
-            <div className='flex items-center justify-between px-16 pt-9 mobile-navbar-style'>
+            <div className='flex items-center justify-between px-10 pt-9 mobile-navbar-style'>
 
                 <div className='lg:hidden ' >
                     <RxHamburgerMenu onClick={handelMenu} className='w-10 h-10 text-[#056499]'></RxHamburgerMenu>
@@ -145,7 +145,7 @@ const handleOnClickPackageMobile = () => {
 
                 <div className='hidden lg:flex'>
                     <div className='navbar-desktop-div-hover'>
-                        <ul className='flex  lg:w-[790px] lg:justify-between lg:items-center'>
+                        <ul className='flex  lg:w-[740px]  lg:justify-between lg:items-center'>
                             <li>
                             <Link className='flex items-center gap-1'
                                 to='/booking'>Find Reservations
