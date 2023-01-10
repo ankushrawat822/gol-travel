@@ -1,5 +1,5 @@
 import React from 'react'
-import BookingImg from './assets/booking-img.svg'
+import BookingImg from './assets/booking-png-img.png'
 
 const Booking = () => {
   return (
@@ -22,7 +22,7 @@ const Booking = () => {
                 <button className='booking-find-btn bg-[#3282AD]  lg:w-[598px] text-[24px] text-white font-bold flex items-center justify-center  btn-hover-effect-blue-to-white-bg lg:mt-7'>Find</button>
             </div>
 
-    <img className='hidden sm:flex lg:w-[540px] lg:h-[637px]' src={BookingImg} alt="" />
+    <img className='hidden sm:flex md:w-[466px] md:h-[549px] lg:w-[540px] lg:h-[637px]' src={BookingImg} alt="" />
 
 
             </div>
