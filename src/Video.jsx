@@ -24,11 +24,11 @@ const Video = () => {
                   
                 </div>
 
-                <div className='first-video-container'>
-                    <div className="first-text-container">
+                <div className='first-video-container md:gap-6'>
+                    <div className="flex flex-col items-center justify-center py-3 md:w-2/4 md:items-start md:justify-start md:gap-3">
                         <h3>Lorem, ipsum.</h3>
                         <h2 className='text-[22px]'>Lorem ipsum dolor sit amet consectetu.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam velit, odit dolores dicta quas quibusdam laudantium facilis assumenda odit 
+                        <p className='text-center md:text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam velit, odit dolores dicta quas quibusdam laudantium facilis assumenda odit 
                           dolores dicta quas quibusda!</p>
                     </div>
                     <div className="first-video-box">
@@ -42,7 +42,7 @@ const Video = () => {
                 <div className='second-video-container mt-11 mb-11'>
                     <div className='second-text-container text-center py-6'>
                         <h1 className='py-6'>Lorem ipsum dolor sit amet consectetur</h1>
-                        <p className='text-center'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum vero unde praesentium vitae aspernatur natus asperiores nam quidem tempore.unde praesentium vitae aspernatur natus asperiores nam quidem tempore. 
+                        <p className='text-center hidden sm:flex'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum vero unde praesentium vitae aspernatur natus asperiores nam quidem tempore.unde praesentium vitae aspernatur natus asperiores nam quidem tempore. 
                          </p>
                     </div>
 
@@ -69,15 +69,15 @@ const Video = () => {
                 <div className='third-video-container'>
                     <h1>Lorem ipsum dolor sit.</h1>
                     <div className='all-third-video-container w-full'>
-                    <div className='flex items-center w-full justify-around p-10 gap-5'>
+                    <div className='flex flex-col md:flex-row items-center w-full md:justify-around justify-center p-4  md:p-10 gap-5'>
                         <img className='third-video-single-video' src={video7} alt="" />
                         <img className='third-video-single-video' src={video2} alt="" />
                     </div>
-                    <div className='flex items-center w-full justify-around p-10 gap-5'>
+                    <div className='flex flex-col md:flex-row items-center w-full md:justify-around justify-center p-4  md:p-10 gap-5'>
                         <img className='third-video-single-video' src={video3} alt="" />
                         <img className='third-video-single-video' src={video4} alt="" />
                     </div>
-                    <div className='flex items-center w-full justify-around p-10 gap-5'>
+                    <div className='flex flex-col md:flex-row items-center w-full md:justify-around justify-center p-4  md:p-10 gap-5'>
                         <img className='third-video-single-video' src={video5} alt="" />
                         <img className='third-video-single-video' src={video6} alt="" />
                     </div>
