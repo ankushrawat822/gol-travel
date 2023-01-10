@@ -204,7 +204,7 @@ const Maldives = () => {
 
 
 
-<div className='flex items-start justify-start  mt-20 md:mx-16 mx-4 lg:mx-28'>
+<div className='flex items-center justify-center sm:items-start sm:justify-start  mt-20 md:mx-16 mx-4 lg:mx-28'>
   <h2 className='text-[24px] font-bold'>Day Wise Itineary</h2>
 </div>
 

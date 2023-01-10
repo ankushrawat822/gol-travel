@@ -1207,7 +1207,12 @@ border-radius: 10px;
  }
 
 
-
+.mobile-menu-links-conatiner ul li{
+  font-size: 20px;
+  color :#3282AD;
+  font-weight: bold;
+  padding: 3px 1px;
+}
 
 
 

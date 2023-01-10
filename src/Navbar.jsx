@@ -204,7 +204,7 @@ const handleOnClickPackageMobile = () => {
             {showMenu && <div>
                 <div className='mobile-menu-links-conatiner'>
                     <ul className='flex-col gap-20'>
-                        <li>
+                        <li onClick={handelMenu}>
                         <Link className='flex items-center gap-1'
                                 to='/booking'>Find Reservations
                             </Link>
@@ -218,7 +218,10 @@ const handleOnClickPackageMobile = () => {
 
             { showPmenuMobile && <div className='navmenus-about-lakshwadeep-mobile'>
                 <ul className='flex flex-col gap-3'>
-                    <li onClick={handlePliClickedEventToCloseMobile}><Link className='flex items-center gap-1'
+                    <li  onClick={() => {
+                  handlePliClickedEventToCloseMobile();
+                  handelMenu();
+                }}><Link className='flex items-center gap-1'
                                     to='/maldives'> Maldives
                                 </Link></li>
                                
@@ -240,19 +243,29 @@ const handleOnClickPackageMobile = () => {
 
             { showALmenuMobile && <div className='navmenus-about-lakshwadeep-mobile'>
                 <ul className='flex flex-col gap-3'>
-                    <li onClick={handleALliClickedEventToCloseMobile}><Link className='flex items-center gap-1'
+                    <li  onClick={() => {
+                  handlePliClickedEventToCloseMobile();
+                  handelMenu()}}><Link className='flex items-center gap-1'
                                     to='/video'> videos
                                 </Link></li>
-                                <li onClick={handleALliClickedEventToCloseMobile}><Link className='flex items-center gap-1'
+                                <li   onClick={() => {
+                  handlePliClickedEventToCloseMobile();
+                  handelMenu()}}><Link className='flex items-center gap-1'
                                     to='/at-a-glance'> At A Glance
                                 </Link></li>
-                                <li onClick={handleALliClickedEventToCloseMobile}><Link className='flex items-center gap-1'
+                                <li onClick={() => {
+                  handlePliClickedEventToCloseMobile();
+                  handelMenu()}}><Link className='flex items-center gap-1'
                                     to='/island'> Island
                                 </Link></li>
-                                <li onClick={handleALliClickedEventToCloseMobile}><Link className='flex items-center gap-1'
+                                <li onClick={() => {
+                  handlePliClickedEventToCloseMobile();
+                  handelMenu()}}><Link className='flex items-center gap-1'
                                     to='/gallery'> Gallery
                                 </Link></li>
-                                <li onClick={handleALliClickedEventToCloseMobile}><Link className='flex items-center gap-1'
+                                <li onClick={() => {
+                  handlePliClickedEventToCloseMobile();
+                  handelMenu()}}><Link className='flex items-center gap-1'
                                     to='/attractions'> Attractions
                                 </Link></li>
                 </ul>
@@ -260,17 +273,17 @@ const handleOnClickPackageMobile = () => {
             }
 
             {/*  about lakshwadeep drop down btn ends  */}
-                        <li>
+                        <li onClick={handelMenu}>
                         <Link className='flex items-center gap-1'
                                 to='/about'>About
                             </Link>
                         </li>
-                        <li>
+                        <li onClick={handelMenu}>
                         <Link className='flex items-center gap-1'
                                 to='/gol'>Gol
                             </Link>
                         </li>
-                        <li>
+                        <li onClick={handelMenu}>
                             <Link className='flex items-center gap-1'
                                 to='/support'>Support
                             </Link>
