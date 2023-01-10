@@ -13,6 +13,13 @@ import homeclientUserImg from './assets/home-client-user-img.svg'
 
 
 const Home = () => {
+
+
+      
+
+
+
+
     return (
         <>
             <div className='mt-16'>
