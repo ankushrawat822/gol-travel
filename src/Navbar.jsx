@@ -143,7 +143,7 @@ const handleOnClickPackageMobile = () => {
 
                 {/* links */}
 
-                <div className='hidden lg:flex'>
+                <div className='lg:flex'>
                     <div className='navbar-desktop-div-hover'>
                         <ul className='flex  lg:w-[740px]  lg:justify-between lg:items-center'>
                             <li className='hidden'>
