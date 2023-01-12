@@ -5,7 +5,6 @@ import { IoIosArrowDown } from 'react-icons/io'
 import Logo from './assets/logo.svg'
 import map from './assets/map.svg'
 import gradient from './assets/gradient.svg'
-import circle from './assets/circle.svg'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {

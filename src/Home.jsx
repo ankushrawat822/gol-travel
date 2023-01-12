@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import homeHeroGirl from './assets/homeHeroGirl.svg'
 import homeVisitBtnIcon from './assets/homeVisitBtnIcon.svg'
 import { TextField } from '@mui/material'
@@ -10,12 +10,250 @@ import homeCirlceBlue from './assets/home-circle-blue-img.svg'
 import homeKaravatiIsland from './assets/home-island-karavati.svg'
 import clientStarImg from './assets/home-client-reviews-star.svg'
 import homeclientUserImg from './assets/home-client-user-img.svg'
+import { width } from '@mui/system'
 
 
 const Home = () => {
 
+    //   size 
+   const [size  , setSize] = useState({
+    height: window.innerHeight,
+    width: window.innerWidth
+   })
 
 
+   const windowDimension = () =>{
+    setSize({
+        height: window.innerHeight,
+        width: window.innerWidth
+       })
+   }
+
+  
+
+    useEffect(() => {
+       
+        window.addEventListener('resize' , windowDimension)
+         return ()=> window.removeEventListener('resize' , windowDimension)
+        
+    }, [size])
+
+    console.log(size.width)
+
+    const maldivesData = [
+        {
+            id: 1,
+            price: "500",
+            bgImg: "home-indonesia-img2.svg",
+            place: "Indonesia",
+            rating: "4.4",
+            disc: "Explore the Beauty of the island for 3 days and 2 nights with our travel agency...",
+            showSize: 300
+
+        },
+        {
+            id: 2,
+            price: "600",
+            bgImg: "home-indonesia-img2.svg",
+            place: "Indonesia",
+            rating: "4.5",
+            disc: "Explore the Beauty of the island for 3 days and 2 nights with our travel agency...",
+            showSize: 768
+        },
+        {
+            id: 3,
+            price: "700",
+            bgImg: "home-indonesia-img2.svg",
+            place: "Indonesia",
+            rating: "4.7",
+            disc: "Explore the Beauty of the island for 3 days and 2 nights with our travel agency...",
+            showSize: 1024
+        },
+    ]
+
+
+    const samudramData = [
+        {
+            id: 1,
+            price: "400",
+            bgImg: "home-indonesia-img3.svg",
+            place: "Samudram",
+            rating: "4.8",
+            disc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ",
+            showSize: 300
+
+        },
+        {
+            id: 2,
+            price: "700",
+            bgImg: "home-indonesia-img3.svg",
+            place: "Samudram",
+            rating: "4.6",
+            disc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ",
+            showSize: 768
+        },
+        {
+            id: 3,
+            price: "100",
+            bgImg: "home-indonesia-img3.svg",
+            place: "Samudram",
+            rating: "4.1",
+            disc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ..",
+            showSize: 1024
+        },
+    ]
+
+
+    const cordeliaData = [
+        {
+            id: 1,
+            price: "500",
+            bgImg: "home-indonesia-img2.svg",
+            place: "Cordelia",
+            rating: "3.8",
+            disc: "printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply ",
+            showSize: 300
+
+        },
+        {
+            id: 2,
+            price: "500",
+            bgImg: "home-indonesia-img2.svg",
+            place: "Cordelia",
+            rating: "3.6",
+            disc: "printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply ",
+            showSize: 768
+
+        },
+        {
+            id: 3,
+            price: "500",
+            bgImg: "home-indonesia-img2.svg",
+            place: "Cordelia",
+            rating: "3.1",
+            disc: " printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply",
+            showSize: 1024
+
+        },
+    ]
+
+    const AgattiData = [
+        {
+            id: 1,
+            price: "900",
+            bgImg: "home-indonesia-img3.svg",
+            place: "Agatti",
+            rating: "4.8",
+            disc: "dummy text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply ",
+            showSize: 300
+        },
+        {
+            id: 2,
+            price: "900",
+            bgImg: "home-indonesia-img3.svg",
+            place: "Agatti",
+            rating: "4.6",
+            disc: "dummy text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply ",
+            showSize: 768
+        },
+        {
+            id: 3,
+            price: "900",
+            bgImg: "home-indonesia-img3.svg",
+            place: "Agatti",
+            rating: "5.0",
+            disc: "dummy text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply",
+            showSize: 1024
+        },
+    ]
+
+
+    const MoreData = [
+        {
+            id: 1,
+            price: "200",
+            bgImg: "home-indonesia-img2.svg",
+            place: "More places",
+            rating: "3.8",
+            disc: " text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply ",
+            showSize: 300
+        },
+        {
+            id: 2,
+            price: "200",
+            bgImg: "home-indonesia-img3.svg",
+            place: "More places",
+            rating: "4.3",
+            disc: " text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply ",
+            showSize: 768
+        },
+        {
+            id: 3,
+            price: "200",
+            bgImg: "home-indonesia-img2.svg",
+            place: "More places",
+            rating: "3.3",
+            disc: " text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply",
+            showSize: 1024
+        },
+    ]
+
+    const [maldives, setMaldives] = useState(maldivesData)
+
+
+    // bg color of btn useState
+    const [blueBgM, setBlueBgM] = useState(true)
+    const [blueBgS, setBlueBgS] = useState(false)
+    const [blueBgC, setBlueBgC] = useState(false)
+    const [blueBgA, setBlueBgA] = useState(false)
+    const [blueBgMore, setBlueBgMore] = useState(false)
+
+
+    // buttons 
+    const handelSamudramBtn = () => {
+        setMaldives(samudramData)
+        setBlueBgS(true)
+        setBlueBgA(false)
+        setBlueBgM(false)
+        setBlueBgC(false)
+        setBlueBgMore(false)
+    }
+
+    const handelMaldivesBtn = () => {
+        setMaldives(maldivesData)
+        setBlueBgS(false)
+        setBlueBgA(false)
+        setBlueBgM(true)
+        setBlueBgC(false)
+        setBlueBgMore(false)
+    }
+
+    const handelCordeliaBtn = () => {
+        setMaldives(cordeliaData)
+        setBlueBgS(false)
+        setBlueBgA(false)
+        setBlueBgM(false)
+        setBlueBgC(true)
+        setBlueBgMore(false)
+    }
+
+    const handelAgattiBtn = () => {
+        setMaldives(AgattiData)
+        setBlueBgS(false)
+        setBlueBgA(true)
+        setBlueBgM(false)
+        setBlueBgC(false)
+        setBlueBgMore(false)
+    }
+
+    const handelMoreBtn = () => {
+        setMaldives(MoreData)
+        setBlueBgS(false)
+        setBlueBgA(false)
+        setBlueBgM(false)
+        setBlueBgC(false)
+        setBlueBgMore(true)
+    }
 
     return (
         <>
@@ -84,27 +322,28 @@ const Home = () => {
             </div>
 
 
-{/* best packages div main */}
+            {/* best packages div main */}
             <div className='text-center'>
                 <h1 className='font-bold text-[24px] py-4 mt-16'>Best Packages For You</h1>
                 <p>This is a unique experience on ship, sea and land, exploring different coral island of Lakshadweep</p>
             </div>
 
             <div className='flex  items-center justify-center mt-16'>
-                <button className='hero-page-best-packages-btns bg-[#3282AD] text-white font-bold'>Maldives</button>
-                <button className='hero-page-best-packages-btns text-[#3282AD] font-bold'>Samudram</button>
-                <button className='hidden md:flex md:text-center md:items-center md:justify-center hero-page-best-packages-btns text-[#3282AD] font-bold'>Cordelia</button>
-                <button className='hidden md:flex md:text-center md:items-center md:justify-center hero-page-best-packages-btns text-[#3282AD] font-bold'>Agatti</button>
-                <button className='hero-page-best-packages-btns text-[#3282AD] font-bold'>More</button>
+                <button onClick={handelMaldivesBtn} className={`${blueBgM ? 'hero-page-best-packages-btns bg-[#3282AD] text-white font-bold' : 'hero-page-best-packages-btns bg-white text-[#3282AD] font-bold '}`}>Maldives</button>
+                <button onClick={handelSamudramBtn} className={`${blueBgS ? 'hero-page-best-packages-btns bg-[#3282AD] text-white font-bold' : 'hero-page-best-packages-btns bg-white text-[#3282AD] font-bold '}`}>Samudram</button>
+                <button onClick={handelCordeliaBtn} className={`${blueBgC ? 'hidden md:block hero-page-best-packages-btns bg-[#3282AD] text-white font-bold' : 'hidden md:block hero-page-best-packages-btns bg-white text-[#3282AD] font-bold '}`}>Cordelia</button>
+                <button onClick={handelAgattiBtn} className={`${blueBgA ? 'hidden md:block hero-page-best-packages-btns bg-[#3282AD] text-white font-bold' : 'hidden md:block hero-page-best-packages-btns bg-white text-[#3282AD] font-bold '}`}>Agatti</button>
+                <button onClick={handelMoreBtn} className={`${blueBgMore ? 'hero-page-best-packages-btns bg-[#3282AD] text-white font-bold' : 'hero-page-best-packages-btns bg-white text-[#3282AD] font-bold '}`}>More</button>
             </div>
 
 
             <div className='flex flex-col items-center justify-center md:flex-row md:justify-evenly mt-10  gap-11 md:gap-0'>
-                <div className=' w-[300px] sm:w-[410px]  flex flex-col relative'>
+                {/* cards start */}
+                {maldives.map((data) => (<div key={data.id} className={`w-[300px] sm:w-[410px]  flex flex-col relative ${size.width > data.showSize ? '  ' : ' hidden '} `}>
 
                     <div className='flex flex-col  items-center md:flex-col  '>
-                        <div className="h-[348px] div-img  bg-[url('./assets/home-page-indonesia.svg')]  w-[300px] sm:w-[410px] lg:w-[337px] rounded-t-lg ">
-                            <button className='home-indonedia-price-btn lg:right-[44px]'>&#8377;500</button>
+                        <div className={`h-[348px] div-img    w-[300px] sm:w-[410px] lg:w-[337px] rounded-t-lg bg-[url('./assets/${data.bgImg}')]`}>
+                            <button className='home-indonedia-price-btn lg:right-[44px]'>&#8377;{data.price} </button>
                         </div>
 
 
@@ -114,32 +353,32 @@ const Home = () => {
                             <div className='flex items-center justify-between px-2 py-2 '>
                                 <div className='flex items-center justify-around py-2 mt-[-10px] '>
                                     <img src={homelocationIcon} alt="homelocationIcon" />
-                                    <p className='font-bold'>Indonesia</p>
+                                    <p className='font-bold'>{data.place}</p>
                                 </div>
 
                                 {/* star rating */}
                                 <div className='flex gap-1 mt-[-15px]'>
                                     <img src={homeStarImg} alt="homeStarImg" />
-                                    <p>4.5</p>
+                                    <p>{data.rating}</p>
                                 </div>
                             </div>
 
                             <div className='flex flex-col items-center justify-center px-6'>
-                                <p>Explore the Beauty of the island for 3 days and 2 nights with our travel agency...</p>
+                                <p>{data.disc}</p>
                                 <button className='home-indonesia-book-now-btn my-7 text-white font-bold btn-hover-effect-blue-to-white-bg'>Book Now</button>
                             </div>
 
                         </div>
                     </div>
 
-                </div>
+                </div>))}
 
 
 
 
 
 
-                <div className=' w-[300px] sm:w-[410px]'>
+                {/* <div className=' w-[300px] sm:w-[410px]'>
 
                     <div className='flex flex-col  items-center md:flex-col '>
                         <div className="h-[348px] div-img bg-[url('./assets/home-indonesia-img2.svg')] bg-cover w-[300px] sm:w-[410px] rounded-t-lg relative lg:w-[337px]">
@@ -149,14 +388,14 @@ const Home = () => {
 
                         <div className=' home-indonesia-card-text-main-div lg:w-[337px]'>
 
-                            {/* indonesia name and location icon */}
+                          
                             <div className='flex items-center justify-between px-2 py-2 '>
                                 <div className='flex items-center justify-around py-2 mt-[-10px] '>
                                     <img src={homelocationIcon} alt="homelocationIcon" />
                                     <p className='font-bold'>Indonesia</p>
                                 </div>
 
-                                {/* star rating */}
+                               
                                 <div className='flex gap-1 mt-[-15px]'>
                                     <img src={homeStarImg} alt="homeStarImg" />
                                     <p>4.5</p>
@@ -171,11 +410,11 @@ const Home = () => {
                         </div>
                     </div>
 
-                </div>
+                </div> */}
 
 
-                {/* 3rd indonesia card div */}
 
+                {/* 
                 <div className='hidden lg:flex w-[300px] sm:w-[410px] '>
 
                     <div className='flex flex-col  items-center md:flex-col relative'>
@@ -186,14 +425,14 @@ const Home = () => {
 
                         <div className=' home-indonesia-card-text-main-div lg:w-[337px] '>
 
-                            {/* indonesia name and location icon */}
+                           
                             <div className='flex items-center justify-between px-2 py-2 '>
                                 <div className='flex items-center justify-around py-2 mt-[-10px] '>
                                     <img src={homelocationIcon} alt="homelocationIcon" />
                                     <p className='font-bold'>Indonesia</p>
                                 </div>
 
-                                {/* star rating */}
+                              
                                 <div className='flex gap-1 mt-[-15px]'>
                                     <img src={homeStarImg} alt="homeStarImg" />
                                     <p>4.5</p>
@@ -208,17 +447,17 @@ const Home = () => {
                         </div>
                     </div>
 
-                </div>
+                </div> */}
 
             </div>
 
 
 
-            <div className=' hidden sm:flex items-center justify-center gap-4 py-11'>
+            {/* <div className=' hidden sm:flex items-center justify-center gap-4 py-11'>
                 <img src={homeCirclWhiteImg} alt="w" />
                 <img src={homeCirlceBlue} alt="w" />
                 <img src={homeCirclWhiteImg} alt="w" />
-            </div>
+            </div> */}
 
 
             <div className="flex items-center justify-center">
@@ -347,7 +586,7 @@ const Home = () => {
                 <div className='bg-shadow-hover-effect hidden md:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] island-stays-drop-shadow-card   md:px-0  '>
                     {/* img div */}
                     <div className='bg-black rounded-[8px]'>
-                        <img  className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
+                        <img className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
                     </div>
                     {/* below img div */}
                     <div className='flex flex-col pl-2'>
