@@ -51,6 +51,14 @@ const [showALmenuMobile, setShowALmenuMobile] = useState(false)
 
     const handelMenu = () => {
         setShowMenu(prev => !prev);
+
+        if(document.body.classList.contains('fixed-body-class')){
+            document.body.classList.remove('fixed-body-class');
+            console.log("removed")
+        } else {
+            document.body.classList.add('fixed-body-class');
+            console.log('added')
+        }
     }
 
 
@@ -199,7 +207,7 @@ const handleOnClickPackageMobile = () => {
 
 
 
-            {/* mobile meny links div */}
+            {/* mobile menu links div */}
             {showMenu && <div className='absolute mobile-nav-no-scrolling w-screen h-screen bg-[#E5F8FE]'>
                 <div className='mobile-menu-links-conatiner '>
                     <ul className='flex-col gap-20'>
