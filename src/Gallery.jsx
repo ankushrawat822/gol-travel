@@ -1,10 +1,158 @@
-import React from 'react'
+import React , {useState , useEffect}  from 'react'
 import gallerySectionImg1 from './assets/Gallery-image-section-1.svg'
 import gallerySection2GroupImg from './assets/Gallery-section-2-img.svg'
 import gallerySection3img1 from './assets/Gallery-section-3-img-1.svg'
 import gallerySection3img2 from './assets/Gallery-section-3-img-2.svg'
 
 const Gallery = () => {
+
+    
+    const AllData = [
+        {
+            id: 1,
+            img1 : './galleryImg1.svg',
+            img2 : './galleryImg1.svg',
+            img3 : './galleryImg1.svg',
+            img4 : './galleryImg1.svg',
+            img5 : './galleryImg1.svg',
+        }
+    ]
+
+
+    const LifeData = [
+        {
+            id: 2,
+            img1 : './galleryImg2.svg',
+            img2 : './galleryImg2.svg',
+            img3 : './galleryImg2.svg',
+            img4 : './galleryImg2.svg',
+            img5 : './galleryImg2.svg',
+        }
+    ]
+
+
+    const MomentsData = [
+        {
+            id: 1,
+            img1 : './galleryImg3.svg',
+            img2 : './galleryImg3.svg',
+            img3 : './galleryImg3.svg',
+            img4 : './galleryImg3.svg',
+            img5 : './galleryImg3.svg',
+        }
+    ]
+
+    
+    const NatureData = [
+        {
+            id: 3,
+            img1 : './galleryImg4.svg',
+            img2 : './galleryImg4.svg',
+            img3 : './galleryImg4.svg',
+            img4 : './galleryImg4.svg',
+            img5 : './galleryImg4.svg',
+        }
+    ]
+
+    const StoriesData = [
+        {
+            id: 1,
+            img1 : './galleryImg5.svg',
+            img2 : './galleryImg5.svg',
+            img3 : './galleryImg5.svg',
+            img4 : './galleryImg5.svg',
+            img5: './galleryImg5.svg',
+        }
+    ]
+
+    const TravelData = [
+        {
+            id: 1,
+            img1 : './galleryImg1.svg',
+            img2 : './galleryImg1.svg',
+            img3 : './galleryImg1.svg',
+            img4 : './galleryImg1.svg',
+            img5 : './galleryImg1.svg',
+        }
+    ]
+
+  const [ImgData , setImageData] = useState(AllData)
+
+
+//   buttons useStates
+const [AllBtn , setAllBtn ] = useState(true)
+const [LifeBtn , setLifeBtn ] = useState(false)
+const [NatureBtn , setNatureBtn ] = useState(false)
+const [MomentsBtn , setMomentsBtn ] = useState(false)
+const [StoriesBtn , setStoriesBtn ] = useState(false)
+const [TravelBtn , setTravelBtn ] = useState(false)
+
+
+const handleAllBtn = () =>{
+    setImageData(AllData)
+    setAllBtn(true)
+    setLifeBtn(false)
+    setNatureBtn(false)
+    setStoriesBtn(false)
+    setTravelBtn(false)
+    setMomentsBtn(false)
+}
+
+const handleLifeBtn = () =>{
+    setImageData(LifeData)
+    setAllBtn(false)
+    setLifeBtn(true)
+    setNatureBtn(false)
+    setStoriesBtn(false)
+    setTravelBtn(false)
+    setMomentsBtn(false)
+}
+
+const handleMomentsBtn = () =>{
+    setImageData(MomentsData)
+    setAllBtn(false)
+    setLifeBtn(false)
+    setMomentsBtn(true)
+    setNatureBtn(false)
+    setStoriesBtn(false)
+    setTravelBtn(false)
+}
+
+const handleNatureBtn = () =>{
+    setImageData(NatureData)
+    setAllBtn(false)
+    setLifeBtn(false)
+    setNatureBtn(true)
+    setStoriesBtn(false)
+    setTravelBtn(false)
+    setMomentsBtn(false)
+}
+
+
+const handleStoriesBtn = () =>{
+ //document.body.style.display = 'none'
+    setImageData(StoriesData)
+    setAllBtn(false)
+    setLifeBtn(false)
+    setNatureBtn(false)
+    setStoriesBtn(true)
+    setTravelBtn(false)
+    setMomentsBtn(false)
+}
+
+const handleTravelBtn = () =>{
+   
+    setImageData(TravelData)
+    setAllBtn(false)
+    setLifeBtn(false)
+    setNatureBtn(false)
+    setStoriesBtn(false)
+    setTravelBtn(true)
+    setMomentsBtn(false)
+}
+
+
+
   return (
         <>
         {/* heading center */}
@@ -22,25 +170,27 @@ const Gallery = () => {
 
 {/* buttons div starts */}
         <div className='flex  items-center justify-center mt-16'>
-                <button className='gallery-page-first-section-btns bg-[#0E4DA4] text-white font-bold'>ALL</button>
-                <button className='gallery-page-first-section-btns bg-[#FFFFFF] text-[#3282AD] font-bold'>LIFE</button>
-                <button className='flex text-center items-center justify-center  bg-[#FFFFFF] gallery-page-first-section-btns text-[#3282AD] font-bold'>MOMENTS</button>
-                <button className='hidden sm:flex text-center items-center justify-center gallery-page-first-section-btns  bg-[#FFFFFF] text-[#3282AD] font-bold'>NATURE</button>
-                <button className='hidden md:flex md:text-center md:items-center  bg-[#FFFFFF] md:justify-center gallery-page-first-section-btns text-[#3282AD] font-bold'>STORIES</button>
-                <button className='hidden lg:flex lg:text-center lg:items-center  bg-[#FFFFFF] lg:justify-center gallery-page-first-section-btns text-[#3282AD] font-bold'>TRAVEL</button>
+                <button onClick={handleAllBtn} className={ ` ${AllBtn ?  'gallery-page-first-section-btns bg-[#3282AD] text-white font-bold' : 'gallery-page-first-section-btns bg-[#ffffff] text-[#3282AD] font-bold' }`}>ALL</button>
+                <button onClick={handleLifeBtn} className={ ` ${LifeBtn ?  'gallery-page-first-section-btns bg-[#3282AD] text-white font-bold' : 'gallery-page-first-section-btns bg-[#ffffff] text-[#3282AD] font-bold' }`}>Life</button>
+                <button onClick={handleMomentsBtn} className={ ` ${MomentsBtn ?  'gallery-page-first-section-btns bg-[#3282AD] text-white font-bold' : 'gallery-page-first-section-btns bg-[#ffffff] text-[#3282AD] font-bold' }`}>Moments</button>
+                <button onClick={handleNatureBtn} className={ ` ${NatureBtn ?  'gallery-page-first-section-btns bg-[#3282AD] text-white font-bold' : 'gallery-page-first-section-btns bg-[#ffffff] text-[#3282AD] font-bold' }`}>Nature</button>
+                <button onClick={handleStoriesBtn} className={ ` ${StoriesBtn ?  'hidden lg:block gallery-page-first-section-btns bg-[#3282AD] text-white font-bold' : 'hidden lg:block gallery-page-first-section-btns bg-[#ffffff] text-[#3282AD] font-bold' }`}>Stories</button>
+                <button onClick={handleTravelBtn} className={ ` ${TravelBtn ?  'hidden md:block gallery-page-first-section-btns bg-[#3282AD] text-white font-bold' : 'hidden md:block gallery-page-first-section-btns bg-[#ffffff] text-[#3282AD] font-bold' }`}>Travel</button>
             </div>
 
 {/* images section */}
-   <div className='flex flex-col items-center justify-center gap-10 px-3 md:px-10 mt-16'>
+ {  ImgData.map((data)=> ( 
+
+          <div key={data.id} className='flex flex-col items-center justify-center gap-10 px-3 md:px-10 mt-16'>
        {/* upper div */}
        <div className='flex flex-col items-center justify-center md:flex-row gap-10   '>
             {/* first div */}
             <div className='md:w-[384px] md:h-[248px] lg:w-[809px] lg:h-[377px] '>
-                <img className='turn-into-blur object-cover rounded-[7px] md:w-[384px] md:h-[248px] lg:w-[809px] lg:h-[377px]'  src={gallerySectionImg1} alt="gallerySectionImg1" />
+                <img className='turn-into-blur object-cover rounded-[7px] md:w-[384px] md:h-[248px] lg:w-[809px] lg:h-[377px]'  src={data.img1} alt="gallerySectionImg1" />
             </div>
             {/* second div */}
             <div className='md:w-[221px] md:h-[248px] lg:w-[393px] lg:h-[377px]  '>
-            <img className=' turn-into-blur  object-cover rounded-[7px] md:w-[221px] md:h-[248px] lg:w-[393px] lg:h-[377px]' src={gallerySectionImg1} alt="gallerySectionImg1" />
+            <img className=' turn-into-blur  object-cover rounded-[7px] md:w-[221px] md:h-[248px] lg:w-[393px] lg:h-[377px]' src={data.img2} alt="gallerySectionImg1" />
             </div>
        </div>
        {/* lower div */}
@@ -48,20 +198,20 @@ const Gallery = () => {
 
         {/* third hidden on mobile div */}
         <div className='hidden lg:flex lg:w-[289px] lg:h-[377px]'>
-            <img className=' turn-into-blur  object-cover rounded-[7px] md:w-[303px] md:h-[248px] lg:w-[289px] lg:h-[377px]' src={gallerySectionImg1} alt="gallerySectionImg1" />
+            <img className=' turn-into-blur  object-cover rounded-[7px] md:w-[303px] md:h-[248px] lg:w-[289px] lg:h-[377px]' src={data.img3} alt="gallerySectionImg1" />
             </div>
 
 
             {/* first div */}
             <div className='md:w-[303px] md:h-[248px] lg:w-[391px] lg:h-[377px]'>
-            <img className=' turn-into-blur object-cover rounded-[7px] md:w-[303px] md:h-[248px] lg:w-[391px] lg:h-[377px]' src={gallerySectionImg1} alt="gallerySectionImg1" />
+            <img className=' turn-into-blur object-cover rounded-[7px] md:w-[303px] md:h-[248px] lg:w-[391px] lg:h-[377px]' src={data.img4} alt="gallerySectionImg1" />
             </div>
             {/* second div */}
             <div className='md:w-[302px] md:h-[248px] lg:w-[495px] lg:h-[377px]'>
-            <img className=' turn-into-blur object-cover rounded-[7px] md:w-[302px] md:h-[248px] lg:w-[495px] lg:h-[377px]' src={gallerySectionImg1} alt="gallerySectionImg1" />
+            <img className=' turn-into-blur object-cover rounded-[7px] md:w-[302px] md:h-[248px] lg:w-[495px] lg:h-[377px]' src={data.img5} alt="gallerySectionImg1" />
             </div>
        </div>
-   </div>
+   </div>   ))}
 
 
 {/* discover more btn */}

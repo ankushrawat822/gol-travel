@@ -10,11 +10,12 @@ import homeCirlceBlue from './assets/home-circle-blue-img.svg'
 import homeKaravatiIsland from './assets/home-island-karavati.svg'
 import clientStarImg from './assets/home-client-reviews-star.svg'
 import homeclientUserImg from './assets/home-client-user-img.svg'
-import { width } from '@mui/system'
 
 
 const Home = () => {
 
+
+    //  data and functions of home page "best package for you section starts"
     //   size 
    const [size  , setSize] = useState({
     height: window.innerHeight,
@@ -38,7 +39,7 @@ const Home = () => {
         
     }, [size])
 
-    console.log(size.width)
+  
 
     const maldivesData = [
         {
@@ -254,6 +255,267 @@ const Home = () => {
         setBlueBgC(false)
         setBlueBgMore(true)
     }
+
+  //  data and functions of home page "best package for you section ends"
+
+
+//  data and functions of home page "clients section starts"
+
+const client1Data = [
+    {
+        id: 1,
+      
+        bgImg: "./homeClient2img3.svg",
+        name: "Roman Roy",
+        place: "Toranto, Canada",
+        disc: "text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply",
+        star : [{
+            one : 1
+             },
+             {
+                one : 1
+                 },
+                 {
+                    one : 1
+                     },
+                     {
+                        one : 1
+                         }, {
+                            one : 1
+                             },
+                     
+
+    ],
+        showSize: 300
+    },
+    {
+        id: 2,
+    
+        bgImg: "./homeClient2img2.svg",
+        name: "Alex Tom",
+        place: "Paris, France",
+        disc: "text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply ",
+        star : [{
+            one : 1
+             },
+             {
+                one : 1
+                 },
+                 {
+                    one : 1
+                     },
+                     {
+                        one : 1
+                         }, {
+                            one : 1
+                             },
+                     
+
+    ],
+        showSize: 768
+    },
+    {
+        id: 3,
+      
+        bgImg: "./homeClient2img2.svg",
+        name: "Finn Balor",
+        place: "Indore, India",
+        disc: "text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply",
+        star : [{
+            one : 1
+             },
+             {
+                one : 1
+                 },
+                 {
+                    one : 1
+                     },
+
+    ],
+        showSize: 1024
+    },
+]
+
+const client2Data = [
+
+    {
+        id: 1,
+      
+        bgImg: "./homeClient2img1.svg",
+        name: "Roman Roy",
+        place: "Indore, India",
+        disc: "dummy text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply ",
+        star : [{
+            one : 1
+             },
+             {
+                one : 1
+                 },
+                 {
+                    one : 1
+                     },
+
+    ],
+        showSize: 300
+    },
+
+    {
+        id: 2,
+    
+        bgImg: "./homeClient2img2.svg",
+        name: "Alex Tom",
+        place: "Paris, France",
+        disc: "dummy text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply ",
+        star : [{
+            one : 1
+             },
+             {
+                one : 1
+                 },
+                 {
+                    one : 1
+                     },
+                     {
+                        one : 1
+                         },
+                     
+
+    ],
+        showSize: 768
+    },
+
+    {
+        id: 3,
+      
+        bgImg: "./homeClient2img3.svg",
+        name: "Finn Balor",
+        place: "Toranto, Canada",
+        disc: "dummy text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply",
+        star : [{
+            one : 1
+             },
+             {
+                one : 1
+                 },
+                 {
+                    one : 1
+                     },
+                     {
+                        one : 1
+                         }, {
+                            one : 1
+                             },
+                     
+
+    ],
+        showSize: 1024
+    },
+]
+
+
+const client3Data = [
+    {
+        id: 1,
+        bgImg: "./homeClient2img2.svg",
+        name: "Finn Balor",
+        place: "Toranto, Canada",
+        disc: "Explore the Beauty of the island for 3 days and 2 nights with our travel agency.. ",
+        star : [{
+            one : 1
+             },
+             {
+                one : 1
+                 },
+                 {
+                    one : 1
+                     },
+
+    ],
+        showSize: 300
+    },
+    {
+        id: 2,
+    
+        bgImg: "./homeClient2img3.svg",
+        name: "Alex Tom",
+        place: "Paris, France",
+        disc: "Explore the Beauty of the island for 3 days and 2 nights with our travel agency.. ",
+        star : [{
+            one : 1
+             },
+             {
+                one : 1
+                 },
+                 {
+                    one : 1
+                     },
+                     {
+                        one : 1
+                         }, {
+                            one : 1
+                             },
+                     
+
+    ],
+        showSize: 768
+    },
+    {
+        id: 3,
+      
+        bgImg: "./homeClient2img1.svg",
+        name: "Roman Roy",
+        place: "Indore, India",
+        disc: "Explore the Beauty of the island for 3 days and 2 nights with our travel agency..",
+        star : [{
+            one : 1
+             },
+             {
+                one : 1
+                 },
+                 {
+                    one : 1
+                     },
+                     {
+                        one : 1
+                         },
+                     
+
+    ],
+        showSize: 1024
+    },
+]
+
+  
+
+    const [clients, setClients] = useState(client2Data)
+
+
+    // small circle div btn color usestate
+    const [circle1 , setCircle1] = useState(false)
+    const [circle2 , setCircle2] = useState(true)
+    const [circle3 , setCircle3] = useState(false)
+
+    const handleSmallDiv1 = () =>{
+     setClients(client1Data)
+     setCircle1(true)
+     setCircle2(false)
+     setCircle3(false)
+    }
+
+    const handleSmallDiv2 = () =>{
+        setClients(client2Data)
+        setCircle2(true)
+        setCircle1(false)
+        setCircle3(false)
+    }
+
+    const handleSmallDiv3 = () =>{
+        setClients(client3Data)
+        setCircle3(true)
+        setCircle2(false)
+        setCircle1(false)
+    }
+
 
     return (
         <>
@@ -719,7 +981,7 @@ const Home = () => {
             <div className='mt-14  flex items-center justify-center md:justify-evenly'>
 
                 {/* card 1 */}
-                <div className='hidden md:flex   w-[300px] sm:w-[410px] md:w-[302px] lg:[w-336px] '>
+                {/* <div className='hidden md:flex   w-[300px] sm:w-[410px] md:w-[302px] lg:[w-336px] '>
                     <div className=' flex flex-col items-center justify-center gap-2 px-5 text-center home-client-reviews-card-bg'>
                         <img src={homeclientUserImg} alt="" className='py-3' />
                         <p className='font-bold mt-[-10px] text-[20px]'>Trina Davis</p>
@@ -733,12 +995,12 @@ const Home = () => {
                             <img src={clientStarImg} alt="" />
                         </p>
                     </div>
-                </div>
+                </div> */}
 
 
 
                 {/* card 2 */}
-                <div className='hidden lg:flex   w-[300px] sm:w-[410px] md:w-[302px] lg:[w-336px] '>
+                {/* <div className='hidden lg:flex   w-[300px] sm:w-[410px] md:w-[302px] lg:[w-336px] '>
                     <div className=' flex flex-col items-center justify-center gap-2 px-5 text-center home-client-reviews-card-bg'>
                         <img src={homeclientUserImg} alt="" className='py-3' />
                         <p className='font-bold mt-[-10px] text-[20px]'>Trina Davis</p>
@@ -752,26 +1014,32 @@ const Home = () => {
                             <img src={clientStarImg} alt="" />
                         </p>
                     </div>
-                </div>
+                </div> */}
 
 
 
                 {/* card 3 */}
-                <div className='  w-[300px] sm:w-[410px] md:w-[302px] lg:[w-336px] '>
+             { clients.map((data)=> (  <div key={data.id} className={` w-[300px] sm:w-[410px] md:w-[302px] lg:[w-336px] ${size.width > data.showSize ? '  ' : ' hidden '} `}>
                     <div className='flex flex-col items-center justify-center gap-2 px-5 text-center home-client-reviews-card-bg'>
-                        <img src={homeclientUserImg} alt="" className='py-3' />
-                        <p className='font-bold mt-[-10px] text-[20px]'>Trina Davis</p>
-                        <p className='text-[16px] font-bold text-[#555555]'>Toranto, Canada</p>
-                        <p className='text-[14px] text-[#5A5A5A] py-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam voluptate veniam repudiandae quod animi, dolorum, tempore duci</p>
+                        <img src={data.bgImg} alt="sdsd" className='py-3 h-[112px] w-[112px]' />
+                        <p className='font-bold mt-[-10px] text-[20px]'> {data.name} </p>
+                        <p className='text-[16px] font-bold text-[#555555]'>{data.place}</p>
+                        <p className='text-[14px] text-[#5A5A5A] py-5'> {data.disc} </p>
                         <p className='flex gap-2 py-2 pb-3'>
+
+                        {  data.star.map((s)=>(
+                             <img src={clientStarImg} alt="" />
+                        
+                        ))    }
+
+
+                            {/* <img src={clientStarImg} alt="" />
                             <img src={clientStarImg} alt="" />
                             <img src={clientStarImg} alt="" />
-                            <img src={clientStarImg} alt="" />
-                            <img src={clientStarImg} alt="" />
-                            <img src={clientStarImg} alt="" />
+                            <img src={clientStarImg} alt="" /> */}
                         </p>
                     </div>
-                </div>
+                </div>   ))}
 
 
 
@@ -781,9 +1049,9 @@ const Home = () => {
 
 
             <div className='flex items-center justify-center gap-4 py-11'>
-                <img src={homeCirclWhiteImg} alt="w" />
-                <img src={homeCirlceBlue} alt="w" />
-                <img src={homeCirclWhiteImg} alt="w" />
+            <div onClick={handleSmallDiv1} className={`${circle1 ? 'w-[32px] h-[32px] rounded-full home-small-circle-border-styles bg-[#3282AD]' : 'w-[32px] h-[32px] rounded-full home-small-circle-border-styles bg-[#ffffff]' }`}></div>
+                <div onClick={handleSmallDiv2} className={`${circle2 ? 'w-[32px] h-[32px] rounded-full home-small-circle-border-styles bg-[#3282AD]' : 'w-[32px] h-[32px] rounded-full home-small-circle-border-styles bg-[#ffffff]' }`}></div>
+                <div onClick={handleSmallDiv3} className={`${circle3 ? 'w-[32px] h-[32px] rounded-full home-small-circle-border-styles bg-[#3282AD]' : 'w-[32px] h-[32px] rounded-full home-small-circle-border-styles bg-[#ffffff]' }`}></div>
             </div>
 
         </>
