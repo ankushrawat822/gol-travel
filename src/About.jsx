@@ -207,7 +207,7 @@ useEffect(() => {
             </div>
 
             {/* first section */}
-          {  TeamData.map((data) => (   <div key={data.id} className=' flex flex-col-reverse items-center justify-center md:flex-row md:items-center md:justify-evenly md:gap-1 p-3'>
+          {  TeamData.map((data) => (  <>  <div key={data.id} className=' flex flex-col-reverse items-center justify-center md:flex-row md:items-center md:justify-evenly md:gap-1 p-3'>
                 {/* small pictures of all team members */}
                      <div className='flex flex-row md:flex-col items-center justify-center gap-3 '>
                     <img onClick={handleImg1} className={`${Teambtn1 ? ' cursor-pointer w-[47px] h-[47px] md:w-[63px] md:h-[63px] rounded-full about-page-small-image-border' : 'cursor-pointer w-[47px] h-[47px] md:w-[63px] md:h-[63px] rounded-full' }`} src={AboutTeamsImg1} alt="" />
@@ -248,7 +248,7 @@ useEffect(() => {
 
 
 
-            </div>  ))}
+            </div>  
 
 
             {/* sebastian bennett , founder info div */}
@@ -258,7 +258,7 @@ useEffect(() => {
 
 
                     <div className='flex items-center justify-between md:w-[541px]'>
-                        <p className='font-bold text-[24px] text-[#3282AD] py-2'>Sebastian Bennett</p>
+                        <p className='font-bold text-[24px] text-[#3282AD] py-2'> {data.name} </p>
                         <div className='hidden md:flex items-center justify-center gap-3'>
                             <img src={AboutFacebookImg} alt="AboutFacebookImg" />
                             <img src={AboutFacebookImg} alt="AboutFacebookImg" />
@@ -266,8 +266,8 @@ useEffect(() => {
                         </div>
                     </div>
 
-                    <p className='font-bold py-2 text-justify'>FOUNDER, LEAD PHOTOGRAPHER, CEO</p>
-                    <p className='md:w-[447px]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem explicabo obcaecati veritatis. Voluptates culpa obcaecati a esse temporibus ullam? Quos atque quae veritatis minus nihil nisi, porro excepturi blanditiis expedita explicabo corporis, quo repellat? Lorem ipsum dolor sit amet. </p>
+                    <p className='font-bold py-2 text-justify'>  {data.role} </p>
+                    <p className='md:w-[447px]'> {data.disc} </p>
                 </div>
 
                 <div className=' flex md:hidden items-center justify-center gap-3 py-7'>
@@ -277,7 +277,7 @@ useEffect(() => {
                 </div>
 
 
-            </div>
+            </div> </> ))}
 
 
 
