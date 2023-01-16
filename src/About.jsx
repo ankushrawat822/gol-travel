@@ -282,7 +282,7 @@ useEffect(() => {
 
 
             {/* what customer's are saying */}
-            <div className='relative bg-[#F7FDFF] py-24 px-3 lg:px-80  mt-24'>
+            <div className='relative bg-[#F7FDFF] pt-8  pb-40 lg:px-80  mt-24'>
                 {/* text  div */}
                 <div className=' sm:w-[523px] mb-[100px] px-3'>
                     <p className='font-bold text-[24px] py-2'>What customer's are saying?</p>
@@ -313,7 +313,7 @@ useEffect(() => {
 
             {/* certificate */}
 
-            <div className='flex flex-col items-center justify-center mt-16 px-3 text-center'>
+            <div className='flex flex-col items-center justify-center mt-32 py-6 px-3 text-center'>
                 <p className='font-bold text-[24px] py-3'>Certificate</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed nisi ipsa iste fugit sequi.</p>
             </div>

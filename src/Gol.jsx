@@ -50,7 +50,7 @@ const Gol = () => {
 
 {/* what we do  */}
 
-<div className='flex flex-col items-center justify-center mt-16 px-3 text-center'>
+<div className='flex flex-col items-center justify-center mt-32 px-3 py-6 text-center'>
     <p className='font-bold text-[24px] py-3'>What we do</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed nisi ipsa iste fugit sequi.</p>
    </div>
@@ -82,8 +82,8 @@ const Gol = () => {
       </div>
    </div>
 
- <div className='flex items-center justify-center'>
-   <h2 className='font-bold mt-16 mb-16 text-[24px]'>About Gol Ventures</h2>
+ <div className='flex items-center justify-center mt-32 mb-16  py-6'>
+   <h2 className='font-bold  text-[24px]'>About Gol Ventures</h2>
  </div>
  
 
