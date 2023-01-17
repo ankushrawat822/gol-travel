@@ -1164,27 +1164,202 @@ border-radius: 10px;
 /* home heor illustration */
 .illustration{
   position: relative;
-  width: 464.27px;
+  min-width: 371.27px;
   font-size: 14px;
   color: #636363;
+  margin-top: -300px;
 }
 
 .illustration-child{
   position: absolute;
   top: 64.76px;
   right: 0;
-  width: 449.99px;
-  height: 412.49px;
+
+}
+
+
+.bg-icon,
+.people-icon {
+  position: absolute;
+  top: 84.93px;
+  right: 40.36px;
+  width: 384.49px;
+  height: 369.15px;
+}
+
+
+.item {
+  position: absolute;
+  top: 135.64px;
+  right: 26.58px;
+  width: 464.27px;
+  height: 321.04px;
+}
+
+
+.icbaseline-flight-icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+
+.icbaseline-flight-parent {
+  position: absolute;
+  top: 0;
+  right: 8.8px;
+  border-radius: 24px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(40, 41, 61, 0.04),
+    0 8px 16px rgba(96, 97, 112, 0.16);
+  display: flex;
+  flex-direction: row;
+  padding: 10px 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+
+.frame-icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.frame-wrapper {
+  position: absolute;
+  top: 64.53px;
+  right: 9.53px;
+  border-radius: 24px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(40, 41, 61, 0.04),
+    0 8px 16px rgba(96, 97, 112, 0.16);
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.explore-labuan-bajo-parent {
+  position: absolute;
+  top: 240.69px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 4px;
+  left: 5px;
+}
+
+.card-child,
+.card-item {
+  position: absolute;
+  border-radius: 5px;
+  
+  
+}
+.card-child {
+  top: 147px;
+  
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(40, 41, 61, 0.04),
+    0 8px 16px rgba(96, 97, 112, 0.16);
+  width: 149.32px;
+  height: 138.37px;
+}
+.card-item {
+
+  left: -0.7599999999999998px;
+  top: 147px;
+
+  width: 149.13px;
+  height: 89.79px;
+  object-fit: cover;
+}
+
+.home-hero-illustration-small-div{
+  margin-top: 53px;
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.explore-labuan-bajo {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: 0.01em;
+  line-height: 140%;
+  font-weight: 700;
+  font-family: inherit;
+}
+.iconlyboldlocation {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+.ntt-indonesua {
+  margin: 0;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 140%;
+}
+.iconlyboldlocation-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  font-size: 10px;
+  color: #8f8f8f;
+  font-family: "Open Sans";
+}
+
+
+.card-inner {
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(40, 41, 61, 0.04),
+    0 8px 16px rgba(96, 97, 112, 0.16);
+  width: 88.27px;
+  height: 81.79px;
 }
 
 
 
-
-
-
-
-
-
+.card-inner,
+.frame-div,
+.rectangle-icon {
+  position: absolute;
+  border-radius: 5px;
+}
+.rectangle-icon {
+  top: 0.42px;
+  right: 0.469999px;
+  width: 91.43px;
+  height: 56.35px;
+  object-fit: cover;
+}
+.frame-div {
+  top: 55.6px;
+  right: 18.68px;
+  width: 51.59px;
+  height: 18.61px;
+}
+.card1 {
+  position: absolute;
+  top: 287px;
+  right: 0;
+  width: 88.27px;
+  height: 81.79px;
+}
 
 
 
@@ -1270,6 +1445,13 @@ border-radius: 10px;
 
 }
 
+@media screen and (max-width: 1001px){
+ 
+  .item{
+    width: 338px;
+  }
+}
+
 
 @media screen and (max-width: 756px) {
  .footer-four-div-container{
@@ -1313,6 +1495,7 @@ border-radius: 10px;
 
 .mobile-nav-no-scrolling{
   overscroll-behavior-block: contain;
+  z-index: 4;
 }
 
 
@@ -1419,6 +1602,12 @@ border-radius: 10px;
     align-items: center;
     justify-content: center;
   }
+
+  .bg-icon, .people-icon{
+    right: 0;
+  }
+
+  
 }
 
 
@@ -1446,7 +1635,11 @@ border-radius: 10px;
   .day1-text-div{
     width: 100%;
   }
+ 
 }
+
+
+
 
 
 
@@ -1455,3 +1648,4 @@ border-radius: 10px;
     font-size: 33px;
    }
 }
+

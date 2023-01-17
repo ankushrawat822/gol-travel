@@ -184,8 +184,6 @@ useEffect(() => {
             setTest(0)
          }
 
-
-
     }, 6000);
   
    

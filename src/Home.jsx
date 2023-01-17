@@ -11,6 +11,10 @@ import homeKaravatiIsland from './assets/home-island-karavati.svg'
 import clientStarImg from './assets/home-client-reviews-star.svg'
 import homeHeroIllustrationBg from './assets/home-hero-illustration-bg.svg'
 import homeHeroIllustratioGirlImg from './assets/home-hero-illustration-girl-img.png'
+import homeHeroIcbaselineflight from './assets/home-hero-icbaselineFlightImg.svg'
+import homeHeroIllustrationFrame from './assets/home-hero-illustration-frame.svg'
+import homeHeroIllustrationRectangle9 from './assets/rectangle-9@2x.png'
+import homeHeroIllustrationRectangle912x from './assets/rectangle-91@2x.png'
 
 
 const Home = () => {
@@ -518,6 +522,80 @@ const Home = () => {
     }
 
 
+    //  illustration logic 
+
+  
+      
+      
+    
+    const content1 = [
+        {
+            img1: 'galleryImg2.svg' ,
+            img2 : 'galleryImg3.svg' ,
+            upperText : "London - Paris" ,
+            text1 : 'Lorem Ipsum Dolor' ,
+            text2 : 'simply dummy text'
+
+        }
+    ]
+
+
+    const content2 = [
+        {
+            img1: 'galleryImg5.svg' ,
+            img2 : 'galleryImg4.svg' ,
+            upperText : "Beijin - China" ,
+            text1 : 'Contrary to popula' ,
+            text2 : 'Latin literature from'
+
+        }
+    ]
+
+
+
+    const content3 = [
+        {
+            img1: 'galleryImg1.svg' ,
+            img2 : 'galleryImg4.svg' ,
+            upperText : "Delhi - India" ,
+            text1 : ' majority have suffered' ,
+            text2 : ' dummy simply text'
+
+        }
+    ]
+
+    const [currentContent , setCurrentContent] =  useState(content1)
+
+
+
+    const [test , setTest] = useState(0)
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+        
+            if(test === 0){
+                setCurrentContent(content1)
+                console.log("1")
+                setTest(1)
+            } else if(test === 1){
+                setCurrentContent(content2)
+               console.log("2")
+               setTest(2)
+            }
+            else if(test === 2){
+                setCurrentContent(content3)
+               console.log("2")
+               setTest(0)
+            }
+           
+    
+        }, 2000);
+      
+       
+        return () => clearInterval(interval);
+      }, [test]);
+    
+
     return (
         <>
         <div>
@@ -543,33 +621,40 @@ const Home = () => {
                     </div>
 
 
-                    <div className='hero-img-or-svg-section '>
-                        <img src={homeHeroGirl} alt="homeHeroGirl" />
-                        {/* <div className="illustration bb">
+                  { currentContent.map((data)=> (  <div className='hero-img-or-svg-section mt-[228px] md:mt-0'>
+                        {/* <img src={homeHeroGirl} alt="homeHeroGirl" /> */}
+                         <div className="illustration ">
                             <div className="illustration-child"></div><img className="bg-icon" alt="" src={homeHeroIllustrationBg} /><img
                                 className="people-icon" alt="" src={homeHeroIllustratioGirlImg} />
                             <div className="item">
                                 <div className="icbaseline-flight-parent"><img className="icbaseline-flight-icon" alt=""
-                                    src="public/icbaselineflight.svg" />
-                                    <div className="jakarta-bali">Jakarta - Bali</div>
+                                    src={homeHeroIcbaselineflight} />
+                                    <div className="jakarta-bali"> {data.upperText} </div>
                                 </div>
-                                <div className="frame-wrapper"><img className="frame-icon" alt="" src="public/frame.svg" /></div>
+                                <div className="frame-wrapper"><img className="frame-icon" alt="" src={homeHeroIllustrationFrame} /></div>
                                 <div className="card" />
-                                <div className="card-child"></div><img className="card-item" alt="" src="public/rectangle-9@2x.png" />
+                                <div className="card-child"></div><img className="card-item" alt="" src={data.img1} />
                                 <div className="explore-labuan-bajo-parent">
-                                    <h2 className="explore-labuan-bajo">Explore Labuan Bajo</h2>
+                                    <h2 className="explore-labuan-bajo">{data.text1}</h2>
                                     <div className="iconlyboldlocation-parent"><img className="iconlyboldlocation" alt=""
-                                        src="public/iconlyboldlocation.svg" />
+                                        src={homelocationIcon} />
                                         <p className="ntt-indonesua">NTT, Indonesua</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="card1">
-                                <div className="card-inner"></div><img className="rectangle-icon" alt="" src="public/rectangle-91@2x.png" />
+                                <div className="card-inner">
+                                <div className="home-hero-illustration-small-div">
+                                    <h2 className="explore-labuan-bajo"> {data.text2} </h2>
+                                
+                                </div>
+                                </div><img className="rectangle-icon" alt="" src={data.img2} />
                                 <div className="frame-div"></div>
                             </div>
-                        </div> */}
-                    </div>
+                        </div>
+                    </div> ))}
+
+                    
                 </div>
             </div>
 
@@ -580,11 +665,11 @@ const Home = () => {
 
             {/* where are you flying */ }
 
-    <div className='hidden sm:flex flex-col items-center justify-center relative mt-12  lg:mx-28  home-page-where-flying-drop-shadow'>
+    {/* <div className='hidden sm:flex flex-col mt-[300px] items-center justify-center relative md:mt-12  lg:mx-28  home-page-where-flying-drop-shadow'>
 
 
 
-        <div className='home-hero-flying-input-div  items-centerjuc
+        <div className='home-hero-flying-input-div  items-center justify-center
                  flex flex-col sm:items-start sm:justify-start w-screen  lg:pb-28  lg:w-[1160px]'>
 
             <div className='py-5'>
@@ -608,11 +693,38 @@ const Home = () => {
             <button>+ Add Promo Code</button>
             <button className='home-hero-show-flight-btn flex items-center justify-center text-white '> <img src={showFlightImg} alt="showFlightImg" />Show Flights</button>
         </div>
+    </div> */}
+
+ 
+ <div className=' mt-[300px]  md:mt-16 flex flex-col  px-7 py-7 lg:mx-[12%] home-page-where-flying-drop-shadow'>
+     {/* heading */}
+     <div className='py-5'>
+                <p className='font-bold'>Where are you flying?</p>
     </div>
+    {/* input field */}
+    <div className='flex sm:flex-col md:flex-row  items-center justify-center sm:justify-evenly lg:justify-between  flex-wrap gap-5 lg:gap-10'>
+
+    <TextField id="outlined-basic" variant="outlined" label="From - To" placeholder='Lahore - Karachi'></TextField>
+
+    <TextField id="outlined-basic" variant="outlined" label="Trip" placeholder='Reture'></TextField>
+
+     <TextField id="outlined-basic" variant="outlined" label="Depart - Return" placeholder='07 Nov 22 - 13 NOv 22'></TextField>
+
+    <TextField id="outlined-basic" variant="outlined" label="Passenger - Class" placeholder='1 Passenger , Economy'></TextField>
+    </div>
+
+    {/* show flight btns  */}
+    <div className=' flex items-end justify-end mt-8 gap-5'>
+            <button>+ Add Promo Code</button>
+            <button className='home-hero-show-flight-btn flex items-center justify-center text-white '> <img src={showFlightImg} alt="showFlightImg" />Show Flights</button>
+        </div>
+    
+ </div>
+
 
 
     {/* best packages div main */ }
-            <div className='text-center'>
+            <div className='text-center  md:mt-6'>
                 <h1 className='font-bold text-[24px] py-4 mt-16'>Best Packages For You</h1>
                 <p>This is a unique experience on ship, sea and land, exploring different coral island of Lakshadweep</p>
             </div>
