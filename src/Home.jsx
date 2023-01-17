@@ -9,7 +9,8 @@ import homeCirclWhiteImg from './assets/home-circle-white-img.svg'
 import homeCirlceBlue from './assets/home-circle-blue-img.svg'
 import homeKaravatiIsland from './assets/home-island-karavati.svg'
 import clientStarImg from './assets/home-client-reviews-star.svg'
-import homeclientUserImg from './assets/home-client-user-img.svg'
+import homeHeroIllustrationBg from './assets/home-hero-illustration-bg.svg'
+import homeHeroIllustratioGirlImg from './assets/home-hero-illustration-girl-img.png'
 
 
 const Home = () => {
@@ -17,29 +18,29 @@ const Home = () => {
 
     //  data and functions of home page "best package for you section starts"
     //   size 
-   const [size  , setSize] = useState({
-    height: window.innerHeight,
-    width: window.innerWidth
-   })
-
-
-   const windowDimension = () =>{
-    setSize({
+    const [size, setSize] = useState({
         height: window.innerHeight,
         width: window.innerWidth
-       })
-   }
+    })
 
-  
+
+    const windowDimension = () => {
+        setSize({
+            height: window.innerHeight,
+            width: window.innerWidth
+        })
+    }
+
+
 
     useEffect(() => {
-       
-        window.addEventListener('resize' , windowDimension)
-         return ()=> window.removeEventListener('resize' , windowDimension)
-        
+
+        window.addEventListener('resize', windowDimension)
+        return () => window.removeEventListener('resize', windowDimension)
+
     }, [size])
 
-  
+
 
     const maldivesData = [
         {
@@ -256,260 +257,260 @@ const Home = () => {
         setBlueBgMore(true)
     }
 
-  //  data and functions of home page "best package for you section ends"
+    //  data and functions of home page "best package for you section ends"
 
 
-//  data and functions of home page "clients section starts"
+    //  data and functions of home page "clients section starts"
 
-const client1Data = [
-    {
-        id: 1,
-      
-        bgImg: "./homeClient2img3.svg",
-        name: "Roman Roy",
-        place: "Toranto, Canada",
-        disc: "text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply",
-        star : [{
-            one : 1
-             },
-             {
-                one : 1
-                 },
-                 {
-                    one : 1
-                     },
-                     {
-                        one : 1
-                         }, {
-                            one : 1
-                             },
-                     
+    const client1Data = [
+        {
+            id: 1,
 
-    ],
-        showSize: 300
-    },
-    {
-        id: 2,
-    
-        bgImg: "./homeClient2img2.svg",
-        name: "Alex Tom",
-        place: "Paris, France",
-        disc: "text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply ",
-        star : [{
-            one : 1
-             },
-             {
-                one : 1
-                 },
-                 {
-                    one : 1
-                     },
-                     {
-                        one : 1
-                         }, {
-                            one : 1
-                             },
-                     
-
-    ],
-        showSize: 768
-    },
-    {
-        id: 3,
-      
-        bgImg: "./homeClient2img2.svg",
-        name: "Finn Balor",
-        place: "Indore, India",
-        disc: "text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply",
-        star : [{
-            one : 1
-             },
-             {
-                one : 1
-                 },
-                 {
-                    one : 1
-                     },
-
-    ],
-        showSize: 1024
-    },
-]
-
-const client2Data = [
-
-    {
-        id: 1,
-      
-        bgImg: "./homeClient2img1.svg",
-        name: "Roman Roy",
-        place: "Indore, India",
-        disc: "dummy text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply ",
-        star : [{
-            one : 1
-             },
-             {
-                one : 1
-                 },
-                 {
-                    one : 1
-                     },
-
-    ],
-        showSize: 300
-    },
-
-    {
-        id: 2,
-    
-        bgImg: "./homeClient2img2.svg",
-        name: "Alex Tom",
-        place: "Paris, France",
-        disc: "dummy text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply ",
-        star : [{
-            one : 1
-             },
-             {
-                one : 1
-                 },
-                 {
-                    one : 1
-                     },
-                     {
-                        one : 1
-                         },
-                     
-
-    ],
-        showSize: 768
-    },
-
-    {
-        id: 3,
-      
-        bgImg: "./homeClient2img3.svg",
-        name: "Finn Balor",
-        place: "Toranto, Canada",
-        disc: "dummy text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply",
-        star : [{
-            one : 1
-             },
-             {
-                one : 1
-                 },
-                 {
-                    one : 1
-                     },
-                     {
-                        one : 1
-                         }, {
-                            one : 1
-                             },
-                     
-
-    ],
-        showSize: 1024
-    },
-]
+            bgImg: "./homeClient2img3.svg",
+            name: "Roman Roy",
+            place: "Toranto, Canada",
+            disc: "text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply",
+            star: [{
+                one: 1
+            },
+            {
+                one: 1
+            },
+            {
+                one: 1
+            },
+            {
+                one: 1
+            }, {
+                one: 1
+            },
 
 
-const client3Data = [
-    {
-        id: 1,
-        bgImg: "./homeClient2img2.svg",
-        name: "Finn Balor",
-        place: "Toranto, Canada",
-        disc: "Explore the Beauty of the island for 3 days and 2 nights with our travel agency.. ",
-        star : [{
-            one : 1
-             },
-             {
-                one : 1
-                 },
-                 {
-                    one : 1
-                     },
+            ],
+            showSize: 300
+        },
+        {
+            id: 2,
 
-    ],
-        showSize: 300
-    },
-    {
-        id: 2,
-    
-        bgImg: "./homeClient2img3.svg",
-        name: "Alex Tom",
-        place: "Paris, France",
-        disc: "Explore the Beauty of the island for 3 days and 2 nights with our travel agency.. ",
-        star : [{
-            one : 1
-             },
-             {
-                one : 1
-                 },
-                 {
-                    one : 1
-                     },
-                     {
-                        one : 1
-                         }, {
-                            one : 1
-                             },
-                     
+            bgImg: "./homeClient2img2.svg",
+            name: "Alex Tom",
+            place: "Paris, France",
+            disc: "text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply ",
+            star: [{
+                one: 1
+            },
+            {
+                one: 1
+            },
+            {
+                one: 1
+            },
+            {
+                one: 1
+            }, {
+                one: 1
+            },
 
-    ],
-        showSize: 768
-    },
-    {
-        id: 3,
-      
-        bgImg: "./homeClient2img1.svg",
-        name: "Roman Roy",
-        place: "Indore, India",
-        disc: "Explore the Beauty of the island for 3 days and 2 nights with our travel agency..",
-        star : [{
-            one : 1
-             },
-             {
-                one : 1
-                 },
-                 {
-                    one : 1
-                     },
-                     {
-                        one : 1
-                         },
-                     
 
-    ],
-        showSize: 1024
-    },
-]
+            ],
+            showSize: 768
+        },
+        {
+            id: 3,
 
-  
+            bgImg: "./homeClient2img2.svg",
+            name: "Finn Balor",
+            place: "Indore, India",
+            disc: "text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply",
+            star: [{
+                one: 1
+            },
+            {
+                one: 1
+            },
+            {
+                one: 1
+            },
+
+            ],
+            showSize: 1024
+        },
+    ]
+
+    const client2Data = [
+
+        {
+            id: 1,
+
+            bgImg: "./homeClient2img1.svg",
+            name: "Roman Roy",
+            place: "Indore, India",
+            disc: "dummy text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply ",
+            star: [{
+                one: 1
+            },
+            {
+                one: 1
+            },
+            {
+                one: 1
+            },
+
+            ],
+            showSize: 300
+        },
+
+        {
+            id: 2,
+
+            bgImg: "./homeClient2img2.svg",
+            name: "Alex Tom",
+            place: "Paris, France",
+            disc: "dummy text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply ",
+            star: [{
+                one: 1
+            },
+            {
+                one: 1
+            },
+            {
+                one: 1
+            },
+            {
+                one: 1
+            },
+
+
+            ],
+            showSize: 768
+        },
+
+        {
+            id: 3,
+
+            bgImg: "./homeClient2img3.svg",
+            name: "Finn Balor",
+            place: "Toranto, Canada",
+            disc: "dummy text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply",
+            star: [{
+                one: 1
+            },
+            {
+                one: 1
+            },
+            {
+                one: 1
+            },
+            {
+                one: 1
+            }, {
+                one: 1
+            },
+
+
+            ],
+            showSize: 1024
+        },
+    ]
+
+
+    const client3Data = [
+        {
+            id: 1,
+            bgImg: "./homeClient2img2.svg",
+            name: "Finn Balor",
+            place: "Toranto, Canada",
+            disc: "Explore the Beauty of the island for 3 days and 2 nights with our travel agency.. ",
+            star: [{
+                one: 1
+            },
+            {
+                one: 1
+            },
+            {
+                one: 1
+            },
+
+            ],
+            showSize: 300
+        },
+        {
+            id: 2,
+
+            bgImg: "./homeClient2img3.svg",
+            name: "Alex Tom",
+            place: "Paris, France",
+            disc: "Explore the Beauty of the island for 3 days and 2 nights with our travel agency.. ",
+            star: [{
+                one: 1
+            },
+            {
+                one: 1
+            },
+            {
+                one: 1
+            },
+            {
+                one: 1
+            }, {
+                one: 1
+            },
+
+
+            ],
+            showSize: 768
+        },
+        {
+            id: 3,
+
+            bgImg: "./homeClient2img1.svg",
+            name: "Roman Roy",
+            place: "Indore, India",
+            disc: "Explore the Beauty of the island for 3 days and 2 nights with our travel agency..",
+            star: [{
+                one: 1
+            },
+            {
+                one: 1
+            },
+            {
+                one: 1
+            },
+            {
+                one: 1
+            },
+
+
+            ],
+            showSize: 1024
+        },
+    ]
+
+
 
     const [clients, setClients] = useState(client2Data)
 
 
     // small circle div btn color usestate
-    const [circle1 , setCircle1] = useState(false)
-    const [circle2 , setCircle2] = useState(true)
-    const [circle3 , setCircle3] = useState(false)
+    const [circle1, setCircle1] = useState(false)
+    const [circle2, setCircle2] = useState(true)
+    const [circle3, setCircle3] = useState(false)
 
-    const handleSmallDiv1 = () =>{
-     setClients(client1Data)
-     setCircle1(true)
-     setCircle2(false)
-     setCircle3(false)
+    const handleSmallDiv1 = () => {
+        setClients(client1Data)
+        setCircle1(true)
+        setCircle2(false)
+        setCircle3(false)
     }
 
-    const handleSmallDiv2 = () =>{
+    const handleSmallDiv2 = () => {
         setClients(client2Data)
         setCircle2(true)
         setCircle1(false)
         setCircle3(false)
     }
 
-    const handleSmallDiv3 = () =>{
+    const handleSmallDiv3 = () => {
         setClients(client3Data)
         setCircle3(true)
         setCircle2(false)
@@ -519,6 +520,7 @@ const client3Data = [
 
     return (
         <>
+        <div>
             <div className='mt-16'>
                 {/* hero section */}
                 <div className='home-hero-main-div lg:gap-32 '>
@@ -543,48 +545,73 @@ const client3Data = [
 
                     <div className='hero-img-or-svg-section '>
                         <img src={homeHeroGirl} alt="homeHeroGirl" />
+                        {/* <div className="illustration bb">
+                            <div className="illustration-child"></div><img className="bg-icon" alt="" src={homeHeroIllustrationBg} /><img
+                                className="people-icon" alt="" src={homeHeroIllustratioGirlImg} />
+                            <div className="item">
+                                <div className="icbaseline-flight-parent"><img className="icbaseline-flight-icon" alt=""
+                                    src="public/icbaselineflight.svg" />
+                                    <div className="jakarta-bali">Jakarta - Bali</div>
+                                </div>
+                                <div className="frame-wrapper"><img className="frame-icon" alt="" src="public/frame.svg" /></div>
+                                <div className="card" />
+                                <div className="card-child"></div><img className="card-item" alt="" src="public/rectangle-9@2x.png" />
+                                <div className="explore-labuan-bajo-parent">
+                                    <h2 className="explore-labuan-bajo">Explore Labuan Bajo</h2>
+                                    <div className="iconlyboldlocation-parent"><img className="iconlyboldlocation" alt=""
+                                        src="public/iconlyboldlocation.svg" />
+                                        <p className="ntt-indonesua">NTT, Indonesua</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card1">
+                                <div className="card-inner"></div><img className="rectangle-icon" alt="" src="public/rectangle-91@2x.png" />
+                                <div className="frame-div"></div>
+                            </div>
+                        </div> */}
                     </div>
                 </div>
-
-
-
             </div>
 
 
-            {/* where are you flying */}
-
-            <div className='hidden sm:flex flex-col items-center justify-center relative mt-12  lg:mx-28  home-page-where-flying-drop-shadow'>
-
+    
+        </div>
 
 
-                <div className='home-hero-flying-input-div  items-centerjuc
+            {/* where are you flying */ }
+
+    <div className='hidden sm:flex flex-col items-center justify-center relative mt-12  lg:mx-28  home-page-where-flying-drop-shadow'>
+
+
+
+        <div className='home-hero-flying-input-div  items-centerjuc
                  flex flex-col sm:items-start sm:justify-start w-screen  lg:pb-28  lg:w-[1160px]'>
 
-                    <div className='py-5'>
-                        <p className='font-bold'>Where are you flying?</p>
-                    </div>
-
-                    <div className='flex sm:flex-col md:flex-row  items-center justify-center sm:justify-evenly flex-wrap gap-5 lg:gap-10'>
-
-                        <TextField id="outlined-basic" variant="outlined" label="From - To" placeholder='Lahore - Karachi'></TextField>
-
-                        <TextField id="outlined-basic" variant="outlined" label="Trip" placeholder='Reture'></TextField>
-
-                        <TextField id="outlined-basic" variant="outlined" label="Depart - Return" placeholder='07 Nov 22 - 13 NOv 22'></TextField>
-
-                        <TextField id="outlined-basic" variant="outlined" label="Passenger - Class" placeholder='1 Passenger , Economy'></TextField>
-                    </div>
-
-                </div>
-
-                <div className='lg:absolute bottom-[10px] right-40  flex gap-4 items-center  justify-center md:items-end md:justify-end md:mr-16'>
-                    <button>+ Add Promo Code</button>
-                    <button className='home-hero-show-flight-btn flex items-center justify-center text-white '> <img src={showFlightImg} alt="showFlightImg" />Show Flights</button>
-                </div>
+            <div className='py-5'>
+                <p className='font-bold'>Where are you flying?</p>
             </div>
 
+            <div className='flex sm:flex-col md:flex-row  items-center justify-center sm:justify-evenly flex-wrap gap-5 lg:gap-10'>
 
-            {/* best packages div main */}
+                <TextField id="outlined-basic" variant="outlined" label="From - To" placeholder='Lahore - Karachi'></TextField>
+
+                <TextField id="outlined-basic" variant="outlined" label="Trip" placeholder='Reture'></TextField>
+
+                <TextField id="outlined-basic" variant="outlined" label="Depart - Return" placeholder='07 Nov 22 - 13 NOv 22'></TextField>
+
+                <TextField id="outlined-basic" variant="outlined" label="Passenger - Class" placeholder='1 Passenger , Economy'></TextField>
+            </div>
+
+        </div>
+
+        <div className='lg:absolute bottom-[10px] right-40  flex gap-4 items-center  justify-center md:items-end md:justify-end md:mr-16'>
+            <button>+ Add Promo Code</button>
+            <button className='home-hero-show-flight-btn flex items-center justify-center text-white '> <img src={showFlightImg} alt="showFlightImg" />Show Flights</button>
+        </div>
+    </div>
+
+
+    {/* best packages div main */ }
             <div className='text-center'>
                 <h1 className='font-bold text-[24px] py-4 mt-16'>Best Packages For You</h1>
                 <p>This is a unique experience on ship, sea and land, exploring different coral island of Lakshadweep</p>
@@ -715,269 +742,269 @@ const client3Data = [
 
 
 
-            {/* <div className=' hidden sm:flex items-center justify-center gap-4 py-11'>
+    {/* <div className=' hidden sm:flex items-center justify-center gap-4 py-11'>
                 <img src={homeCirclWhiteImg} alt="w" />
                 <img src={homeCirlceBlue} alt="w" />
                 <img src={homeCirclWhiteImg} alt="w" />
             </div> */}
 
 
-            <div className="flex items-center justify-center">
-                <button className='home-hero-discover-btn mt-10 home-all-btn-hover-effects'>Discover Now</button>
-            </div>
+    <div className="flex items-center justify-center">
+        <button className='home-hero-discover-btn mt-10 home-all-btn-hover-effects'>Discover Now</button>
+    </div>
 
 
-            {/* island stays */}
-            <div className='flex flex-col items-center justify-center text-center mt-9 '>
-                <h3 className='font-bold text-[24px] py-2'>Island Stays</h3>
-                <p>One can choose from a variety of beautiful coral islands which offers different staying experience from..</p>
-            </div>
+    {/* island stays */ }
+    <div className='flex flex-col items-center justify-center text-center mt-9 '>
+        <h3 className='font-bold text-[24px] py-2'>Island Stays</h3>
+        <p>One can choose from a variety of beautiful coral islands which offers different staying experience from..</p>
+    </div>
 
-            {/* island cards main */}
-            <div className='mt-16 flex flex-col gap-5 items-center justify-evenly lg:px-16 lg:gap-10  md:flex-row md:flex-wrap '>
+    {/* island cards main */ }
+    <div className='mt-16 flex flex-col gap-5 items-center justify-evenly lg:px-16 lg:gap-10  md:flex-row md:flex-wrap '>
 
-                {/* first card div */}
-                <div className='flex flex-col w-[300px] sm:w-[404px] sm:px-3 lg:w-[336px]  island-stays-drop-shadow-card bg-shadow-hover-effect  md:px-0  
+        {/* first card div */}
+        <div className='flex flex-col w-[300px] sm:w-[404px] sm:px-3 lg:w-[336px]  island-stays-drop-shadow-card bg-shadow-hover-effect  md:px-0  
                 '>
-                    {/* img div */}
-                    <div className='bg-black rounded-[8px]' >
-                        <img className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
+            {/* img div */}
+            <div className='bg-black rounded-[8px]' >
+                <img className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
+            </div>
+            {/* below img div */}
+            <div className='flex flex-col pl-2'>
+                {/* h1 and p div */}
+                <div className='flex flex-col w-'>
+                    <h3 className='font-bold'>Kavaratti</h3>
+                    <p>Kavaratti is the capital of the Union Territory of Lakshadweep having...</p>
+                </div>
+                {/* rating and button */}
+                <div className='flex justify-between items-center'>
+                    {/* reviews */}
+                    <div className='flex gap-1 py-3'>
+                        <img src={homeStarImg} alt="star" />
+                        <p className='font-bold'>4.5</p>
+                        <p>(1.5k Review)</p>
                     </div>
-                    {/* below img div */}
-                    <div className='flex flex-col pl-2'>
-                        {/* h1 and p div */}
-                        <div className='flex flex-col w-'>
-                            <h3 className='font-bold'>Kavaratti</h3>
-                            <p>Kavaratti is the capital of the Union Territory of Lakshadweep having...</p>
-                        </div>
-                        {/* rating and button */}
-                        <div className='flex justify-between items-center'>
-                            {/* reviews */}
-                            <div className='flex gap-1 py-3'>
-                                <img src={homeStarImg} alt="star" />
-                                <p className='font-bold'>4.5</p>
-                                <p>(1.5k Review)</p>
-                            </div>
-                            {/* explore more btn */}
+                    {/* explore more btn */}
 
-                            <button className='rounded-[5px] md:mr-3 flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg'>Explore More</button>
-
-                        </div>
-                    </div>
-
-
+                    <button className='rounded-[5px] md:mr-3 flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg'>Explore More</button>
 
                 </div>
-
-
-
-
-
-                {/* second card div */}
-                <div className='bg-shadow-hover-effect flex flex-col w-[300px]  sm:w-[404px] lg:w-[336px] sm:px-3  island-stays-drop-shadow-card   md:px-0 '>
-                    {/* img div */}
-                    <div className='bg-black rounded-[8px]'>
-                        <img className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
-                    </div>
-                    {/* below img div */}
-                    <div className='flex flex-col pl-2'>
-                        {/* h1 and p div */}
-                        <div className='flex flex-col w-'>
-                            <h3 className='font-bold'>Kavaratti</h3>
-                            <p>Kavaratti is the capital of the Union Territory of Lakshadweep having...</p>
-                        </div>
-                        {/* rating and button */}
-                        <div className='flex justify-between items-center'>
-                            {/* reviews */}
-                            <div className='flex gap-1 py-3'>
-                                <img src={homeStarImg} alt="star" />
-                                <p className='font-bold'>4.5</p>
-                                <p>(1.5k Review)</p>
-                            </div>
-                            {/* explore more btn */}
-
-                            <button className='rounded-[5px] md:mr-3 flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg'>Explore More</button>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-
-
-
-
-                {/* third card div */}
-                <div className='bg-shadow-hover-effect flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] island-stays-drop-shadow-card   md:px-0 '>
-                    {/* img div */}
-                    <div className='bg-black rounded-[8px]'>
-                        <img className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
-                    </div>
-                    {/* below img div */}
-                    <div className='flex flex-col pl-2'>
-                        {/* h1 and p div */}
-                        <div className='flex flex-col w-'>
-                            <h3 className='font-bold'>Kavaratti</h3>
-                            <p>Kavaratti is the capital of the Union Territory of Lakshadweep having...</p>
-                        </div>
-                        {/* rating and button */}
-                        <div className='flex justify-between items-center'>
-                            {/* reviews */}
-                            <div className='flex gap-1 py-3'>
-                                <img src={homeStarImg} alt="star" />
-                                <p className='font-bold'>4.5</p>
-                                <p>(1.5k Review)</p>
-                            </div>
-                            {/* explore more btn */}
-
-                            <button className='rounded-[5px] md:mr-3 flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg'>Explore More</button>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-                {/* third card ends */}
-
-
-
-                {/* forth card div */}
-                <div className='bg-shadow-hover-effect hidden md:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] island-stays-drop-shadow-card   md:px-0  '>
-                    {/* img div */}
-                    <div className='bg-black rounded-[8px]'>
-                        <img className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
-                    </div>
-                    {/* below img div */}
-                    <div className='flex flex-col pl-2'>
-                        {/* h1 and p div */}
-                        <div className='flex flex-col w-'>
-                            <h3 className='font-bold'>Kavaratti</h3>
-                            <p>Kavaratti is the capital of the Union Territory of Lakshadweep having...</p>
-                        </div>
-                        {/* rating and button */}
-                        <div className='flex justify-between items-center'>
-                            {/* reviews */}
-                            <div className='flex gap-1 py-3'>
-                                <img src={homeStarImg} alt="star" />
-                                <p className='font-bold'>4.5</p>
-                                <p>(1.5k Review)</p>
-                            </div>
-                            {/* explore more btn */}
-
-                            <button className='rounded-[5px] md:mr-3 flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg'>Explore More</button>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-                {/* forth card ends */}
-
-
-
-
-
-                {/* five card div */}
-                <div className='bg-shadow-hover-effect hidden lg:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] island-stays-drop-shadow-card   md:px-0  '>
-                    {/* img div */}
-                    <div className='bg-black rounded-[8px]'>
-                        <img className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
-                    </div>
-                    {/* below img div */}
-                    <div className='flex flex-col pl-2'>
-                        {/* h1 and p div */}
-                        <div className='flex flex-col w-'>
-                            <h3 className='font-bold'>Kavaratti</h3>
-                            <p>Kavaratti is the capital of the Union Territory of Lakshadweep having...</p>
-                        </div>
-                        {/* rating and button */}
-                        <div className='flex justify-between items-center'>
-                            {/* reviews */}
-                            <div className='flex gap-1 py-3'>
-                                <img src={homeStarImg} alt="star" />
-                                <p className='font-bold'>4.5</p>
-                                <p>(1.5k Review)</p>
-                            </div>
-                            {/* explore more btn */}
-
-                            <button className='rounded-[5px] md:mr-3 flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg'>Explore More</button>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-                {/* five card ends */}
-
-
-
-                {/* six card div */}
-                <div className='bg-shadow-hover-effect hidden lg:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] island-stays-drop-shadow-card   md:px-0 '>
-                    {/* img div */}
-                    <div className='bg-black rounded-[8px]'>
-                        <img className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
-                    </div>
-                    {/* below img div */}
-                    <div className='flex flex-col pl-2'>
-                        {/* h1 and p div */}
-                        <div className='flex flex-col w-'>
-                            <h3 className='font-bold'>Kavaratti</h3>
-                            <p>Kavaratti is the capital of the Union Territory of Lakshadweep having...</p>
-                        </div>
-                        {/* rating and button */}
-                        <div className='flex justify-between items-center'>
-                            {/* reviews */}
-                            <div className='flex gap-1 py-3'>
-                                <img src={homeStarImg} alt="star" />
-                                <p className='font-bold'>4.5</p>
-                                <p>(1.5k Review)</p>
-                            </div>
-                            {/* explore more btn */}
-
-                            <button className='rounded-[5px] md:mr-3 flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg'>Explore More</button>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-                {/* six card ends */}
-
             </div>
 
 
 
+        </div>
 
-            {/* contact us container */}
-            <div className="bg-[url('./assets/Backfooter.svg')]  h-[197px] flex flex-col items-center justify-center gap-8 md:flex-row md:h-[154px] lg:h-[261px] lg:px-10 md:justify-between mt-24 mx-3 sm:mx-5 lg:mx-24  rounded-[15px]">
 
-                {/* text div */}
-                <div className="text-center md:text-left text-white  md:w-[2/5]">
-                    <p className='md:font-bold md:text-[20px] lg:w-[451px] lg:text-[42px] lg:leading-[50px] lg:my-[20px]'>Lets Ready to Explore The World With Us.</p>
-                    <p className='hidden md:flex'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et quis incidunt iusto!</p>
+
+
+
+        {/* second card div */}
+        <div className='bg-shadow-hover-effect flex flex-col w-[300px]  sm:w-[404px] lg:w-[336px] sm:px-3  island-stays-drop-shadow-card   md:px-0 '>
+            {/* img div */}
+            <div className='bg-black rounded-[8px]'>
+                <img className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
+            </div>
+            {/* below img div */}
+            <div className='flex flex-col pl-2'>
+                {/* h1 and p div */}
+                <div className='flex flex-col w-'>
+                    <h3 className='font-bold'>Kavaratti</h3>
+                    <p>Kavaratti is the capital of the Union Territory of Lakshadweep having...</p>
                 </div>
+                {/* rating and button */}
+                <div className='flex justify-between items-center'>
+                    {/* reviews */}
+                    <div className='flex gap-1 py-3'>
+                        <img src={homeStarImg} alt="star" />
+                        <p className='font-bold'>4.5</p>
+                        <p>(1.5k Review)</p>
+                    </div>
+                    {/* explore more btn */}
 
-                {/* button div */}
-                <button className='home-contact-us-btn text-center home-all-btn-hover-effects'>Contact Us</button>
+                    <button className='rounded-[5px] md:mr-3 flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg'>Explore More</button>
 
+                </div>
             </div>
 
 
-            {/* home reviews page */}
 
-            <div className='text-center mx-6 mt-24'>
-                <h2 className='font-bold text-[24px] leading-[32px] '>What Our Clients Says About Us</h2>
+        </div>
+
+
+
+
+
+        {/* third card div */}
+        <div className='bg-shadow-hover-effect flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] island-stays-drop-shadow-card   md:px-0 '>
+            {/* img div */}
+            <div className='bg-black rounded-[8px]'>
+                <img className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
+            </div>
+            {/* below img div */}
+            <div className='flex flex-col pl-2'>
+                {/* h1 and p div */}
+                <div className='flex flex-col w-'>
+                    <h3 className='font-bold'>Kavaratti</h3>
+                    <p>Kavaratti is the capital of the Union Territory of Lakshadweep having...</p>
+                </div>
+                {/* rating and button */}
+                <div className='flex justify-between items-center'>
+                    {/* reviews */}
+                    <div className='flex gap-1 py-3'>
+                        <img src={homeStarImg} alt="star" />
+                        <p className='font-bold'>4.5</p>
+                        <p>(1.5k Review)</p>
+                    </div>
+                    {/* explore more btn */}
+
+                    <button className='rounded-[5px] md:mr-3 flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg'>Explore More</button>
+
+                </div>
             </div>
 
 
 
-            {/* reviews card main div*/}
+        </div>
+        {/* third card ends */}
+
+
+
+        {/* forth card div */}
+        <div className='bg-shadow-hover-effect hidden md:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] island-stays-drop-shadow-card   md:px-0  '>
+            {/* img div */}
+            <div className='bg-black rounded-[8px]'>
+                <img className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
+            </div>
+            {/* below img div */}
+            <div className='flex flex-col pl-2'>
+                {/* h1 and p div */}
+                <div className='flex flex-col w-'>
+                    <h3 className='font-bold'>Kavaratti</h3>
+                    <p>Kavaratti is the capital of the Union Territory of Lakshadweep having...</p>
+                </div>
+                {/* rating and button */}
+                <div className='flex justify-between items-center'>
+                    {/* reviews */}
+                    <div className='flex gap-1 py-3'>
+                        <img src={homeStarImg} alt="star" />
+                        <p className='font-bold'>4.5</p>
+                        <p>(1.5k Review)</p>
+                    </div>
+                    {/* explore more btn */}
+
+                    <button className='rounded-[5px] md:mr-3 flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg'>Explore More</button>
+
+                </div>
+            </div>
+
+
+
+        </div>
+        {/* forth card ends */}
+
+
+
+
+
+        {/* five card div */}
+        <div className='bg-shadow-hover-effect hidden lg:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] island-stays-drop-shadow-card   md:px-0  '>
+            {/* img div */}
+            <div className='bg-black rounded-[8px]'>
+                <img className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
+            </div>
+            {/* below img div */}
+            <div className='flex flex-col pl-2'>
+                {/* h1 and p div */}
+                <div className='flex flex-col w-'>
+                    <h3 className='font-bold'>Kavaratti</h3>
+                    <p>Kavaratti is the capital of the Union Territory of Lakshadweep having...</p>
+                </div>
+                {/* rating and button */}
+                <div className='flex justify-between items-center'>
+                    {/* reviews */}
+                    <div className='flex gap-1 py-3'>
+                        <img src={homeStarImg} alt="star" />
+                        <p className='font-bold'>4.5</p>
+                        <p>(1.5k Review)</p>
+                    </div>
+                    {/* explore more btn */}
+
+                    <button className='rounded-[5px] md:mr-3 flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg'>Explore More</button>
+
+                </div>
+            </div>
+
+
+
+        </div>
+        {/* five card ends */}
+
+
+
+        {/* six card div */}
+        <div className='bg-shadow-hover-effect hidden lg:flex flex-col w-[300px]  sm:w-[404px] sm:px-3 lg:w-[336px] island-stays-drop-shadow-card   md:px-0 '>
+            {/* img div */}
+            <div className='bg-black rounded-[8px]'>
+                <img className='img-tag-effects ' src={homeKaravatiIsland} alt="" />
+            </div>
+            {/* below img div */}
+            <div className='flex flex-col pl-2'>
+                {/* h1 and p div */}
+                <div className='flex flex-col w-'>
+                    <h3 className='font-bold'>Kavaratti</h3>
+                    <p>Kavaratti is the capital of the Union Territory of Lakshadweep having...</p>
+                </div>
+                {/* rating and button */}
+                <div className='flex justify-between items-center'>
+                    {/* reviews */}
+                    <div className='flex gap-1 py-3'>
+                        <img src={homeStarImg} alt="star" />
+                        <p className='font-bold'>4.5</p>
+                        <p>(1.5k Review)</p>
+                    </div>
+                    {/* explore more btn */}
+
+                    <button className='rounded-[5px] md:mr-3 flex items-center justify-center bg-[#3282AD] w-[133px] h-[35px]  text-white font-bold btn-hover-effect-blue-to-white-bg'>Explore More</button>
+
+                </div>
+            </div>
+
+
+
+        </div>
+        {/* six card ends */}
+
+    </div>
+
+
+
+
+    {/* contact us container */ }
+    <div className="bg-[url('./assets/Backfooter.svg')]  h-[197px] flex flex-col items-center justify-center gap-8 md:flex-row md:h-[154px] lg:h-[261px] lg:px-10 md:justify-between mt-24 mx-3 sm:mx-5 lg:mx-24  rounded-[15px]">
+
+        {/* text div */}
+        <div className="text-center md:text-left text-white  md:w-[2/5]">
+            <p className='md:font-bold md:text-[20px] lg:w-[451px] lg:text-[42px] lg:leading-[50px] lg:my-[20px]'>Lets Ready to Explore The World With Us.</p>
+            <p className='hidden md:flex'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et quis incidunt iusto!</p>
+        </div>
+
+        {/* button div */}
+        <button className='home-contact-us-btn text-center home-all-btn-hover-effects'>Contact Us</button>
+
+    </div>
+
+
+    {/* home reviews page */ }
+
+    <div className='text-center mx-6 mt-24'>
+        <h2 className='font-bold text-[24px] leading-[32px] '>What Our Clients Says About Us</h2>
+    </div>
+
+
+
+    {/* reviews card main div*/ }
             <div className='mt-14  flex items-center justify-center md:justify-evenly'>
 
                 {/* card 1 */}

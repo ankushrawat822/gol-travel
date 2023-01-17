@@ -1007,7 +1007,12 @@ border-radius: 8px;
   animation-direction: alternate;
 }
 
-
+.nav-bar-below-small-line{
+  width: 25px;
+height: 4px;
+background: #3282AD;
+border-radius: 15px;
+}
 
 
 
@@ -1153,6 +1158,40 @@ border-radius: 10px;
 .light-blue-shade-hover:hover{
   background-color: rgba(18, 126, 220, 0.092);
 }
+
+
+
+/* home heor illustration */
+.illustration{
+  position: relative;
+  width: 464.27px;
+  font-size: 14px;
+  color: #636363;
+}
+
+.illustration-child{
+  position: absolute;
+  top: 64.76px;
+  right: 0;
+  width: 449.99px;
+  height: 412.49px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
