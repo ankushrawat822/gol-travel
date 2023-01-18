@@ -1341,11 +1341,12 @@ border-radius: 10px;
   border-radius: 5px;
 }
 .rectangle-icon {
-  top: 0.42px;
-  right: 0.469999px;
-  width: 91.43px;
-  height: 56.35px;
-  object-fit: cover;
+  top: -2.58px;
+    right: 1.469999px;
+    width: 86.43px;
+    height: 53.35px;
+    
+    object-fit: cover;
 }
 .frame-div {
   top: 55.6px;

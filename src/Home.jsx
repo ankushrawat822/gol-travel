@@ -534,7 +534,9 @@ const Home = () => {
             img2 : 'galleryImg3.svg' ,
             upperText : "London - Paris" ,
             text1 : 'Lorem Ipsum Dolor' ,
-            text2 : 'simply dummy text'
+            text2 : 'simply dummy text',
+            lightText: 'DML, Japan'
+
 
         }
     ]
@@ -546,7 +548,8 @@ const Home = () => {
             img2 : 'galleryImg4.svg' ,
             upperText : "Beijin - China" ,
             text1 : 'Contrary to popula' ,
-            text2 : 'Latin literature from'
+            text2 : 'Latin literature from',
+            lightText: 'XML, Asia'
 
         }
     ]
@@ -556,10 +559,11 @@ const Home = () => {
     const content3 = [
         {
             img1: 'galleryImg1.svg' ,
-            img2 : 'galleryImg4.svg' ,
+            img2 : 'galleryImg2.svg' ,
             upperText : "Delhi - India" ,
-            text1 : ' majority have suffered' ,
-            text2 : ' dummy simply text'
+            text1 : ' majority have sufred' ,
+            text2 : ' dummy simply text',
+            lightText: 'APR, Karavatti'
 
         }
     ]
@@ -638,7 +642,7 @@ const Home = () => {
                                     <h2 className="explore-labuan-bajo">{data.text1}</h2>
                                     <div className="iconlyboldlocation-parent"><img className="iconlyboldlocation" alt=""
                                         src={homelocationIcon} />
-                                        <p className="ntt-indonesua">NTT, Indonesua</p>
+                                        <p className="ntt-indonesua"> {data.lightText} </p>
                                     </div>
                                 </div>
                             </div>
